@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #081B2D;
+}
+
+@layer utilities {
+  .nav-link {
+    @apply text-sm font-medium text-dark-200 hover:text-blue-200 transition-colors duration-200 flex items-center gap-1;
+  }
+  .nav-link-active {
+    @apply text-blue-200;
+  }
+}
