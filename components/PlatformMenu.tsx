@@ -22,16 +22,15 @@ export default function PlatformMenu({ onClose }: { onClose: () => void }) {
         <div className="absolute -top-[7px] left-1/2 -translate-x-1/2 w-3 h-3 bg-light-000 border-l border-t border-light-300 rotate-45 z-10" />
 
         <div className="rounded-xl border border-light-300 shadow-2xl bg-light-000 overflow-hidden animate-fade-in-down">
-          <div className="flex" style={{ minHeight: 320 }}>
+          <div className="flex" style={{ minHeight: 360 }}>
 
-            {/* ── Left sidebar ─────────────────────────────────── */}
+            {/* ── Left sidebar — click only, no hover switching ── */}
             <div className="w-[204px] shrink-0 bg-light-100 border-r border-light-200 py-3">
               {CATEGORIES.map((cat) => {
                 const isActive = cat.id === activeId;
                 return (
                   <button
                     key={cat.id}
-                    onMouseEnter={() => setActiveId(cat.id)}
                     onClick={() => setActiveId(cat.id)}
                     className={`relative w-full text-left px-4 py-[9px] text-[13px] transition-colors duration-100 ${
                       isActive
@@ -51,7 +50,7 @@ export default function PlatformMenu({ onClose }: { onClose: () => void }) {
             {/* ── Right panel ──────────────────────────────────── */}
             <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
 
-              {/* Overview — neutral, no blue tint */}
+              {/* Overview — always-visible arrow signals it's a link */}
               <a
                 href="#"
                 onClick={onClose}
@@ -61,7 +60,7 @@ export default function PlatformMenu({ onClose }: { onClose: () => void }) {
                   <p className="text-sm font-semibold text-dark-300">{active.overview.label}</p>
                   <p className="text-xs text-dark-100 mt-0.5">{active.overview.desc}</p>
                 </div>
-                <svg className="shrink-0 text-dark-100 opacity-0 group-hover:opacity-100 transition-opacity" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <svg className="shrink-0 text-dark-100 opacity-40 group-hover:opacity-100 group-hover:text-blue-200 transition-all duration-150" width="14" height="14" viewBox="0 0 14 14" fill="none">
                   <path d="M3 7H11M7.5 4L11 7L7.5 10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </a>
@@ -113,7 +112,7 @@ export default function PlatformMenu({ onClose }: { onClose: () => void }) {
                             </span>
                           )}
                         </div>
-                        <p className="text-[11px] text-dark-100 mt-0.5 line-clamp-1 leading-snug">{feat.desc}</p>
+                        <p className="text-[11px] text-dark-100 mt-0.5 line-clamp-2 leading-snug">{feat.desc}</p>
                       </div>
                     </a>
                   );
