@@ -26,3 +26,46 @@ body {
     @apply text-blue-200;
   }
 }
+
+@keyframes slideLeft {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes slideRight {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* Dark section — moving dot grid */
+@keyframes dotPan {
+  0%   { background-position: 0px 0px; }
+  100% { background-position: 40px 40px; }
+}
+
+.dark-dot-grid {
+  background-image: radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: dotPan 18s linear infinite;
+}
+
+/* Dark section — ambient blob drift */
+@keyframes blobDrift1 {
+  0%, 100% { transform: translate(0px,   0px)  scale(1);    }
+  30%       { transform: translate(50px, -40px) scale(1.08); }
+  65%       { transform: translate(-30px, 25px) scale(0.94); }
+}
+@keyframes blobDrift2 {
+  0%, 100% { transform: translate(0px,   0px)  scale(1);    }
+  35%       { transform: translate(-45px, 30px) scale(1.06); }
+  70%       { transform: translate(35px, -25px) scale(1.1);  }
+}
+@keyframes blobDrift3 {
+  0%, 100% { transform: translate(0px,  0px)  scale(1);    }
+  40%       { transform: translate(25px, 45px) scale(0.95); }
+  75%       { transform: translate(-35px,-20px) scale(1.05); }
+}
+
+.blob-1 { animation: blobDrift1 16s ease-in-out infinite; }
+.blob-2 { animation: blobDrift2 20s ease-in-out infinite; }
+.blob-3 { animation: blobDrift3 14s ease-in-out infinite; }

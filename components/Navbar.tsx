@@ -173,7 +173,7 @@ function EmpulsLogo({ isDark }: { isDark: boolean }) {
     <img
       src={isDark ? "/logos/empuls-light.svg" : "/logos/empuls-dark.svg"}
       alt="Empuls"
-      style={{ height: "30px", width: "auto" }}
+      style={{ height: "22px", width: "auto" }}
     />
   );
 }
