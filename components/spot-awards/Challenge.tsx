@@ -9,45 +9,38 @@ const STATS = [
     suffix: "%",
     label: "of employees feel underrecognized at work",
     source: "Gallup, 2024",
-    color: "text-blue-200",
   },
   {
     numeric: 7,
     suffix: " days",
     label: "average delay between achievement and recognition",
     source: "SHRM Research",
-    color: "text-orange-200",
   },
   {
     numeric: 31,
     suffix: "%",
     label: "lower attrition when recognition is timely and public",
     source: "Deloitte Insights",
-    color: "text-green-300",
   },
 ];
 
 function useCountUp(target: number, duration = 1400, trigger: boolean) {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(target);
   useEffect(() => {
     if (!trigger) return;
     let start = 0;
     const step = target / (duration / 16);
     const timer = setInterval(() => {
       start += step;
-      if (start >= target) {
-        setCount(target);
-        clearInterval(timer);
-      } else {
-        setCount(Math.floor(start));
-      }
+      if (start >= target) { setCount(target); clearInterval(timer); }
+      else setCount(Math.floor(start));
     }, 16);
     return () => clearInterval(timer);
   }, [target, duration, trigger]);
   return count;
 }
 
-function AnimatedStat({ numeric, suffix, label, source, color }: typeof STATS[0]) {
+function StatItem({ numeric, suffix, label, source }: typeof STATS[0]) {
   const ref = useRef<HTMLDivElement>(null);
   const [triggered, setTriggered] = useState(false);
   const reduce = useReducedMotion();
@@ -56,84 +49,70 @@ function AnimatedStat({ numeric, suffix, label, source, color }: typeof STATS[0]
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) setTriggered(true); },
+    const obs = new IntersectionObserver(
+      ([e]) => { if (e.isIntersecting) setTriggered(true); },
       { threshold: 0.5 }
     );
-    observer.observe(el);
-    return () => observer.disconnect();
+    obs.observe(el);
+    return () => obs.disconnect();
   }, []);
 
   return (
-    <div
-      ref={ref}
-      className="bg-light-000 px-8 py-10 text-center group hover:bg-light-100 transition-colors duration-200"
-    >
-      <p className={`text-5xl font-bold mb-3 tabular-nums ${color}`}>
+    <div ref={ref} className="flex flex-col items-center text-center sm:items-start sm:text-left px-8 py-6 sm:py-0 first:pl-0 last:pr-0">
+      <p className="text-5xl lg:text-6xl font-bold tabular-nums text-white mb-2">
         {reduce ? `${numeric}${suffix}` : `${count}${suffix}`}
       </p>
-      <p className="text-dark-200 text-sm leading-relaxed mb-2 max-w-[200px] mx-auto">{label}</p>
-      <p className="text-dark-000 text-[10px] font-medium uppercase tracking-wide">{source}</p>
+      <p className="text-dark-000 text-sm leading-snug mb-1.5 max-w-[180px]">{label}</p>
+      <p className="text-dark-100 text-[10px] font-semibold uppercase tracking-[0.12em]">{source}</p>
     </div>
   );
 }
 
-const container = {
-  hidden: {},
-  visible: { transition: { staggerChildren: 0.12 } },
-};
-const item = {
-  hidden: { opacity: 0, y: 24 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.55, ease: [0, 0, 0.2, 1] as const } },
-};
+const ease = [0, 0, 0.2, 1] as const;
 
 export default function Challenge() {
   const reduce = useReducedMotion();
 
   return (
-    <section className="bg-light-000 py-20 lg:py-28">
-      <div className="max-w-[1280px] mx-auto px-6">
-        <div className="text-center max-w-2xl mx-auto mb-14">
-          <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">
+    <section className="relative bg-dark-300 overflow-hidden">
+      {/* Reuse dark section ambient layers */}
+      <div className="dark-dot-grid absolute inset-0 pointer-events-none" />
+      <div className="blob-1 absolute -top-40 left-1/4 w-[500px] h-[500px] rounded-full pointer-events-none"
+        style={{ background: "radial-gradient(circle, rgba(29,97,246,0.20) 0%, transparent 65%)" }} />
+      <div className="blob-2 absolute -bottom-20 right-1/4 w-[420px] h-[420px] rounded-full pointer-events-none"
+        style={{ background: "radial-gradient(circle, rgba(99,102,241,0.14) 0%, transparent 65%)" }} />
+
+      <div className="relative z-10 max-w-[1280px] mx-auto px-6 py-14 lg:py-16">
+
+        {/* Header — compact, left-aligned on desktop */}
+        <motion.div
+          className="max-w-xl mb-10"
+          initial={reduce ? undefined : { opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ duration: 0.5, ease }}
+        >
+          <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-100 mb-3">
             The recognition gap
           </p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 leading-tight tracking-tight mb-4">
+          <h2 className="text-2xl lg:text-3xl font-bold text-white leading-tight tracking-tight">
             Recognition delayed is recognition denied
           </h2>
-          <p className="text-dark-100 text-base leading-relaxed">
-            Traditional recognition programs are slow, infrequent, and tied to annual cycles. By the time a plaque arrives, the moment is long gone.
-          </p>
-        </div>
+        </motion.div>
 
-        {/* Stats grid — animated count-up on scroll */}
+        {/* Stats strip */}
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-light-200 border border-light-200 rounded-2xl overflow-hidden mb-14"
-          variants={reduce ? undefined : container}
-          initial="hidden"
-          whileInView="visible"
+          className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-white/10"
+          initial={reduce ? undefined : { opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.55, ease, delay: 0.1 }}
         >
           {STATS.map((s) => (
-            <motion.div key={s.numeric} variants={reduce ? undefined : item}>
-              <AnimatedStat {...s} />
-            </motion.div>
+            <StatItem key={s.source} {...s} />
           ))}
         </motion.div>
 
-        {/* Pull quote */}
-        <motion.blockquote
-          className="max-w-2xl mx-auto text-center"
-          initial={reduce ? undefined : { opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.6 }}
-          transition={{ duration: 0.6, ease: [0, 0, 0.2, 1] as const }}
-        >
-          <div className="w-8 h-1 bg-blue-200 rounded-full mx-auto mb-6" />
-          <p className="text-xl lg:text-2xl font-medium text-dark-300 leading-relaxed italic">
-            &ldquo;Recognition loses its power the moment it&apos;s delayed. Spot awards close that gap — instantly.&rdquo;
-          </p>
-          <div className="w-8 h-1 bg-blue-200 rounded-full mx-auto mt-6" />
-        </motion.blockquote>
       </div>
     </section>
   );

@@ -3,10 +3,10 @@
 import { useEffect, useRef } from "react";
 
 const STATS = [
-  { value: "3x", label: "Higher retention" },
-  { value: "89%", label: "Employee satisfaction" },
-  { value: "50+", label: "Integrations" },
-  { value: "1M+", label: "Rewards options" },
+  { value: "1,400+", label: "Companies worldwide" },
+  { value: "5M+",    label: "Employees on the platform" },
+  { value: "50",     label: "Countries reached" },
+  { value: "$1B+",   label: "Rewards distributed" },
 ];
 
 const LOGOS = ["Continental", "Bosch", "Pepsi", "Luminous", "CGI", "Razorpay"];
@@ -168,16 +168,6 @@ export default function Hero() {
             </button>
           </div>
 
-          {/* Stats row */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-14">
-            {STATS.map((stat) => (
-              <div key={stat.value}>
-                <p className="text-2xl font-bold text-white">{stat.value}</p>
-                <p className="text-xs text-dark-000 mt-1">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-
           {/* Trusted by */}
           <div>
             <p className="text-xs text-dark-100 uppercase tracking-widest mb-4 font-medium">
@@ -255,6 +245,18 @@ export default function Hero() {
             <span className="text-sm">✨</span>
             <span className="text-xs font-medium text-white">Copilot suggests a nudge</span>
           </div>
+        </div>
+      </div>
+
+      {/* Stats strip */}
+      <div className="relative z-10 w-full border-t border-white/10">
+        <div className="max-w-[1280px] mx-auto px-6 py-8 grid grid-cols-2 lg:grid-cols-4 divide-y-0 lg:divide-x divide-white/10">
+          {STATS.map((stat) => (
+            <div key={stat.value} className="px-6 py-4 lg:py-0 first:pl-0 last:pr-0 text-center lg:text-left">
+              <p className="text-3xl lg:text-4xl font-bold text-white mb-1">{stat.value}</p>
+              <p className="text-dark-000 text-sm">{stat.label}</p>
+            </div>
+          ))}
         </div>
       </div>
 

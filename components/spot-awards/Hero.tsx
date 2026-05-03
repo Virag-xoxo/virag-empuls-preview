@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { motion, useReducedMotion } from "motion/react";
 
 const FLOATING_CHIPS = [
@@ -47,39 +47,11 @@ const LOGOS = [
   { name: "Western Digital", src: "/logos/spot-awards/western-digital.svg", h: "h-6" },
 ];
 
-const STATS = [
-  { numeric: 65, suffix: "%",     label: "of employees feel underrecognized", source: "Gallup, 2024" },
-  { numeric: 7,  suffix: " days", label: "average delay before recognition happens", source: "SHRM Research" },
-  { numeric: 31, suffix: "%",     label: "lower attrition with timely recognition", source: "Deloitte Insights" },
-];
-
 const ease = [0, 0, 0.2, 1] as const;
-
-function useCountUp(target: number, duration = 1200, trigger: boolean) {
-  const [count, setCount] = useState(0);
-  useEffect(() => {
-    if (!trigger) return;
-    let val = 0;
-    const step = target / (duration / 16);
-    const timer = setInterval(() => {
-      val += step;
-      if (val >= target) { setCount(target); clearInterval(timer); }
-      else setCount(Math.floor(val));
-    }, 16);
-    return () => clearInterval(timer);
-  }, [target, duration, trigger]);
-  return count;
-}
 
 export default function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const reduce = useReducedMotion();
-  const [statTriggered, setStatTriggered] = useState(false);
-
-  useEffect(() => {
-    const t = setTimeout(() => setStatTriggered(true), 900);
-    return () => clearTimeout(t);
-  }, []);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -313,19 +285,6 @@ export default function Hero() {
         </div>
       </motion.div>
 
-      {/* ── Stats strip ── */}
-      <motion.div
-        className="relative z-10 w-full border-t border-white/10"
-        initial={reduce ? undefined : { opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6, ease, delay: 0.65 }}
-      >
-        <div className="max-w-[1280px] mx-auto px-6 py-7 grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-white/10">
-          {STATS.map((s) => (
-            <StatItem key={s.label} {...s} triggered={statTriggered} reduce={!!reduce} />
-          ))}
-        </div>
-      </motion.div>
 
 
       <style jsx>{`
@@ -339,23 +298,6 @@ export default function Hero() {
         }
       `}</style>
     </section>
-  );
-}
-
-function StatItem({
-  numeric, suffix, label, source, triggered, reduce,
-}: typeof STATS[0] & { triggered: boolean; reduce: boolean }) {
-  const count = useCountUp(numeric, 1200, triggered && !reduce);
-  const display = reduce ? numeric : count;
-
-  return (
-    <div className="px-8 py-6 sm:py-0 first:pl-0 last:pr-0 text-center sm:text-left">
-      <p className="text-4xl font-bold tabular-nums text-white mb-1">
-        {display}{suffix}
-      </p>
-      <p className="text-dark-000 text-sm leading-snug">{label}</p>
-      <p className="text-dark-100 text-[10px] font-semibold uppercase tracking-widest mt-1.5">{source}</p>
-    </div>
   );
 }
 

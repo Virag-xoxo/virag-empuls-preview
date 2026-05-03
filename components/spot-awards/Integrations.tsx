@@ -143,19 +143,6 @@ export default function Integrations() {
             <SliderRow logos={ROW_3} speed={32} />
           </div>
 
-          {/* Centre: Empuls logo */}
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <div className="relative flex items-center justify-center w-[72px] h-[72px] rounded-full bg-white border border-light-200 shadow-xl">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/logos/empuls-dark.svg"
-                alt="Empuls"
-                className="h-7 w-auto object-contain"
-              />
-              {/* Pulse ring */}
-              <span className="absolute inset-0 rounded-full border border-blue-100 animate-ping opacity-30" />
-            </div>
-          </div>
         </motion.div>
 
         {/* Category labels */}
