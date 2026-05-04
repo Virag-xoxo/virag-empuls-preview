@@ -172,15 +172,15 @@ function TiersViz() {
 }
 
 const WISHES = [
-  { initials: "RK", name: "Rohan K.",  color: "#4338CA", msg: "Five years of Priya = five years of this team being genuinely better." },
-  { initials: "AM", name: "Asha M.",   color: "#0891B2", msg: "Your calm under pressure makes everything easier. Happy 5th!" },
+  { initials: "RK", name: "Ryan K.",    color: "#4338CA", msg: "Three years of Michael = three years of this team being genuinely better." },
+  { initials: "AM", name: "Ashley M.",  color: "#0891B2", msg: "Your calm under pressure makes everything easier. Happy 3rd!" },
 ];
 
 function WishboardViz() {
   return (
     <div className="space-y-2">
       <div className="flex items-center justify-between mb-1">
-        <p className="text-[10px] font-bold text-dark-300">Priya&apos;s 5-Year Wishboard</p>
+        <p className="text-[10px] font-bold text-dark-300">Michael&apos;s 3-Year Wishboard</p>
         <span className="text-[9px] font-bold text-blue-200 bg-blue-000 border border-blue-100 rounded px-1.5 py-0.5">✦ AI Assist</span>
       </div>
       {WISHES.map((w) => (
@@ -207,7 +207,7 @@ function YearbookViz() {
     <div className="space-y-3">
       <div className="bg-white border border-light-200 rounded-xl overflow-hidden">
         <div className="px-3 py-2 border-b border-light-200 flex items-center justify-between">
-          <p className="text-[10px] font-bold text-dark-300">Yearbook · Priya · 5 Years</p>
+          <p className="text-[10px] font-bold text-dark-300">Yearbook · Michael · 3 Years</p>
           <span className="text-[10px] font-semibold text-blue-200">↓ PDF</span>
         </div>
         <div className="grid grid-cols-4 gap-1.5 p-3">
@@ -234,8 +234,8 @@ function CertificateViz() {
       <div className="rounded-xl border border-white/15 overflow-hidden" style={{ background: "linear-gradient(135deg, #1a2a4a 0%, #0d2a50 100%)" }}>
         <div className="px-4 py-3 text-center border-b border-white/10">
           <p className="text-[8px] uppercase tracking-[0.2em] text-orange-200 font-bold mb-1.5">Certificate of Service</p>
-          <p className="text-white text-sm font-extrabold leading-tight">Priya Sharma</p>
-          <p className="text-white/55 text-[9px] mt-0.5">5 Years of Excellence · Engineering</p>
+          <p className="text-white text-sm font-extrabold leading-tight">Michael Carter</p>
+          <p className="text-white/55 text-[9px] mt-0.5">3 Years of Excellence · Engineering</p>
         </div>
         <div className="px-4 py-3 flex items-center justify-between">
           <div className="flex flex-col">
@@ -243,7 +243,7 @@ function CertificateViz() {
             <span className="text-white/85 text-[10px] font-semibold">May 2026</span>
           </div>
           <div className="text-right flex flex-col">
-            <span className="text-orange-200 text-2xl font-extrabold leading-none">5</span>
+            <span className="text-orange-200 text-2xl font-extrabold leading-none">3</span>
             <span className="text-white/55 text-[8px] uppercase tracking-wider mt-0.5">Years</span>
           </div>
         </div>
@@ -266,10 +266,10 @@ function SlackViz() {
       </div>
       <div className="bg-white/8 border border-white/10 rounded-lg px-3 py-2.5">
         <div className="flex items-center justify-between mb-1.5">
-          <p className="text-[12px] font-bold" style={{ color: "#FBBF24" }}>🏆 5 years of Priya Sharma!</p>
-          <span className="bg-orange-200 text-dark-300 text-[9px] font-extrabold rounded-full px-1.5 py-0.5">5 YRS</span>
+          <p className="text-[12px] font-bold" style={{ color: "#FBBF24" }}>🏆 3 years of Michael Carter!</p>
+          <span className="bg-orange-200 text-dark-300 text-[9px] font-extrabold rounded-full px-1.5 py-0.5">3 YRS</span>
         </div>
-        <p className="text-[10px] text-white/60 leading-relaxed">Five years of brilliance and calm leadership. Thank you, Priya.</p>
+        <p className="text-[10px] text-white/60 leading-relaxed">Three years of brilliance and calm leadership. Thank you, Michael.</p>
         <div className="flex items-center gap-1.5 mt-2">
           <span className="bg-white/10 text-white/65 text-[9px] rounded px-2 py-0.5">📖 Yearbook</span>
           <span className="bg-white/10 text-white/65 text-[9px] rounded px-2 py-0.5">🏅 Certificate</span>
@@ -334,7 +334,7 @@ function CopilotViz() {
           <div className="flex-1 min-w-0">
             <p className="text-[10px] font-bold text-dark-300 mb-0.5">Anniversary in 7 days</p>
             <p className="text-[9px] text-dark-100 leading-relaxed">
-              <span className="font-semibold text-dark-200">Priya Sharma · 5 years</span> · led 3 launches this year — Copilot drafted a personal note.
+              <span className="font-semibold text-dark-200">Michael Carter · 3 years</span> · led 3 launches this year — Copilot drafted a personal note.
             </p>
           </div>
         </div>
@@ -350,7 +350,7 @@ function CopilotViz() {
         </div>
         <div className="px-3 py-2.5">
           <p className="text-[10px] text-dark-200 leading-relaxed">
-            &ldquo;Five incredible years, Priya. From the platform rewrite to last quarter&apos;s onboarding flow — your fingerprints are on everything we&apos;re proud of. 🌟&rdquo;
+            &ldquo;Three incredible years, Michael. From the platform rewrite to last quarter&apos;s onboarding flow — your fingerprints are on everything we&apos;re proud of. 🌟&rdquo;
           </p>
         </div>
         <div className="flex items-center justify-between px-3 py-2 border-t border-light-200">

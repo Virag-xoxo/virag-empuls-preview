@@ -4,15 +4,15 @@ import { useEffect, useRef, useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
 
 const FEATURED = {
-  company: "Infosys",
-  industry: "IT Services · 320,000 employees",
+  company: "IBM",
+  industry: "IT Services · 280,000 employees",
   metric: "98",
   metricSuffix: "%",
   metricLabel: "milestone coverage",
   metricContext: "across 30 countries, every tenure tier",
   quote:
     "We went from missing half our service anniversaries to recognising every single one — at scale. Empuls handles enrolment, tier rules, and rewards across 30 countries on its own.",
-  name: "Anita Krishnan",
+  name: "Catherine Reed",
   title: "Head of Rewards & Recognition",
   photo: "https://randomuser.me/api/portraits/women/45.jpg",
 };

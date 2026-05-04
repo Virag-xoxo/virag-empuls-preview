@@ -6,22 +6,22 @@ import { motion, useReducedMotion } from "motion/react";
 const FLOATING_CHIPS = [
   {
     id: 1,
-    emoji: "📖",
-    label: "Yearbook ready",
-    sub: "Auto-compiled · 22 wishes",
-    value: "PDF",
-    pos: "top-[6%] right-[2%]",
+    emoji: "🏆",
+    label: "11 recognitions",
+    sub: "from your colleagues",
+    value: "Live",
+    pos: "top-[14%] right-[-2%]",
     delay: "0s",
     bg: "bg-white border-light-200",
     val: "text-blue-200",
   },
   {
     id: 2,
-    emoji: "🏅",
-    label: "Certificate generated",
-    sub: "5-Year milestone · Priya S.",
-    value: "Share",
-    pos: "top-[58%] right-[-2%]",
+    emoji: "🎉",
+    label: "3rd Work Anniversary",
+    sub: "Michael Carter · Today",
+    value: "View",
+    pos: "top-[68%] right-[-6%]",
     delay: "0.6s",
     bg: "bg-white border-light-200",
     val: "text-orange-200",
@@ -29,10 +29,10 @@ const FLOATING_CHIPS = [
   {
     id: 3,
     emoji: "🎁",
-    label: "Tiered rewards live",
-    sub: "Y1 / Y3 / Y5 / Y10 configured",
+    label: "Tiered rewards",
+    sub: "Y1 / Y3 / Y5 / Y10 active",
     value: "Done",
-    pos: "bottom-[10%] right-[6%]",
+    pos: "bottom-[10%] right-[2%]",
     delay: "1.1s",
     bg: "bg-white border-light-200",
     val: "text-green-300",
@@ -133,12 +133,12 @@ export default function Hero() {
           >
             <span className="block">Every year of service</span>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">
-              celebrated automatically
+              honored automatically
             </span>
           </motion.h1>
 
           <motion.p {...fadeUp(0.2)} className="text-lg text-dark-000 max-w-md mb-10 leading-relaxed">
-            Peer wishboards, a digital yearbook, milestone certificates, and rewards employees actually choose — at every anniversary tier.
+            Wishboards, yearbooks, certificates, and rewards employees choose — at every anniversary tier.
           </motion.p>
 
           <motion.div {...fadeUp(0.3)} className="flex flex-wrap items-center gap-4 mb-10">
@@ -161,66 +161,64 @@ export default function Hero() {
             transition: { duration: 0.75, ease, delay: 0.18 },
           })}
         >
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-blue-200/10 blur-3xl pointer-events-none" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-blue-200/15 blur-3xl pointer-events-none" />
+          <div className="absolute top-[40%] left-1/2 -translate-x-1/2 w-72 h-32 rounded-full bg-orange-200/10 blur-2xl pointer-events-none" />
 
-          {/* Central milestone card */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 bg-white/10 backdrop-blur-xl rounded-2xl border border-white/15 p-5 shadow-2xl">
-            <div className="inline-flex items-center gap-1.5 bg-blue-200/15 border border-blue-100/20 rounded-full px-2.5 py-1 mb-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-blue-100" />
-              <span className="text-blue-100 text-[10px] font-semibold uppercase tracking-wide">5-Year Milestone · Auto-triggered</span>
-            </div>
-
-            <div className="flex items-center gap-3 mb-4 pb-4 border-b border-white/10">
-              <div className="w-9 h-9 rounded-full shrink-0 flex items-center justify-center text-white text-xs font-bold bg-blue-200">
-                PS
+          {/* Central yearbook book — CSS-rendered (matches Empuls yearbook design) */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div
+              className="relative w-[260px] h-[360px] rounded-lg overflow-hidden ring-1 ring-white/10"
+              style={{
+                background: `
+                  radial-gradient(ellipse 70% 50% at 70% 45%, rgba(245, 180, 90, 0.16), transparent 60%),
+                  linear-gradient(180deg, #181b25 0%, #11141d 100%)
+                `,
+                boxShadow:
+                  "0 30px 60px -10px rgba(0,0,0,0.6), 0 18px 36px -10px rgba(29,97,246,0.25), inset 0 1px 0 rgba(255,255,255,0.08)",
+              }}
+            >
+              {/* xoxoday wordmark top-left */}
+              <div className="absolute top-4 left-4 text-white/55 text-[10px] font-medium tracking-tight">
+                xoxoday
               </div>
-              <div className="min-w-0 flex-1">
-                <p className="text-white text-xs font-semibold">Priya Sharma</p>
-                <p className="text-dark-000 text-[10px]">Engineering Lead · Infosys</p>
-              </div>
-              <span className="shrink-0 bg-orange-200 text-dark-300 text-[9px] font-extrabold rounded-full px-2 py-0.5 tracking-wide">5 YRS</span>
-            </div>
 
-            <div className="flex items-center justify-between mb-2.5">
-              <p className="text-white text-[11px] font-semibold">Wishboard</p>
-              <div className="flex items-center gap-1.5">
-                <span className="text-dark-000 text-[10px]">22 messages</span>
-                <span className="bg-blue-200/20 border border-blue-100/20 text-blue-100 text-[9px] font-bold rounded px-1.5 py-0.5">✦ AI Assist</span>
-              </div>
-            </div>
+              {/* Subtle book spine highlight on left edge */}
+              <div className="absolute top-0 bottom-0 left-0 w-px bg-gradient-to-b from-white/15 via-white/5 to-white/0 pointer-events-none" />
 
-            <div className="space-y-1.5 mb-3">
-              <div className="flex items-start gap-2">
-                <div className="w-5 h-5 rounded-full bg-white/8 border border-white/10 shrink-0 flex items-center justify-center text-[8px] font-bold text-white">RK</div>
-                <p className="text-white/75 text-[10px] leading-snug bg-white/5 rounded-r-lg rounded-bl-lg px-2 py-1.5 flex-1">
-                  &ldquo;Five years of Priya = five years of this team at its best.&rdquo;
+              {/* Center content */}
+              <div className="absolute left-6 right-6 top-1/2 -translate-y-1/2">
+                {/* Avatar */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="https://randomuser.me/api/portraits/men/41.jpg"
+                  alt="Michael Carter"
+                  className="w-10 h-10 rounded-full object-cover ring-2 ring-white/10 mb-4"
+                />
+
+                {/* Subtitle */}
+                <p
+                  className="text-white/85 text-[14px] italic mb-3"
+                  style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
+                >
+                  Michael Carter&apos;s
                 </p>
+
+                {/* Big serif title */}
+                <h3
+                  className="text-white font-bold leading-[1.1]"
+                  style={{ fontFamily: "Georgia, 'Times New Roman', serif", fontSize: "26px" }}
+                >
+                  Happy 3rd Work<br />Anniversary
+                </h3>
               </div>
-              <div className="flex items-start gap-2">
-                <div className="w-5 h-5 rounded-full bg-white/8 border border-white/10 shrink-0 flex items-center justify-center text-[8px] font-bold text-white">AM</div>
-                <p className="text-white/75 text-[10px] leading-snug bg-white/5 rounded-r-lg rounded-bl-lg px-2 py-1.5 flex-1">
-                  &ldquo;Your calm under pressure makes everything easier. Happy 5th!&rdquo;
-                </p>
-              </div>
-            </div>
 
-            <p className="text-dark-000 text-[10px] mb-3 ml-7">+ 20 more from your team</p>
-
-            <div className="flex items-center gap-1.5 mb-3 pt-3 border-t border-white/10">
-              <span className="inline-flex items-center gap-1 text-[9px] text-white/70 bg-white/5 border border-white/10 rounded px-1.5 py-0.5">
-                <span className="w-1 h-1 rounded-full bg-green-200" />Yearbook ready
-              </span>
-              <span className="inline-flex items-center gap-1 text-[9px] text-white/70 bg-white/5 border border-white/10 rounded px-1.5 py-0.5">
-                <span className="w-1 h-1 rounded-full bg-green-200" />Certificate generated
-              </span>
-            </div>
-
-            <div className="bg-white/5 rounded-lg p-2.5">
-              <p className="text-white text-[10px] font-semibold mb-1.5">Choose your reward</p>
-              <div className="flex gap-1">
-                <span className="flex-1 text-center text-[9px] font-semibold rounded px-1.5 py-1 border bg-blue-200/15 border-blue-100/30 text-blue-100">Gift Cards</span>
-                <span className="flex-1 text-center text-[9px] font-medium rounded px-1.5 py-1 border bg-white/5 border-white/10 text-white/55">Experiences</span>
-                <span className="flex-1 text-center text-[9px] font-medium rounded px-1.5 py-1 border bg-white/5 border-white/10 text-white/55">Merchandise</span>
+              {/* Powered by badge bottom-right */}
+              <div className="absolute bottom-3.5 right-4 flex items-center gap-1 text-[9px] text-white/45">
+                <span>Powered by</span>
+                <span className="flex items-center gap-0.5 text-white/65 font-medium">
+                  <span className="w-1.5 h-1.5 rounded-sm bg-blue-200" />
+                  empuls
+                </span>
               </div>
             </div>
           </div>

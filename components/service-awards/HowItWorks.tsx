@@ -26,9 +26,9 @@ function HRMSSyncModal() {
   }, []);
 
   const employees = [
-    { initials: "PS", name: "Priya Sharma",  doj: "Joined 2021 · Year 5 in 12d" },
-    { initials: "RK", name: "Rohan Kapoor",  doj: "Joined 2023 · Year 3 in 47d" },
-    { initials: "AM", name: "Asha Mehta",    doj: "Joined 2025 · Year 1 in 89d" },
+    { initials: "MC", name: "Michael Carter",  doj: "Joined 2023 · Year 3 in 12d" },
+    { initials: "RK", name: "Ryan Kim",        doj: "Joined 2021 · Year 5 in 47d" },
+    { initials: "AM", name: "Ashley Murphy",   doj: "Joined 2025 · Year 1 in 89d" },
   ];
 
   return (
@@ -166,14 +166,14 @@ function AnniversaryDayModal() {
               <div className="px-3.5 py-2.5 flex items-center gap-2" style={{ background: "#FFF3E0" }}>
                 <span className="text-xl leading-none">🏆</span>
                 <div className="min-w-0 flex-1">
-                  <p className="text-[12px] font-bold text-dark-300">5 years of Priya Sharma!</p>
-                  <p className="text-[10px] text-dark-100">Engineering Lead · since 2021</p>
+                  <p className="text-[12px] font-bold text-dark-300">3 years of Michael Carter!</p>
+                  <p className="text-[10px] text-dark-100">Engineering Lead · since 2023</p>
                 </div>
-                <span className="bg-orange-200 text-dark-300 text-[9px] font-extrabold rounded-full px-2 py-0.5 tracking-wide shrink-0">5 YRS</span>
+                <span className="bg-orange-200 text-dark-300 text-[9px] font-extrabold rounded-full px-2 py-0.5 tracking-wide shrink-0">3 YRS</span>
               </div>
               <div className="px-3.5 py-3">
                 <p className="text-[11px] text-dark-100 leading-relaxed">
-                  Priya, five years of brilliance and calm leadership — thank you for everything you bring to this team.
+                  Michael, three years of brilliance and calm leadership — thank you for everything you bring to this team.
                 </p>
               </div>
               <div className="px-3.5 py-2 border-t border-light-200 flex items-center justify-between">
