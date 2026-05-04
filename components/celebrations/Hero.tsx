@@ -123,7 +123,7 @@ export default function Hero() {
           <motion.div {...fadeUp(0)}>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/8 border border-white/12 text-blue-100 text-xs font-semibold mb-8 backdrop-blur-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-blue-100 animate-pulse" />
-              Celebrations · Part of Empuls Gifting
+              Celebrations
             </div>
           </motion.div>
 
@@ -131,14 +131,14 @@ export default function Hero() {
             {...fadeUp(0.1)}
             className="text-[46px] lg:text-[60px] font-bold text-white leading-[1.06] tracking-tight mb-6"
           >
-            <span className="block">Every milestone.</span>
+            <span className="block">Honor every milestone</span>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">
-              Celebrated automatically.
+              the moment it matters
             </span>
           </motion.h1>
 
           <motion.p {...fadeUp(0.2)} className="text-lg text-dark-000 max-w-md mb-10 leading-relaxed">
-            Empuls detects birthdays, work anniversaries, and life events — then triggers Wishboards, gift credits, and team shoutouts without any HR effort.
+            Wishboards, gift credits, and team shoutouts — automatically scheduled for every milestone.
           </motion.p>
 
           <motion.div {...fadeUp(0.3)} className="flex flex-wrap items-center gap-4 mb-10">

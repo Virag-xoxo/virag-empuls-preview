@@ -134,41 +134,21 @@ function MilestonesViz() {
     { label: "💍 Life events",   count: 17,  pct: 14,  color: "#22C55E" },
   ];
 
-  return (
-    <div ref={ref} className="flex flex-col lg:flex-row gap-5 items-start">
-      {/* Featured Wishboard preview */}
-      <div className="w-full lg:w-[240px] shrink-0 bg-light-100 rounded-xl border border-light-200 p-4">
-        <div className="flex items-center gap-2.5 mb-3">
-          <div className="w-8 h-8 rounded-full shrink-0 flex items-center justify-center text-[10px] font-bold text-white" style={{ background: "linear-gradient(135deg,#f59e0b,#ef4444)" }}>
-            PK
-          </div>
-          <div className="flex-1 min-w-0">
-            <p className="text-[11px] font-semibold text-dark-300 leading-tight">Priya Kapoor</p>
-            <p className="text-[9px] text-dark-100">🎂 Birthday · in 3 days</p>
-          </div>
-          <span className="text-[9px] font-semibold text-dark-200 bg-white border border-light-300 rounded-full px-2 py-0.5 shrink-0">₹500</span>
-        </div>
-        <p className="text-[10px] text-dark-200 leading-relaxed italic mb-3">
-          &ldquo;Wishboard live — 14 wishes already added by the team.&rdquo;
-        </p>
-        <div className="flex items-center justify-between">
-          <span className="inline-flex items-center gap-1 text-[9px] font-semibold text-blue-200 bg-white border border-light-300 px-2.5 py-1 rounded-full">
-            ✨ Auto-scheduled
-          </span>
-          <div className="flex items-center gap-2 text-[9px] text-dark-100">
-            <span>🎉 36</span>
-            <span>❤️ 18</span>
-          </div>
-        </div>
-      </div>
+  const upcoming = [
+    { emoji: "🎂", name: "Priya",  when: "in 3d",  bg: "#FFF8F0", border: "#FED7AA", color: "#C2410C" },
+    { emoji: "⭐", name: "Rahul",  when: "in 7d",  bg: "#EFF6FF", border: "#BFDBFE", color: "#1D4ED8" },
+    { emoji: "💍", name: "Anika",  when: "in 14d", bg: "#F9FAFB", border: "#E5E7EB", color: "#4B5563" },
+  ];
 
-      <div className="flex-1 min-w-0 space-y-3 pt-1">
-        <p className="text-[9px] font-bold uppercase tracking-wider text-dark-100 mb-2">Milestones · this quarter</p>
+  return (
+    <div ref={ref} className="space-y-4">
+      <div className="space-y-3">
+        <p className="text-[9px] font-bold uppercase tracking-wider text-dark-100">Milestones · this quarter</p>
         {rows.map((r, i) => (
           <div key={r.label}>
             <div className="flex items-center justify-between mb-1">
-              <span className="text-[10px] font-semibold text-dark-200">{r.label}</span>
-              <span className="text-[10px] font-semibold text-dark-300">{r.count}</span>
+              <span className="text-[11px] font-semibold text-dark-200">{r.label}</span>
+              <span className="text-[11px] font-semibold text-dark-300">{r.count}</span>
             </div>
             <div className="h-1.5 bg-light-200 rounded-full overflow-hidden">
               <motion.div
@@ -181,9 +161,23 @@ function MilestonesViz() {
             </div>
           </div>
         ))}
-        <div className="mt-3 px-3 py-2 bg-blue-000 rounded-lg flex items-center justify-between">
-          <span className="text-[10px] font-semibold text-blue-200">247 milestones celebrated</span>
-          <span className="text-[10px] font-bold text-green-300">100% coverage ✓</span>
+      </div>
+
+      <div className="px-3 py-2 bg-blue-000 rounded-lg flex items-center justify-between">
+        <span className="text-[11px] font-semibold text-blue-200">247 milestones celebrated this quarter</span>
+        <span className="text-[11px] font-bold text-green-300">100% coverage ✓</span>
+      </div>
+
+      <div>
+        <p className="text-[9px] font-bold uppercase tracking-wider text-dark-100 mb-2">Upcoming · next 14 days</p>
+        <div className="flex flex-wrap gap-1.5">
+          {upcoming.map((u) => (
+            <div key={u.name} className="flex items-center gap-1.5 rounded-full border px-2.5 py-1" style={{ background: u.bg, borderColor: u.border }}>
+              <span className="text-[12px] leading-none">{u.emoji}</span>
+              <span className="text-[10px] font-semibold" style={{ color: u.color }}>{u.name}</span>
+              <span className="text-[9px] text-dark-100">{u.when}</span>
+            </div>
+          ))}
         </div>
       </div>
     </div>
@@ -333,24 +327,50 @@ function AnalyticsViz() {
           </div>
         ))}
       </div>
-      <div className="bg-white border border-light-200 rounded-xl p-3">
-        <p className="text-[10px] font-semibold text-dark-100 mb-2">Celebrations per month — Q2 2026</p>
-        <svg viewBox={`0 0 ${W} ${H}`} className="w-full" style={{ height: 64 }} preserveAspectRatio="none">
-          <defs>
-            <linearGradient id="celebSparkGrad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#1D61F6" stopOpacity="0.18" />
-              <stop offset="100%" stopColor="#1D61F6" stopOpacity="0" />
-            </linearGradient>
-          </defs>
-          <path d={areaPath} fill="url(#celebSparkGrad)" />
-          <motion.path d={linePath} fill="none" stroke="#1D61F6" strokeWidth="2.5"
-            strokeLinecap="round" strokeLinejoin="round"
-            initial={reduce ? undefined : { pathLength: 0 }}
-            animate={inView ? { pathLength: 1 } : {}}
-            transition={{ duration: 1.2, ease: "easeOut" }}
-          />
-          <circle cx={pts[pts.length - 1].x} cy={pts[pts.length - 1].y} r="3.5" fill="#1D61F6" />
-        </svg>
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_220px] gap-3">
+        <div className="bg-white border border-light-200 rounded-xl p-3">
+          <p className="text-[10px] font-semibold text-dark-100 mb-2">Celebrations per month — Q2 2026</p>
+          <svg viewBox={`0 0 ${W} ${H}`} className="w-full" style={{ height: 64 }} preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="celebSparkGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#1D61F6" stopOpacity="0.18" />
+                <stop offset="100%" stopColor="#1D61F6" stopOpacity="0" />
+              </linearGradient>
+            </defs>
+            <path d={areaPath} fill="url(#celebSparkGrad)" />
+            <motion.path d={linePath} fill="none" stroke="#1D61F6" strokeWidth="2.5"
+              strokeLinecap="round" strokeLinejoin="round"
+              initial={reduce ? undefined : { pathLength: 0 }}
+              animate={inView ? { pathLength: 1 } : {}}
+              transition={{ duration: 1.2, ease: "easeOut" }}
+            />
+            <circle cx={pts[pts.length - 1].x} cy={pts[pts.length - 1].y} r="3.5" fill="#1D61F6" />
+          </svg>
+        </div>
+
+        <div className="bg-white border border-light-200 rounded-xl p-3">
+          <p className="text-[10px] font-semibold text-dark-100 mb-2.5">Top participating teams</p>
+          <div className="space-y-2">
+            {[
+              { name: "Engineering", pct: 96 },
+              { name: "Design",      pct: 88 },
+              { name: "Sales",       pct: 74 },
+            ].map((t, i) => (
+              <div key={t.name} className="flex items-center gap-2">
+                <span className="text-[10px] font-medium text-dark-200 w-16 shrink-0 truncate">{t.name}</span>
+                <div className="flex-1 h-1.5 bg-light-200 rounded-full overflow-hidden">
+                  <motion.div
+                    className="h-full rounded-full bg-blue-200"
+                    initial={{ width: 0 }}
+                    animate={inView ? { width: `${t.pct}%` } : { width: 0 }}
+                    transition={reduce ? { duration: 0 } : { duration: 0.7, ease: [0,0,0.2,1] as const, delay: 0.5 + i * 0.08 }}
+                  />
+                </div>
+                <span className="text-[10px] font-bold text-dark-300 tabular-nums w-8 text-right">{t.pct}%</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
