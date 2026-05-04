@@ -170,7 +170,7 @@ function AttendanceViz() {
         <span className="text-[10px] font-bold text-green-300">+150 pts</span>
       </div>
       <div className="grid grid-cols-5 gap-1.5">
-        {days.map((d) => <p key={d} className="text-[8px] text-dark-100 text-center font-bold uppercase">{d}</p>)}
+        {days.map((d, i) => <p key={i} className="text-[8px] text-dark-100 text-center font-bold uppercase">{d}</p>)}
         {weeks.flat().map((v, i) => (
           <motion.div key={i} className="aspect-square rounded"
             initial={{ scale: 0, opacity: 0 }}
