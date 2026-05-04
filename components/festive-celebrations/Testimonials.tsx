@@ -97,11 +97,11 @@ export default function Testimonials() {
   return (
     <section className="relative bg-dark-300 py-20 lg:py-28 overflow-hidden">
       <div className="dark-dot-grid absolute inset-0 pointer-events-none" />
-      <div className="blob-1 absolute -top-60 -left-40 w-[650px] h-[650px] rounded-full pointer-events-none" style={{ background: "radial-gradient(circle, rgba(245,180,90,0.22) 0%, transparent 65%)" }} />
+      <div className="blob-1 absolute -top-60 -left-40 w-[650px] h-[650px] rounded-full pointer-events-none" style={{ background: "radial-gradient(circle, rgba(29,97,246,0.28) 0%, transparent 65%)" }} />
       <div className="blob-2 absolute bottom-0 right-[-80px] w-[550px] h-[550px] rounded-full pointer-events-none" style={{ background: "radial-gradient(circle, rgba(29,97,246,0.20) 0%, transparent 65%)" }} />
       <div className="max-w-[1280px] mx-auto px-6">
         <div className="text-center max-w-xl mx-auto mb-14">
-          <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-orange-200 mb-3">Customer stories</p>
+          <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">Customer stories</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-white tracking-tight mb-4">Trusted by global teams that celebrate every culture</h2>
           <p className="text-dark-000 text-base leading-relaxed">Companies that scaled festive recognition from manual annual sprints to one-and-done automation.</p>
         </div>
@@ -115,7 +115,7 @@ export default function Testimonials() {
               <span className="text-xl font-medium text-white/50">{FEATURED.metricLabel}</span>
             </div>
             <p className="text-dark-100 text-xs mb-5">{FEATURED.metricContext}</p>
-            <blockquote className="text-dark-000 text-base leading-relaxed pl-4 border-l-2 border-orange-200/40">
+            <blockquote className="text-dark-000 text-base leading-relaxed pl-4 border-l-2 border-blue-200/40">
               &ldquo;{FEATURED.quote}&rdquo;
             </blockquote>
           </div>

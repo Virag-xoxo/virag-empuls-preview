@@ -35,7 +35,7 @@ export default function FAQ() {
       <div className="max-w-[800px] mx-auto px-6">
         <motion.div className="text-center mb-12"
           initial={reduce ? undefined : { opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.5, ease }}>
-          <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-orange-200 mb-3">Common questions</p>
+          <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">Common questions</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">Questions about Festive Celebrations</h2>
           <p className="text-dark-100 text-base leading-relaxed">What HR teams ask before rolling out automated festival gifting.</p>
         </motion.div>
@@ -50,7 +50,7 @@ export default function FAQ() {
           </Accordion>
         </motion.div>
         <p className="text-center text-sm text-dark-100 mt-8">
-          Still have questions?{" "}<a href="#" className="text-orange-200 font-semibold hover:underline">Talk to our team →</a>
+          Still have questions?{" "}<a href="#" className="text-blue-200 font-semibold hover:underline">Talk to our team →</a>
         </p>
       </div>
     </section>

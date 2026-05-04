@@ -23,7 +23,7 @@ export default function FeatureBento() {
     <section className="bg-light-000 py-20 lg:py-28">
       <div className="max-w-[1280px] mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-orange-200 mb-3">Festival collections</p>
+          <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">Festival collections</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">Pre-loaded for the world&apos;s biggest festivals</h2>
           <p className="text-dark-100 text-base leading-relaxed">Curated themes, recipient choice, and locally available catalog options — all ready to use.</p>
         </div>
@@ -39,7 +39,7 @@ export default function FeatureBento() {
                 <p className="text-[11px] font-semibold text-blue-200 mb-3" dangerouslySetInnerHTML={{ __html: f.region }} />
                 <div className="flex items-center justify-between text-[10px]">
                   <span className="text-dark-100">{f.products}</span>
-                  <span className="text-orange-200 font-bold">🟡 or Gift Points</span>
+                  <span className="text-blue-200 font-bold">🟡 or Gift Points</span>
                 </div>
               </div>
             </motion.div>
@@ -50,7 +50,7 @@ export default function FeatureBento() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-auto">
           <motion.div custom={0} variants={reduce ? undefined : fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}
             className="lg:col-span-2 bg-white border border-light-200 rounded-2xl p-6 hover:shadow-menu hover:-translate-y-0.5 transition-all duration-200">
-            <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-orange-200 mb-1">📊 Festive impact</p>
+            <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-1">📊 Festive impact</p>
             <h3 className="text-lg font-bold text-dark-300 mb-1">When teams feel celebrated, every metric moves</h3>
             <p className="text-dark-100 text-sm leading-relaxed mb-5">Festival recognition lifts cultural belonging, engagement, and reach across global teams.</p>
             <StatsViz />
@@ -58,7 +58,7 @@ export default function FeatureBento() {
 
           <motion.div custom={1} variants={reduce ? undefined : fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}
             className="bg-white border border-light-200 rounded-2xl p-6 hover:shadow-menu hover:-translate-y-0.5 transition-all duration-200">
-            <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-orange-200 mb-1">🌍 Audience targeting</p>
+            <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-1">🌍 Audience targeting</p>
             <h3 className="text-lg font-bold text-dark-300 mb-1">Different gifts per region</h3>
             <p className="text-dark-100 text-sm leading-relaxed mb-5">Filter by location, department, or HRMS field. India team gets Diwali, Middle East gets Eid.</p>
             <AudienceViz />
@@ -66,7 +66,7 @@ export default function FeatureBento() {
 
           <motion.div custom={2} variants={reduce ? undefined : fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}
             className="bg-white border border-light-200 rounded-2xl p-6 hover:shadow-menu hover:-translate-y-0.5 transition-all duration-200">
-            <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-orange-200 mb-1">🎁 Many gift types</p>
+            <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-1">🎁 Many gift types</p>
             <h3 className="text-lg font-bold text-dark-300 mb-1">Points, cards, merch, and more</h3>
             <p className="text-dark-100 text-sm leading-relaxed mb-5">20+ categories — Fashion, Food, Lifestyle, Travel — plus reward points and personalized greetings.</p>
             <GiftTypesViz />
@@ -82,7 +82,7 @@ export default function FeatureBento() {
 
           <motion.div custom={4} variants={reduce ? undefined : fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}
             className="bg-white border border-light-200 rounded-2xl p-6 hover:shadow-menu hover:-translate-y-0.5 transition-all duration-200">
-            <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-orange-200 mb-1">💬 Slack &amp; Teams</p>
+            <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-1">💬 Slack &amp; Teams</p>
             <h3 className="text-lg font-bold text-dark-300 mb-1">Festive moments where work happens</h3>
             <p className="text-dark-100 text-sm leading-relaxed mb-5">Gifts arrive in Slack and Teams alongside work — no new app, no new login.</p>
             <SlackViz />
@@ -90,7 +90,7 @@ export default function FeatureBento() {
 
           <motion.div custom={5} variants={reduce ? undefined : fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}
             className="lg:col-span-2 bg-white border border-light-200 rounded-2xl p-6 hover:shadow-menu hover:-translate-y-0.5 transition-all duration-200">
-            <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-orange-200 mb-1">✨ Custom occasions</p>
+            <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-1">✨ Custom occasions</p>
             <h3 className="text-lg font-bold text-dark-300 mb-1">Beyond the 50+ pre-loaded — any occasion you want</h3>
             <p className="text-dark-100 text-sm leading-relaxed mb-5">Company founding day, regional holidays, culture-specific celebrations. Build any custom occasion campaign.</p>
             <CustomViz />
@@ -98,7 +98,7 @@ export default function FeatureBento() {
 
           <motion.div custom={6} variants={reduce ? undefined : fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}
             className="bg-white border border-light-200 rounded-2xl p-6 hover:shadow-menu hover:-translate-y-0.5 transition-all duration-200">
-            <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-orange-200 mb-1">Empuls Copilot ✦</p>
+            <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-1">Empuls Copilot ✦</p>
             <h3 className="text-lg font-bold text-dark-300 mb-1">Festive messages drafted for you</h3>
             <p className="text-dark-100 text-sm leading-relaxed mb-5">Copilot drafts festival-appropriate greetings — culturally aware, personalised by recipient.</p>
             <CopilotViz />
@@ -141,7 +141,7 @@ function StatsViz() {
             <div key={r.name} className="flex items-center gap-2">
               <span className="text-[10px] font-medium text-dark-200 w-32 shrink-0" dangerouslySetInnerHTML={{ __html: r.name }} />
               <div className="flex-1 h-1.5 bg-light-200 rounded-full overflow-hidden">
-                <motion.div className="h-full rounded-full bg-orange-200" initial={{ width: 0 }} animate={inView ? { width: `${r.pct}%` } : { width: 0 }} transition={reduce ? { duration: 0 } : { duration: 0.7, delay: 0.3 + i * 0.08 }} />
+                <motion.div className="h-full rounded-full bg-blue-200" initial={{ width: 0 }} animate={inView ? { width: `${r.pct}%` } : { width: 0 }} transition={reduce ? { duration: 0 } : { duration: 0.7, delay: 0.3 + i * 0.08 }} />
               </div>
               <span className="text-[10px] font-bold text-dark-300 tabular-nums w-9 text-right">{r.pct}%</span>
             </div>
@@ -208,7 +208,7 @@ function FeedViz() {
             <div className="w-5 h-5 rounded-full shrink-0 flex items-center justify-center text-[8px] font-bold text-white" style={{ background: it.grad }}>{it.initials}</div>
             <p className="text-white/70 text-[10px] truncate flex-1">
               <span className="text-white font-medium">{it.name}</span>
-              <span className="text-orange-200"> · {it.occasion}</span>
+              <span className="text-blue-200"> · {it.occasion}</span>
             </p>
             <span className="text-white/30 text-[9px] shrink-0">{it.time}</span>
           </div>
@@ -227,11 +227,11 @@ function SlackViz() {
         <span className="text-[10px] text-white/35 ml-auto">Oct 29 · 09:00</span>
       </div>
       <div className="bg-white/8 border border-white/10 rounded-lg px-3 py-2.5">
-        <p className="text-[12px] font-bold mb-1" style={{ color: "#FBBF24" }}>🪔 Happy Diwali, team!</p>
+        <p className="text-[12px] font-bold mb-1" style={{ color: "#1D61F6" }}>🪔 Happy Diwali, team!</p>
         <p className="text-[10px] text-white/60 leading-relaxed">A small token of celebration from all of us — pick your gift below.</p>
         <div className="flex items-center gap-1.5 mt-2">
           <span className="bg-white/10 text-white/65 text-[9px] rounded px-2 py-0.5">🎁 Open gift</span>
-          <span className="text-[9px] rounded px-2 py-0.5" style={{ background: "rgba(245,180,90,0.25)", color: "#FBBF24" }}>⭐ 1,000 pts</span>
+          <span className="text-[9px] rounded px-2 py-0.5" style={{ background: "rgba(29,97,246,0.25)", color: "#1D61F6" }}>⭐ 1,000 pts</span>
         </div>
       </div>
     </div>
@@ -255,7 +255,7 @@ function CustomViz() {
           </div>
           <div className="flex items-center justify-between text-[9px]">
             <span className="text-dark-100">{c.date}</span>
-            <span className="text-orange-200 font-semibold">{c.recipients}</span>
+            <span className="text-blue-200 font-semibold">{c.recipients}</span>
           </div>
         </div>
       ))}
@@ -265,10 +265,10 @@ function CustomViz() {
 
 function CopilotViz() {
   return (
-    <div className="rounded-xl border border-orange-100 bg-white overflow-hidden">
-      <div className="flex items-center gap-1.5 px-3 py-2 bg-orange-000 border-b border-orange-100">
-        <span className="text-[9px] font-bold text-orange-200">✦ Empuls Copilot</span>
-        <span className="ml-auto text-[8px] text-orange-200 bg-white border border-orange-100 rounded-full px-1.5 py-0.5">Diwali tone</span>
+    <div className="rounded-xl border border-blue-100 bg-white overflow-hidden">
+      <div className="flex items-center gap-1.5 px-3 py-2 bg-blue-000 border-b border-blue-100">
+        <span className="text-[9px] font-bold text-blue-200">✦ Empuls Copilot</span>
+        <span className="ml-auto text-[8px] text-blue-200 bg-white border border-blue-100 rounded-full px-1.5 py-0.5">Diwali tone</span>
       </div>
       <div className="px-3 py-2.5">
         <p className="text-[10px] text-dark-200 leading-relaxed">
@@ -276,8 +276,8 @@ function CopilotViz() {
         </p>
       </div>
       <div className="flex items-center justify-between px-3 py-2 border-t border-light-200">
-        <button className="text-[9px] font-semibold text-orange-200">Regenerate</button>
-        <button className="text-[9px] font-semibold bg-orange-200 text-white px-2.5 py-1 rounded-lg">Use this</button>
+        <button className="text-[9px] font-semibold text-blue-200">Regenerate</button>
+        <button className="text-[9px] font-semibold bg-blue-200 text-white px-2.5 py-1 rounded-lg">Use this</button>
       </div>
     </div>
   );

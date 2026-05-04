@@ -28,7 +28,7 @@ const ROW_3 = [CHANNELS[0], HRIS[0], HRIS[2], CHANNELS[1], HRIS[5], HRIS[3], CHA
 
 function LogoPill({ name, src }: { name: string; src: string }) {
   return (
-    <div title={name} className="shrink-0 flex items-center justify-center bg-white rounded-2xl border border-light-200 shadow-sm px-4 py-2.5 h-[52px] w-[140px] hover:border-orange-100 hover:shadow-md transition-all duration-200">
+    <div title={name} className="shrink-0 flex items-center justify-center bg-white rounded-2xl border border-light-200 shadow-sm px-4 py-2.5 h-[52px] w-[140px] hover:border-blue-100 hover:shadow-md transition-all duration-200">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={src} alt={name} className="max-h-[28px] w-auto max-w-[108px] object-contain" />
     </div>
@@ -57,7 +57,7 @@ export default function Integrations() {
       <div className="max-w-[1280px] mx-auto px-6">
         <motion.div className="text-center max-w-xl mx-auto mb-14"
           initial={reduce ? undefined : { opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.55, ease }}>
-          <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-orange-200 mb-3">Works where you work</p>
+          <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">Works where you work</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">Festive gifts in the tools your global team uses</h2>
           <p className="text-dark-100 text-base leading-relaxed">HRMS-connected for audience targeting by location and team. Slack, Teams, email for delivery. 250+ integrations.</p>
         </motion.div>
@@ -75,7 +75,7 @@ export default function Integrations() {
 
         <motion.div className="text-center mt-8"
           initial={reduce ? undefined : { opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: 0.3 }}>
-          <a href="#" className="inline-flex items-center gap-2 text-orange-200 text-sm font-semibold hover:underline">
+          <a href="#" className="inline-flex items-center gap-2 text-blue-200 text-sm font-semibold hover:underline">
             Explore all 250+ integrations
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
               <path d="M3 7H11M8 4L11 7L8 10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

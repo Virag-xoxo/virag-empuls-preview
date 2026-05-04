@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { motion, useReducedMotion } from "motion/react";
 
 const FLOATING_CHIPS = [
-  { id: 1, emoji: "🪔", label: "Diwali campaign live",  sub: "Auto-fires Oct 29",         value: "On",    pos: "top-[6%] right-[2%]",     delay: "0s",   bg: "bg-white border-light-200", val: "text-orange-200" },
+  { id: 1, emoji: "🪔", label: "Diwali campaign live",  sub: "Auto-fires Oct 29",         value: "On",    pos: "top-[6%] right-[2%]",     delay: "0s",   bg: "bg-white border-light-200", val: "text-blue-200" },
   { id: 2, emoji: "🎄", label: "Christmas scheduled",   sub: "Dec 25 · 12,400 recipients", value: "Set",   pos: "top-[58%] right-[-2%]",   delay: "0.6s", bg: "bg-white border-light-200", val: "text-green-300" },
   { id: 3, emoji: "🌙", label: "Eid collection ready",  sub: "Region-curated",             value: "Live",  pos: "bottom-[10%] right-[6%]", delay: "1.1s", bg: "bg-white border-light-200", val: "text-blue-200" },
 ];
@@ -43,7 +43,7 @@ export default function Hero() {
         const alpha = 0.03 + wave * 0.09;
         const radius = 1 + wave * 0.8;
         ctx.beginPath(); ctx.arc(x, y, radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(245, 180, 90, ${alpha})`; ctx.fill();
+        ctx.fillStyle = `rgba(29, 97, 246, ${alpha})`; ctx.fill();
       }
       t += 0.016;
       animFrame = requestAnimationFrame(draw);
@@ -60,25 +60,25 @@ export default function Hero() {
     <section className="relative flex flex-col overflow-hidden bg-dark-300">
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full pointer-events-none" />
       <div className="dark-dot-grid absolute inset-0 pointer-events-none" />
-      <div className="blob-1 absolute -top-40 -left-40 w-[700px] h-[700px] rounded-full pointer-events-none" style={{ background: "radial-gradient(circle, rgba(245,180,90,0.22) 0%, transparent 65%)" }} />
-      <div className="blob-2 absolute top-20 right-[-80px] w-[550px] h-[550px] rounded-full pointer-events-none" style={{ background: "radial-gradient(circle, rgba(220,38,38,0.18) 0%, transparent 65%)" }} />
+      <div className="blob-1 absolute -top-40 -left-40 w-[700px] h-[700px] rounded-full pointer-events-none" style={{ background: "radial-gradient(circle, rgba(29,97,246,0.28) 0%, transparent 65%)" }} />
+      <div className="blob-2 absolute top-20 right-[-80px] w-[550px] h-[550px] rounded-full pointer-events-none" style={{ background: "radial-gradient(circle, rgba(99,102,241,0.20) 0%, transparent 65%)" }} />
       <div className="blob-3 absolute bottom-0 left-1/3 w-[450px] h-[450px] rounded-full pointer-events-none" style={{ background: "radial-gradient(circle, rgba(29,97,246,0.16) 0%, transparent 65%)" }} />
 
-      <div className="absolute top-[-15%] left-[-8%] w-[600px] h-[600px] rounded-full bg-orange-200/15 blur-[120px] pointer-events-none" />
+      <div className="absolute top-[-15%] left-[-8%] w-[600px] h-[600px] rounded-full bg-blue-200/15 blur-[120px] pointer-events-none" />
       <div className="absolute bottom-[-10%] right-[-5%] w-[480px] h-[480px] rounded-full bg-blue-300/20 blur-[100px] pointer-events-none" />
 
       <div className="relative z-10 w-full max-w-[1280px] mx-auto px-6 pt-28 pb-12 grid lg:grid-cols-[1fr_500px] gap-16 items-center">
         <div className="flex flex-col items-start">
           <motion.div {...fadeUp(0)}>
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/8 border border-white/12 text-orange-200 text-xs font-semibold mb-8 backdrop-blur-sm">
-              <span className="w-1.5 h-1.5 rounded-full bg-orange-200 animate-pulse" />
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/8 border border-white/12 text-blue-200 text-xs font-semibold mb-8 backdrop-blur-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-200 animate-pulse" />
               Festive Celebrations
             </div>
           </motion.div>
 
           <motion.h1 {...fadeUp(0.1)} className="text-[46px] lg:text-[60px] font-bold text-white leading-[1.06] tracking-tight mb-6">
             <span className="block">Every culture covered,</span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-200 to-blue-100">out of the box</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">out of the box</span>
           </motion.h1>
 
           <motion.p {...fadeUp(0.2)} className="text-lg text-dark-000 max-w-md mb-10 leading-relaxed">
@@ -96,7 +96,7 @@ export default function Hero() {
 
         <motion.div className="relative hidden lg:block h-[540px]"
           {...(reduce ? {} : { initial: { opacity: 0, x: 40 }, animate: { opacity: 1, x: 0 }, transition: { duration: 0.75, ease, delay: 0.18 } })}>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-orange-200/15 blur-3xl pointer-events-none" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-blue-200/15 blur-3xl pointer-events-none" />
 
           {/* Festival picker card */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 bg-white/10 backdrop-blur-xl rounded-2xl border border-white/15 p-5 shadow-2xl">
@@ -108,7 +108,7 @@ export default function Hero() {
             </div>
 
             <div className="flex flex-wrap gap-1 mb-3">
-              <span className="text-[10px] font-bold rounded-full px-2.5 py-1 bg-orange-200/20 border border-orange-200/30 text-orange-200">🪔 Diwali</span>
+              <span className="text-[10px] font-bold rounded-full px-2.5 py-1 bg-blue-200/20 border border-blue-200/30 text-blue-200">🪔 Diwali</span>
               <span className="text-[10px] font-medium rounded-full px-2.5 py-1 bg-white/5 border border-white/10 text-white/55">🎄 Christmas</span>
               <span className="text-[10px] font-medium rounded-full px-2.5 py-1 bg-white/5 border border-white/10 text-white/55">🦃 Thanksgiving</span>
             </div>
@@ -127,12 +127,12 @@ export default function Hero() {
               </div>
               <div className="rounded-lg overflow-hidden border border-white/10" style={{ background: "linear-gradient(135deg,#06182d,#0a2540)" }}>
                 <div className="h-12 flex items-center justify-center text-2xl">⭐</div>
-                <p className="text-[8px] uppercase tracking-wider text-center text-orange-200 px-1 py-1 font-bold">Diwali Cheer</p>
+                <p className="text-[8px] uppercase tracking-wider text-center text-blue-200 px-1 py-1 font-bold">Diwali Cheer</p>
               </div>
             </div>
 
             <div className="flex items-center justify-between pt-3 border-t border-white/10">
-              <span className="text-orange-200 text-[10px] font-bold">🟡 1,000 pts available</span>
+              <span className="text-blue-200 text-[10px] font-bold">🟡 1,000 pts available</span>
               <span className="text-white/55 text-[9px]">+48 products</span>
             </div>
           </div>
