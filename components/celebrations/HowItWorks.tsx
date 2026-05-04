@@ -89,9 +89,9 @@ function MilestoneScheduleModal() {
   }, [reduce]);
 
   const items = [
-    { emoji: "🎂", title: "Priya Kapoor · Birthday",       sub: "in 3 days · Wishboard live · ₹500 ready",    bg: "#FFF8F0", border: "#FED7AA", dot: "#F97316" },
-    { emoji: "⭐", title: "Rahul Mehta · 5-Year Anniversary", sub: "in 7 days · Wishboard live · ₹1,500 ready", bg: "#EFF6FF", border: "#BFDBFE", dot: "#1D61F6" },
-    { emoji: "💍", title: "Anika Singh · Work Anniversary",   sub: "in 14 days · Preparing",                   bg: "#FFFFFF", border: "#EDEFF3", dot: "#BFC9DA" },
+    { emoji: "🎂", title: "Sarah Mitchell · Birthday",         sub: "in 3 days · Wishboard live · $50 ready",    bg: "#FFF8F0", border: "#FED7AA", dot: "#F97316" },
+    { emoji: "⭐", title: "David Thompson · 5-Year Anniversary", sub: "in 7 days · Wishboard live · $150 ready",  bg: "#EFF6FF", border: "#BFDBFE", dot: "#1D61F6" },
+    { emoji: "💍", title: "Emily Roberts · Work Anniversary",   sub: "in 14 days · Preparing",                    bg: "#FFFFFF", border: "#EDEFF3", dot: "#BFC9DA" },
   ];
 
   return (
@@ -164,7 +164,7 @@ function CelebrationDayModal() {
               <div className="px-3.5 py-2.5 flex items-center gap-2" style={{ background: "#FFF8F0" }}>
                 <span className="text-xl leading-none">🎂</span>
                 <div className="min-w-0">
-                  <p className="text-[12px] font-bold text-dark-300">Happy Birthday, Priya Kapoor!</p>
+                  <p className="text-[12px] font-bold text-dark-300">Happy Birthday, Sarah Mitchell!</p>
                   <p className="text-[10px] text-dark-100">Product Designer · Xoxoday Global</p>
                 </div>
               </div>
@@ -175,7 +175,7 @@ function CelebrationDayModal() {
                 </p>
               </div>
               <div className="px-3.5 py-2 border-t border-light-200 flex items-center justify-between">
-                <span className="text-[10px] text-dark-100">🎁 ₹500 gift credit · Open Wishboard</span>
+                <span className="text-[10px] text-dark-100">🎁 $50 gift credit · Open Wishboard</span>
                 <span className="text-[10px] font-semibold border rounded px-2 py-0.5" style={{ background: "#FFF8F0", borderColor: "#FED7AA", color: "#C2410C" }}>Redeem →</span>
               </div>
             </div>

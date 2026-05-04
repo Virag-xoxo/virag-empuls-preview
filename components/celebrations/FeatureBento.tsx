@@ -135,9 +135,9 @@ function MilestonesViz() {
   ];
 
   const upcoming = [
-    { emoji: "🎂", name: "Priya",  when: "in 3d",  bg: "#FFF8F0", border: "#FED7AA", color: "#C2410C" },
-    { emoji: "⭐", name: "Rahul",  when: "in 7d",  bg: "#EFF6FF", border: "#BFDBFE", color: "#1D4ED8" },
-    { emoji: "💍", name: "Anika",  when: "in 14d", bg: "#F9FAFB", border: "#E5E7EB", color: "#4B5563" },
+    { emoji: "🎂", name: "Sarah",  when: "in 3d",  bg: "#FFF8F0", border: "#FED7AA", color: "#C2410C" },
+    { emoji: "⭐", name: "David",  when: "in 7d",  bg: "#EFF6FF", border: "#BFDBFE", color: "#1D4ED8" },
+    { emoji: "💍", name: "Emily",  when: "in 14d", bg: "#F9FAFB", border: "#E5E7EB", color: "#4B5563" },
   ];
 
   return (
@@ -185,8 +185,8 @@ function MilestonesViz() {
 }
 
 const WISHES = [
-  { initials: "AJ", name: "Aadarsh Jha", color: "#4338CA", msg: "Happy Birthday Priya! Your designs always inspire the team. 🎉" },
-  { initials: "VV", name: "Vraj Vyas",   color: "#0891B2", msg: "So grateful to work with you every day! Have a wonderful birthday 🎂" },
+  { initials: "AJ", name: "Andrew Jenkins",  color: "#4338CA", msg: "Happy Birthday Sarah! Your designs always inspire the team. 🎉" },
+  { initials: "VV", name: "Vincent Vasquez", color: "#0891B2", msg: "So grateful to work with you every day! Have a wonderful birthday 🎂" },
 ];
 
 function WishboardViz() {
@@ -253,9 +253,9 @@ function GiftGridViz() {
 }
 
 const FEED_ITEMS = [
-  { initials: "PK", name: "Priya Kapoor",  occasion: "Birthday 🎂",       time: "Today",      grad: "linear-gradient(135deg,#f59e0b,#ef4444)" },
-  { initials: "RM", name: "Rahul Mehta",   occasion: "5 Years ⭐",         time: "Yesterday",  grad: "linear-gradient(135deg,#4338ca,#6366f1)" },
-  { initials: "AS", name: "Anika Singh",   occasion: "Birthday 🎂",       time: "2 days ago", grad: "linear-gradient(135deg,#059669,#10b981)" },
+  { initials: "SM", name: "Sarah Mitchell",   occasion: "Birthday 🎂",       time: "Today",      grad: "linear-gradient(135deg,#f59e0b,#ef4444)" },
+  { initials: "DT", name: "David Thompson",   occasion: "5 Years ⭐",         time: "Yesterday",  grad: "linear-gradient(135deg,#4338ca,#6366f1)" },
+  { initials: "ER", name: "Emily Roberts",    occasion: "Birthday 🎂",       time: "2 days ago", grad: "linear-gradient(135deg,#059669,#10b981)" },
 ];
 
 function FeedViz() {
@@ -289,7 +289,7 @@ function SlackViz() {
         <span className="text-[10px] text-white/35 ml-auto">Today 09:00</span>
       </div>
       <div className="bg-white/8 border border-white/10 rounded-lg px-3 py-2.5">
-        <p className="text-[12px] font-bold mb-1" style={{ color: "#FBBF24" }}>🎂 Happy Birthday, Priya Kapoor!</p>
+        <p className="text-[12px] font-bold mb-1" style={{ color: "#FBBF24" }}>🎂 Happy Birthday, Sarah Mitchell!</p>
         <p className="text-[10px] text-white/60 leading-relaxed">Your creativity and energy make us all shine brighter! 🎉</p>
         <div className="flex items-center gap-1.5 mt-2">
           <span className="bg-white/10 text-white/65 text-[9px] rounded px-2 py-0.5">🎉 View Wishboard</span>
@@ -389,7 +389,7 @@ function CopilotViz() {
           <div className="flex-1 min-w-0">
             <p className="text-[10px] font-bold text-dark-300 mb-0.5">5-year anniversary in 7 days</p>
             <p className="text-[9px] text-dark-100 leading-relaxed">
-              <span className="font-semibold text-dark-200">Rahul Mehta</span> shipped 3 major launches this year — Copilot drafted a personal note.
+              <span className="font-semibold text-dark-200">David Thompson</span> shipped 3 major launches this year — Copilot drafted a personal note.
             </p>
           </div>
         </div>
@@ -405,7 +405,7 @@ function CopilotViz() {
         </div>
         <div className="px-3 py-2.5">
           <p className="text-[10px] text-dark-200 leading-relaxed">
-            &ldquo;Five incredible years, Rahul! From the first launch to last quarter&apos;s pricing redesign — your fingerprints are on everything we&apos;re proud of. 🌟&rdquo;
+            &ldquo;Five incredible years, David! From the first launch to last quarter&apos;s pricing redesign — your fingerprints are on everything we&apos;re proud of. 🌟&rdquo;
           </p>
         </div>
         <div className="flex items-center justify-between px-3 py-2 border-t border-light-200">

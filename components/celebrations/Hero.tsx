@@ -19,7 +19,7 @@ const FLOATING_CHIPS = [
     id: 2,
     emoji: "🎉",
     label: "Wishboard ready!",
-    sub: "14 wishes · Priya Kapoor",
+    sub: "14 wishes · Sarah Mitchell",
     value: "🎉 ❤️",
     pos: "top-[58%] right-[-2%]",
     delay: "0.6s",
@@ -30,7 +30,7 @@ const FLOATING_CHIPS = [
     id: 3,
     emoji: "⭐",
     label: "5-Year milestone!",
-    sub: "Rahul Mehta · ₹1,500 sent",
+    sub: "David Thompson · $150 sent",
     value: "Done",
     pos: "bottom-[10%] right-[6%]",
     delay: "1.1s",
@@ -167,10 +167,10 @@ export default function Hero() {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 bg-white/10 backdrop-blur-xl rounded-2xl border border-white/15 p-5 shadow-2xl">
             <div className="flex items-center gap-3 mb-4 pb-4 border-b border-white/10">
               <div className="w-9 h-9 rounded-full shrink-0 flex items-center justify-center text-white text-xs font-bold" style={{ background: "linear-gradient(135deg,#f59e0b,#ef4444)" }}>
-                PK
+                SM
               </div>
               <div className="min-w-0">
-                <p className="text-white text-xs font-semibold">Priya Kapoor</p>
+                <p className="text-white text-xs font-semibold">Sarah Mitchell</p>
                 <p className="text-dark-000 text-[10px]">Product Designer · Xoxoday Global</p>
               </div>
               <div className="ml-auto shrink-0 flex items-center gap-1 bg-orange-000/20 border border-orange-100/30 rounded-full px-2 py-0.5">
@@ -181,12 +181,12 @@ export default function Hero() {
             <div className="bg-white/8 rounded-xl p-3.5 mb-4">
               <p className="text-white text-lg font-extrabold leading-[1.1] tracking-tight mb-1.5">HAPPY<br/>BIRTHDAY</p>
               <p className="text-white/70 text-[11px] leading-relaxed">
-                Wishing you a wonderful day, Priya! Your creativity and dedication light up our team every single day. 🎉
+                Wishing you a wonderful day, Sarah! Your creativity and dedication light up our team every single day. 🎉
               </p>
             </div>
 
             <div className="flex items-center justify-between">
-              <p className="text-orange-200 text-[11px] font-semibold">🎁 ₹500 gift credit attached</p>
+              <p className="text-orange-200 text-[11px] font-semibold">🎁 $50 gift credit attached</p>
               <span className="text-white/70 text-[11px]">🎉 36  ❤️ 18</span>
             </div>
           </div>

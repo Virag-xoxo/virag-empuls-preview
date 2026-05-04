@@ -22,7 +22,7 @@ const FAQS = [
   {
     id: "item-3",
     q: "Can we customize the celebration message and gift amount per milestone?",
-    a: "Yes. Admins can set different gift credit amounts for different milestone types and tenure bands — for example, ₹500 for birthdays, ₹1,500 for a 5-year anniversary, ₹3,000 for a 10-year anniversary. You can also customize the default celebration message template, notification timing, and which channels the celebration posts to.",
+    a: "Yes. Admins can set different gift credit amounts for different milestone types and tenure bands — for example, $50 for birthdays, $150 for a 5-year anniversary, $300 for a 10-year anniversary. You can also customize the default celebration message template, notification timing, and which channels the celebration posts to.",
   },
   {
     id: "item-4",
