@@ -102,12 +102,12 @@ export default function Hero() {
           </motion.div>
 
           <motion.h1 {...fadeUp(0.1)} className="text-[46px] lg:text-[60px] font-bold text-white leading-[1.06] tracking-tight mb-6">
-            <span className="block">Know how your people feel,</span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">every day.</span>
+            <span className="block">Know how your people</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">feel, every day.</span>
           </motion.h1>
 
           <motion.p {...fadeUp(0.2)} className="text-lg text-dark-000 max-w-md mb-10 leading-relaxed">
-            One emoji tap, embedded directly in the daily feed. Empuls Mood-o-meter captures team sentiment in real time &mdash; anonymously aggregated by department, location, tenure, and more.
+            One emoji tap, embedded in the daily feed &mdash; anonymously aggregated by team, location, and tenure.
           </motion.p>
 
           <motion.div {...fadeUp(0.3)} className="flex flex-wrap items-center gap-4 mb-10">
@@ -125,36 +125,36 @@ export default function Hero() {
           transition={{ duration: reduce ? 0 : 0.75, ease, delay: 0.18 }}>
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-blue-200/10 blur-3xl pointer-events-none" />
 
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[360px] bg-white rounded-2xl border border-light-200 p-5 shadow-2xl">
-            <div className="flex items-center justify-between mb-4 pb-4 border-b border-light-200">
-              <p className="text-[12px] text-dark-300 font-semibold">Good evening, Olivia 👋</p>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[360px] bg-white/10 backdrop-blur-xl rounded-2xl border border-white/15 p-5 shadow-2xl">
+            <div className="flex items-center justify-between mb-4 pb-4 border-b border-white/10">
+              <p className="text-[12px] text-white font-semibold">Good evening, Olivia 👋</p>
               <div className="w-8 h-8 rounded-full flex items-center justify-center text-[10px] font-bold text-white" style={{ background: "linear-gradient(135deg,#1D61F6,#6f8eff)" }}>OB</div>
             </div>
 
-            <div className="flex items-center gap-1 mb-4 border-b border-light-200 pb-3">
+            <div className="flex items-center gap-1 mb-4 border-b border-white/10 pb-3">
               {TABS.map((t) => (
-                <button key={t.name} className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-[10px] font-bold transition-all ${t.active ? "bg-blue-000 text-blue-200" : "text-dark-100 hover:bg-light-100"}`}>
+                <button key={t.name} className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-[10px] font-bold transition-all ${t.active ? "bg-blue-200/20 text-blue-100 border border-blue-100/30" : "text-white/55 hover:bg-white/5"}`}>
                   <span className="w-1.5 h-1.5 rounded-full" style={{ background: t.color }} />
                   {t.name}
                 </button>
               ))}
             </div>
 
-            <div className="bg-light-100 rounded-xl p-3 mb-4 flex items-center gap-2">
-              <input type="text" placeholder="Who do you wish to recognize today?" disabled className="flex-1 bg-transparent text-[10px] text-dark-100 placeholder:text-dark-100 outline-none" />
+            <div className="bg-white/5 border border-white/10 rounded-xl p-3 mb-4 flex items-center gap-2">
+              <input type="text" placeholder="Who do you wish to recognize today?" disabled className="flex-1 bg-transparent text-[10px] text-white/55 placeholder:text-white/45 outline-none" />
               <button className="text-[10px] font-bold text-white bg-blue-200 px-3 py-1.5 rounded-md whitespace-nowrap">Recognize</button>
             </div>
 
-            <p className="text-[12px] font-bold text-dark-300 mb-3">How are you feeling today?</p>
+            <p className="text-[12px] font-bold text-white mb-3">How are you feeling today?</p>
             <div className="grid grid-cols-5 gap-1.5">
               {MOODS.map((m, i) => (
                 <motion.button key={m.l}
                   onClick={() => setSelected(i)}
                   animate={{ scale: selected === i ? 1.05 : 1 }}
                   transition={{ type: "spring", stiffness: 280, damping: 22 }}
-                  className={`flex flex-col items-center gap-1 rounded-lg py-2 transition-colors ${selected === i ? "bg-blue-000 border-2 border-blue-200" : "bg-light-100 border border-light-200 hover:border-blue-100"}`}>
+                  className={`flex flex-col items-center gap-1 rounded-lg py-2 transition-colors ${selected === i ? "bg-blue-200/20 border-2 border-blue-100/40" : "bg-white/5 border border-white/10 hover:border-white/20"}`}>
                   <span className="text-xl">{m.e}</span>
-                  <span className="text-[8px] font-bold text-dark-100 truncate">{m.l}</span>
+                  <span className="text-[8px] font-bold text-white/70 truncate">{m.l}</span>
                 </motion.button>
               ))}
             </div>
