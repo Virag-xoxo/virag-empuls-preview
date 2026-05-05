@@ -24,7 +24,7 @@ const COMPACT = [
     metricSuffix: "",
     metricLabel: "team cohesion lift",
     metricContext: "in pulse surveys after Project Completion Rewards rolled out",
-    quote: "Tiered distributions ended the awkward question of who gets rewarded. The lead, the IC, the support — it&apos;s all configured in advance. Done.",
+    quote: "Tiered distributions ended the awkward question of who gets rewarded. The lead, the IC, the support — it's all configured in advance. Done.",
     name: "Daniel Foster",
     title: "Head of Engineering",
     photo: "https://randomuser.me/api/portraits/men/41.jpg",
