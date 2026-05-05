@@ -101,7 +101,7 @@ export default function Hero() {
   }, []);
 
   const fadeUp = (delay: number) => ({
-    initial: reduce ? (false as const) : { opacity: 0, y: 22 },
+    initial: { opacity: 0, y: 22 },
     animate: { opacity: 1, y: 0 },
     transition: { duration: reduce ? 0 : 0.65, ease, delay },
   });
@@ -151,7 +151,7 @@ export default function Hero() {
 
         <motion.div
           className="relative hidden lg:block h-[540px]"
-          initial={reduce ? false : { opacity: 0, x: 40 }}
+          initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: reduce ? 0 : 0.75, ease, delay: 0.18 }}>
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-blue-200/10 blur-3xl pointer-events-none" />
