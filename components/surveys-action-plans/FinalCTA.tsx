@@ -18,7 +18,7 @@ export default function FinalCTA() {
             initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: reduce ? 0 : 0.55, ease: [0,0,0.2,1] as const }}>
             <h2 className="text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-6">
               <span className="text-white">Close the loop.<br/></span>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">Every single time.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">Every single time</span>
             </h2>
             <p className="text-dark-000 text-base leading-relaxed">
               Give every piece of employee feedback a deadline, an owner, and a resolution. See how it transforms survey participation — and engagement scores.
