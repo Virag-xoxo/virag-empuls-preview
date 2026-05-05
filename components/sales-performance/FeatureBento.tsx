@@ -183,8 +183,8 @@ const TILES = [
   { tag: "Live dashboards",     title: "Team rollups update with every CRM event",    body: "Per-rep, per-team, per-territory. Drill from team to rep without pulling a report.",                                                  Viz: TeamRollup,        span: "lg:col-span-2", dark: false },
   { tag: "No-code builder",     title: "Sales contests in minutes",                   body: "Revenue races, pipeline contests, activity competitions. Pick the metric, set the prize, launch.",                               Viz: ContestBuilderViz, span: "",              dark: false },
   { tag: "Live leaderboards",   title: "Broadcast everywhere",                        body: "In-app, team TVs, Slack, Teams. The board updates the moment a deal moves.",                                                       Viz: LeaderboardDark,   span: "lg:col-span-2", dark: true  },
-  { tag: "Auto badges",         title: "Milestones that fire themselves",             body: "First $100K, 5-deal week, top closer of the quarter &mdash; awarded the moment the threshold is hit, with points and a Slack post.", Viz: BadgeAwards,       span: "",              dark: false },
-  { tag: "AI nudges",           title: "Personalised, deal-specific prompts",         body: "&ldquo;Close NovaTech to move from #3 → #1 and unlock the $500 prize.&rdquo; Tied to each rep&apos;s actual pipeline.",            Viz: AiNudgeCard,       span: "",              dark: false },
+  { tag: "Auto badges",         title: "Milestones that fire themselves",             body: "First $100K, 5-deal week, top closer of the quarter — awarded the moment the threshold is hit, with points and a Slack post.", Viz: BadgeAwards,       span: "",              dark: false },
+  { tag: "AI nudges",           title: "Personalised, deal-specific prompts",         body: "&ldquo;Close NovaTech to move from #3 → #1 and unlock the $500 prize.&rdquo; Tied to each rep's actual pipeline.",            Viz: AiNudgeCard,       span: "",              dark: false },
   { tag: "Pipeline projection", title: "Open deals → projected commission",           body: "Every rep sees the commission already booked, plus what their open pipeline is worth at current tier rates.",                      Viz: PipelinePreview,   span: "",              dark: false },
   { tag: "Manager forecast",    title: "End-of-quarter projection, at-risk flags",    body: "One view of where the team will land, who needs help, and which deals matter most.",                                              Viz: ManagerForecast,   span: "",              dark: false },
 ];
@@ -197,7 +197,7 @@ export default function FeatureBento() {
         <div className="text-center max-w-xl mx-auto mb-14">
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">Platform capabilities</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">A performance system reps actually open every day</h2>
-          <p className="text-dark-100 text-base leading-relaxed">Live dashboards, no-code contests, AI nudges, badge awards, and manager forecasts &mdash; one platform replacing five spreadsheets and a Tuesday standup.</p>
+          <p className="text-dark-100 text-base leading-relaxed">Live dashboards, no-code contests, AI nudges, badge awards, and manager forecasts — one platform replacing five spreadsheets and a Tuesday standup.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-auto">

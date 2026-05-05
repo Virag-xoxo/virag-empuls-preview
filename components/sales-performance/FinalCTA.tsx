@@ -21,7 +21,7 @@ export default function FinalCTA() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">a dashboard they check daily</span>
             </h2>
             <p className="text-dark-000 text-base leading-relaxed">
-              See how Empuls makes quota progress, contest standings, and earnings visible to every rep &mdash; without your managers pulling a single report.
+              See how Empuls makes quota progress, contest standings, and earnings visible to every rep — without your managers pulling a single report.
             </p>
           </motion.div>
 

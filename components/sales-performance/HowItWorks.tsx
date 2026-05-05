@@ -130,7 +130,7 @@ function RampModal() {
 const STEPS = [
   { num: "01", tag: "Set quotas",      title: "Per-rep, per-team, per-territory",  body: "Assign individual quotas, roll up by team or region, no spreadsheet aggregation. Set splits for shared accounts and ramping reps in seconds.", cta: "About quota types",  Illustration: QuotaAssignmentModal },
   { num: "02", tag: "Live tracking",   title: "Attainment updates the moment a deal closes", body: "CRM webhook fires &rarr; attainment % refreshes &rarr; team rollup recalculates. No batch sync, no nightly job, no manual import.", cta: "About data sync",     Illustration: LiveBarsModal },
-  { num: "03", tag: "Ramp & territory",title: "Auto-adjusted plans for new and shared reps", body: "New reps follow a configurable ramp schedule. Territory splits apportion deals automatically. Ops doesn&apos;t pull a single report to true any of it up.", cta: "About ramp logic",    Illustration: RampModal },
+  { num: "03", tag: "Ramp & territory",title: "Auto-adjusted plans for new and shared reps", body: "New reps follow a configurable ramp schedule. Territory splits apportion deals automatically. Ops doesn't pull a single report to true any of it up.", cta: "About ramp logic",    Illustration: RampModal },
 ];
 
 const slideIn: Variants = {

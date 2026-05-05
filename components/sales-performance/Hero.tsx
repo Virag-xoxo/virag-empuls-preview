@@ -136,7 +136,7 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p {...fadeUp(0.2)} className="text-lg text-dark-000 max-w-md mb-10 leading-relaxed">
-            Real-time attainment, gamified contests, and AI-powered nudges &mdash; every rep knows where they stand and what to close next.
+            Real-time attainment, gamified contests, and AI-powered nudges — every rep knows where they stand and what to close next.
           </motion.p>
 
           <motion.div {...fadeUp(0.3)} className="flex flex-wrap items-center gap-4 mb-10">

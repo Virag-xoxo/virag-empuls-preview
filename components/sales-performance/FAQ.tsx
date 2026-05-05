@@ -7,22 +7,22 @@ const FAQS = [
   {
     id: "item-1",
     q: "How does Empuls keep quota attainment data current?",
-    a: "Empuls connects directly to your CRM via native integration or webhook. Every deal close or pipeline stage change is captured in real time, and attainment percentages update immediately. There&apos;s no batch sync, no nightly job, no manual import &mdash; the dashboard your reps open at 9am reflects the deal that closed at 8:55am.",
+    a: "Empuls connects directly to your CRM via native integration or webhook. Every deal close or pipeline stage change is captured in real time, and attainment percentages update immediately. There's no batch sync, no nightly job, no manual import — the dashboard your reps open at 9am reflects the deal that closed at 8:55am.",
   },
   {
     id: "item-2",
     q: "Can reps see how close they are to the next commission tier?",
-    a: "Yes. Each rep&apos;s dashboard shows the current tier, the threshold to the next accelerator, and the revenue gap. Open pipeline deals are surfaced with projected commission so reps can prioritise the deals that close the gap. The view updates live, so the prioritisation stays current.",
+    a: "Yes. Each rep's dashboard shows the current tier, the threshold to the next accelerator, and the revenue gap. Open pipeline deals are surfaced with projected commission so reps can prioritise the deals that close the gap. The view updates live, so the prioritisation stays current.",
   },
   {
     id: "item-3",
-    q: "How do sales contests work &mdash; can we run multiple at once?",
+    q: "How do sales contests work — can we run multiple at once?",
     a: "Yes. Run as many concurrent contests as you need, each targeting a different metric, team, or window. Contests can be based on revenue, pipeline created, deals closed, calls booked, or any CRM activity metric. Winners are determined automatically; prizes and points are awarded without manual intervention.",
   },
   {
     id: "item-4",
     q: "What are AI nudges and how do they get sent to reps?",
-    a: "AI nudges are automated, personalised alerts that fire when a rep is close to a meaningful threshold &mdash; a rank up, a contest prize tier, the next commission accelerator. They&apos;re delivered in-app, in Slack, or in email. Each nudge is specific to the rep&apos;s current pipeline and the gap to the next milestone, not a generic broadcast.",
+    a: "AI nudges are automated, personalised alerts that fire when a rep is close to a meaningful threshold — a rank up, a contest prize tier, the next commission accelerator. They're delivered in-app, in Slack, or in email. Each nudge is specific to the rep's current pipeline and the gap to the next milestone, not a generic broadcast.",
   },
 ];
 
