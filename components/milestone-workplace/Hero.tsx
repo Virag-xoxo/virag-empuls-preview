@@ -78,11 +78,11 @@ export default function Hero() {
 
           <motion.h1 {...fadeUp(0.1)} className="text-[46px] lg:text-[60px] font-bold text-white leading-[1.06] tracking-tight mb-6">
             <span className="block">Build the habits</span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">your team needs to grow</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">your team needs</span>
           </motion.h1>
 
           <motion.p {...fadeUp(0.2)} className="text-lg text-dark-000 max-w-md mb-10 leading-relaxed">
-            Safety streaks, attendance records, performance targets — rewarded automatically the moment each threshold is crossed.
+            Safety streaks, attendance records, performance targets &mdash; rewarded automatically on threshold hit.
           </motion.p>
 
           <motion.div {...fadeUp(0.3)} className="flex flex-wrap items-center gap-4 mb-10">
