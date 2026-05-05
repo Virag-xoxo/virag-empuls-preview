@@ -21,7 +21,7 @@ export default function FinalCTA() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">zero cost to you</span>
             </h2>
             <p className="text-dark-000 text-base leading-relaxed">
-              Turn on the Perks Store and watch employees save thousands a year — without spending a dollar from your benefits budget.
+              Turn on the Perks Store and watch employees save thousands a year &mdash; from your benefits budget.
             </p>
           </motion.div>
 
