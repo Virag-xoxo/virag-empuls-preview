@@ -143,12 +143,31 @@ export default function Hero() {
         </div>
 
         <div className="mt-14 pt-8 border-t border-white/10">
-          <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-dark-100 text-center mb-6">Trusted by RevOps and finance teams at</p>
-          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 opacity-60">
-            {LOGOS.map((l) => <span key={l} className="text-white/70 text-sm font-semibold tracking-wide">{l}</span>)}
+          <div className="flex items-center gap-5 mb-5">
+            <div className="flex-1 h-px bg-white/10" />
+            <p className="text-[10px] text-dark-100 uppercase tracking-[0.18em] font-semibold whitespace-nowrap">Trusted by RevOps and finance teams worldwide</p>
+            <div className="flex-1 h-px bg-white/10" />
+          </div>
+          <div className="overflow-hidden"
+            style={{
+              maskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+              WebkitMaskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+            }}>
+            <div className="flex items-center gap-14 w-max" style={{ animation: "marquee 24s linear infinite" }}>
+              {[...LOGOS, ...LOGOS, ...LOGOS].map((l, i) => (
+                <span key={i} className="text-white/55 text-base font-semibold tracking-wide shrink-0">{l}</span>
+              ))}
+            </div>
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes marquee {
+          0%   { transform: translateX(0); }
+          100% { transform: translateX(-33.33%); }
+        }
+      `}</style>
     </section>
   );
 }
