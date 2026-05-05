@@ -21,7 +21,7 @@ export default function FinalCTA() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">to know what they earned</span>
             </h2>
             <p className="text-dark-000 text-base leading-relaxed">
-              See how Empuls automates sales incentives end-to-end &mdash; from plan design to instant payout &mdash; in a 20-minute walkthrough.
+              See how Empuls automates sales incentives end-to-end — from plan design to instant payout — in a 20-minute walkthrough.
             </p>
           </motion.div>
 

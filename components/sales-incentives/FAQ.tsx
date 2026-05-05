@@ -12,12 +12,12 @@ const FAQS = [
   {
     id: "item-2",
     q: "Can we run different programs for AEs, SDRs, and channel partners simultaneously?",
-    a: "Yes. Run as many concurrent programs as you need, each with its own goal type, tier structure, payout rules, and recipient group. Account executives can be on a closed-won-revenue plan, SDRs on a per-MQL bounty, and channel partners on a flat-percentage program &mdash; all administered from one dashboard. Plans are reusable as templates so a new region or role can launch in under an hour.",
+    a: "Yes. Run as many concurrent programs as you need, each with its own goal type, tier structure, payout rules, and recipient group. Account executives can be on a closed-won-revenue plan, SDRs on a per-MQL bounty, and channel partners on a flat-percentage program — all administered from one dashboard. Plans are reusable as templates so a new region or role can launch in under an hour.",
   },
   {
     id: "item-3",
     q: "How quickly are commissions paid out after a deal closes?",
-    a: "Instantly. The moment a deal is marked closed-won in your CRM, Empuls calculates the commission and posts it to the rep&apos;s wallet. The rep can redeem immediately as Amazon vouchers, Visa prepaid cards, experiences, or bank transfer across 175+ countries. No payroll cycle, no end-of-quarter waiting.",
+    a: "Instantly. The moment a deal is marked closed-won in your CRM, Empuls calculates the commission and posts it to the rep's wallet. The rep can redeem immediately as Amazon vouchers, Visa prepaid cards, experiences, or bank transfer across 175+ countries. No payroll cycle, no end-of-quarter waiting.",
   },
   {
     id: "item-4",

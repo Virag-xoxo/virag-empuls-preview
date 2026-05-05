@@ -187,9 +187,9 @@ function MultiProgramAdmin() {
 
 const TILES = [
   { tag: "No spreadsheets",       title: "Active incentive programs",       body: "5 plans, 25 reps, every dollar tracked. Switch a plan from draft to live without touching a spreadsheet.",                                                Viz: ProgramsViz,         span: "lg:col-span-2", dark: false },
-  { tag: "Real-time visibility",  title: "Live quota dashboards",           body: "Every rep, every team, every region &mdash; updating the moment a deal closes in CRM.",                                                                  Viz: QuotaBars,           span: "",              dark: false },
+  { tag: "Real-time visibility",  title: "Live quota dashboards",           body: "Every rep, every team, every region — updating the moment a deal closes in CRM.",                                                                  Viz: QuotaBars,           span: "",              dark: false },
   { tag: "Contests & leaderboards", title: "Sales gamification",            body: "Run sprint contests, new-logo bounties, pipeline races. Prizes auto-awarded the moment the threshold is hit.",                                              Viz: ContestViz,          span: "",              dark: false },
-  { tag: "175+ countries",        title: "Instant payouts, global reach",   body: "Reps choose how they redeem &mdash; Amazon vouchers, Visa cards, bank transfers, or experiences. Paid the day the deal closes, not the month.",            Viz: PayoutGlobe,         span: "lg:col-span-2", dark: true  },
+  { tag: "175+ countries",        title: "Instant payouts, global reach",   body: "Reps choose how they redeem — Amazon vouchers, Visa cards, bank transfers, or experiences. Paid the day the deal closes, not the month.",            Viz: PayoutGlobe,         span: "lg:col-span-2", dark: true  },
   { tag: "Tiered & accelerated",  title: "Plan ladder",                     body: "Configurable breakpoints: base, target, accelerator, kicker. Apply per-role, per-region, per-product.",                                                     Viz: CommissionLadder,    span: "",              dark: false },
   { tag: "Effectiveness analytics", title: "Plan ROI in one view",          body: "Spend vs. revenue lift. Adoption rate. Effectiveness scoring across every plan you run.",                                                                   Viz: EffectivenessStats,  span: "",              dark: false },
   { tag: "Multi-program",         title: "Run AE, SDR, and channel side-by-side", body: "Different rules, one console. Approvals, audits, payout history all in one place.",                                                                  Viz: MultiProgramAdmin,   span: "",              dark: false },
@@ -203,7 +203,7 @@ export default function FeatureBento() {
         <div className="text-center max-w-xl mx-auto mb-14">
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">Platform capabilities</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">Everything sales leaders need, none of the spreadsheet pain</h2>
-          <p className="text-dark-100 text-base leading-relaxed">Plan design, contest builder, real-time dashboards, instant payouts, and effectiveness analytics &mdash; built into one platform.</p>
+          <p className="text-dark-100 text-base leading-relaxed">Plan design, contest builder, real-time dashboards, instant payouts, and effectiveness analytics — built into one platform.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-auto">

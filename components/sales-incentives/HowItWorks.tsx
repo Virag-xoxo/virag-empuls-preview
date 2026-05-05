@@ -126,9 +126,9 @@ function CrmSyncModal() {
 }
 
 const STEPS = [
-  { num: "01", tag: "Tiered targets",     title: "Set quotas, accelerators, and breakpoints",       body: "Configure the rate at every tier &mdash; base, target, accelerator. Reps see exactly how each deal moves them up the ladder.", cta: "About plan design",  Illustration: TieredTargetsModal },
-  { num: "02", tag: "Role structures",    title: "Different programs for AEs, SDRs, and partners",  body: "Run multiple plans simultaneously, each with its own logic. Account executives, SDRs, channel partners, managers &mdash; all from one console.", cta: "About program types", Illustration: RoleStructuresModal },
-  { num: "03", tag: "CRM-synced",         title: "Deal closes, commission lands, instantly",        body: "Empuls reads from Salesforce, HubSpot, or any CRM via webhook. The moment a deal is closed-won, the rep&apos;s wallet shows the payout.", cta: "About delivery",      Illustration: CrmSyncModal },
+  { num: "01", tag: "Tiered targets",     title: "Set quotas, accelerators, and breakpoints",       body: "Configure the rate at every tier — base, target, accelerator. Reps see exactly how each deal moves them up the ladder.", cta: "About plan design",  Illustration: TieredTargetsModal },
+  { num: "02", tag: "Role structures",    title: "Different programs for AEs, SDRs, and partners",  body: "Run multiple plans simultaneously, each with its own logic. Account executives, SDRs, channel partners, managers — all from one console.", cta: "About program types", Illustration: RoleStructuresModal },
+  { num: "03", tag: "CRM-synced",         title: "Deal closes, commission lands, instantly",        body: "Empuls reads from Salesforce, HubSpot, or any CRM via webhook. The moment a deal is closed-won, the rep's wallet shows the payout.", cta: "About delivery",      Illustration: CrmSyncModal },
 ];
 
 const slideIn: Variants = {

@@ -24,7 +24,7 @@ const COMPACT = [
     metricSuffix: "%",
     metricLabel: "revenue lift",
     metricContext: "in the first two quarters of structured incentive programs",
-    quote: "We thought we were paying competitively. We weren&apos;t paying visibly. Once reps could see the next tier in real time, behavior changed within a sprint.",
+    quote: "We thought we were paying competitively. We weren't paying visibly. Once reps could see the next tier in real time, behavior changed within a sprint.",
     name: "Catherine Reed",
     title: "VP Sales",
     photo: "https://randomuser.me/api/portraits/women/45.jpg",
@@ -36,7 +36,7 @@ const COMPACT = [
     metricSuffix: "%",
     metricLabel: "rep satisfaction",
     metricContext: "with the new transparent payout flow vs the old quarterly-cheque model",
-    quote: "Instant payout was the single biggest morale lever we&apos;ve pulled in five years. Reps trust the math because they can audit every dollar themselves.",
+    quote: "Instant payout was the single biggest morale lever we've pulled in five years. Reps trust the math because they can audit every dollar themselves.",
     name: "Megan Hayes",
     title: "Sales Enablement Lead",
     photo: "https://randomuser.me/api/portraits/women/52.jpg",
@@ -104,7 +104,7 @@ export default function Testimonials() {
         <div className="text-center max-w-xl mx-auto mb-14">
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-100 mb-3">Customer stories</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-white tracking-tight mb-4">Sales orgs that turned spreadsheets into sprint wins</h2>
-          <p className="text-dark-000 text-base leading-relaxed">Companies that swapped end-of-quarter commission chaos for live, automated incentives &mdash; and watched quota attainment, revenue, and rep satisfaction lift together.</p>
+          <p className="text-dark-000 text-base leading-relaxed">Companies that swapped end-of-quarter commission chaos for live, automated incentives — and watched quota attainment, revenue, and rep satisfaction lift together.</p>
         </div>
 
         <motion.figure className="bg-white/8 border border-white/12 rounded-2xl p-7 lg:p-8 mb-4 grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-6 lg:gap-12 items-center"
