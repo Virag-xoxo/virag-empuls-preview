@@ -18,7 +18,7 @@ export default function FinalCTA() {
             initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: reduce ? 0 : 0.55, ease: [0,0,0.2,1] as const }}>
             <h2 className="text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-6">
               <span className="text-white">Stop guessing.<br/></span>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">Start listening.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">Start listening</span>
             </h2>
             <p className="text-dark-000 text-base leading-relaxed">
               Set up your first pulse survey in minutes. See engagement scores, driver heatmaps, and trend analysis from day one.
