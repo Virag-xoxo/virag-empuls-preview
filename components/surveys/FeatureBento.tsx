@@ -182,7 +182,7 @@ function TrendAndDept() {
         </div>
       </div>
       <div className="rounded-lg bg-orange-100/15 border border-orange-200/30 px-3 py-2">
-        <p className="text-[10px] font-bold text-dark-300">⚠️ Action needed: Customer Support &mdash; score dropped 0.4 from Q1.</p>
+        <p className="text-[10px] font-bold text-dark-300">⚠️ Action needed: Customer Support — score dropped 0.4 from Q1.</p>
         <p className="text-[10px] text-dark-100 mt-0.5">AI identified &ldquo;workload&rdquo; and &ldquo;manager communication&rdquo; as top themes.</p>
       </div>
     </div>
@@ -211,13 +211,13 @@ function TemplatesGrid() {
 }
 
 const TILES = [
-  { tag: "Listen",       title: "Pulse Surveys",         body: "Run quick, recurring check-ins to track engagement over time. Spot trends before they become problems &mdash; weekly, monthly, or quarterly.", Viz: PulseCardViz,         span: "",              dark: false },
+  { tag: "Listen",       title: "Pulse Surveys",         body: "Run quick, recurring check-ins to track engagement over time. Spot trends before they become problems — weekly, monthly, or quarterly.", Viz: PulseCardViz,         span: "",              dark: false },
   { tag: "Lifecycle",    title: "Lifecycle Surveys",     body: "Capture feedback at onboarding, milestones, and exit. Understand each stage of the employee journey with automatically triggered surveys.",     Viz: LifecycleTimelineViz, span: "",              dark: false },
-  { tag: "Act",          title: "Action Plans",          body: "Turn survey insights into measurable improvements. Assign action items to managers, set deadlines, and track resolution &mdash; all inside Empuls.", Viz: ActionPlanList, span: "",              dark: true  },
+  { tag: "Act",          title: "Action Plans",          body: "Turn survey insights into measurable improvements. Assign action items to managers, set deadlines, and track resolution — all inside Empuls.", Viz: ActionPlanList, span: "",              dark: true  },
   { tag: "Daily",        title: "Mood-o-meter",          body: "Get a real-time read on how your teams are feeling, every single day. A lightweight daily pulse that employees actually respond to.",            Viz: MoodViz,              span: "",              dark: false },
   { tag: "AI",           title: "AI Sentiment Analysis", body: "Surface themes and emotions hidden in open-ended responses. AI clusters feedback, flags concerns, and presents manager-ready summaries automatically.", Viz: AiThemes, span: "lg:col-span-2", dark: true  },
   { tag: "Deep analytics", title: "Trends over time. Gaps by department.", body: "Move beyond average scores. See where engagement is falling, which teams need attention, and how scores have shifted since last cycle.", Viz: TrendAndDept, span: "lg:col-span-2", dark: false },
-  { tag: "Templates",    title: "50+ validated templates", body: "Build your own surveys from scratch or choose from a library covering peer reviews, 360 feedback, quizzes &mdash; every format supported.",     Viz: TemplatesGrid,        span: "",              dark: false },
+  { tag: "Templates",    title: "50+ validated templates", body: "Build your own surveys from scratch or choose from a library covering peer reviews, 360 feedback, quizzes — every format supported.",     Viz: TemplatesGrid,        span: "",              dark: false },
 ];
 
 export default function FeatureBento() {
@@ -227,8 +227,8 @@ export default function FeatureBento() {
       <div className="max-w-[1280px] mx-auto px-6">
         <div className="text-center max-w-xl mx-auto mb-14">
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">Six ways to listen</p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">A complete listening stack &mdash; not a survey tool</h2>
-          <p className="text-dark-100 text-base leading-relaxed">Pulse, lifecycle, mood-o-meter, AI sentiment, deep analytics, and a template library &mdash; designed to work together, not as standalone features.</p>
+          <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">A complete listening stack — not a survey tool</h2>
+          <p className="text-dark-100 text-base leading-relaxed">Pulse, lifecycle, mood-o-meter, AI sentiment, deep analytics, and a template library — designed to work together, not as standalone features.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-auto">

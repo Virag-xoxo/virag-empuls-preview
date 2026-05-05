@@ -9,7 +9,7 @@ const FEATURED = {
   metric: "94",
   metricSuffix: "%",
   metricLabel: "response rate",
-  metricContext: "with Empuls automated nudges &mdash; vs the 30&ndash;40% industry average for manual email surveys",
+  metricContext: "with Empuls automated nudges — vs the 30–40% industry average for manual email surveys",
   quote: "Surveys used to be a quarterly fire drill that finished with a PDF nobody opened. Now responses arrive in Slack, themes show up in the dashboard, and our managers act on them the same week. The cadence runs itself.",
   name: "Catherine Reed",
   title: "VP People Operations",
@@ -24,7 +24,7 @@ const COMPACT = [
     metricSuffix: "×",
     metricLabel: "engagement lift",
     metricContext: "when employees believe their feedback leads to visible change in the organisation",
-    quote: "We connected sentiment themes directly to action plan tasks. Reps see what was raised in their team and what got assigned. Survey participation hasn&apos;t dropped a single point in three quarters.",
+    quote: "We connected sentiment themes directly to action plan tasks. Reps see what was raised in their team and what got assigned. Survey participation hasn't dropped a single point in three quarters.",
     name: "Daniel Foster",
     title: "Head of Employee Experience",
     photo: "https://randomuser.me/api/portraits/men/41.jpg",
@@ -36,7 +36,7 @@ const COMPACT = [
     metricSuffix: "h",
     metricLabel: "from close to insight",
     metricContext: "AI-generated sentiment report and manager-ready action plan, no analyst or spreadsheet",
-    quote: "What used to take our People Analytics team two weeks now lands in three days. The AI doesn&apos;t replace the read &mdash; it just gets us to the right open-ended quotes faster.",
+    quote: "What used to take our People Analytics team two weeks now lands in three days. The AI doesn't replace the read — it just gets us to the right open-ended quotes faster.",
     name: "Megan Hayes",
     title: "Director People Analytics",
     photo: "https://randomuser.me/api/portraits/women/52.jpg",
@@ -104,7 +104,7 @@ export default function Testimonials() {
         <div className="text-center max-w-xl mx-auto mb-14">
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-100 mb-3">Customer stories</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-white tracking-tight mb-4">People teams that turned listening into action</h2>
-          <p className="text-dark-000 text-base leading-relaxed">Companies that swapped quarterly batch surveys and shelfware PDF reports for an always-on listening loop &mdash; and watched response rates and engagement lift together.</p>
+          <p className="text-dark-000 text-base leading-relaxed">Companies that swapped quarterly batch surveys and shelfware PDF reports for an always-on listening loop — and watched response rates and engagement lift together.</p>
         </div>
 
         <motion.figure className="bg-white/8 border border-white/12 rounded-2xl p-7 lg:p-8 mb-4 grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-6 lg:gap-12 items-center"

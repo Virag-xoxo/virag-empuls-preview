@@ -117,7 +117,7 @@ function AnalyseModal() {
 
 const STEPS = [
   { num: "01", tag: "Design",      title: "50+ templates or build from scratch",      body: "Choose from validated templates or build from scratch. AI suggests questions based on your goals and previous survey data.",                              cta: "About templates",     Illustration: DesignModal },
-  { num: "02", tag: "Distribute",  title: "Slack, Teams, email &mdash; on cadence",   body: "Auto-send to the right people at the right moment. Lifecycle triggers, manual schedules, or recurring cadences &mdash; fully configurable.",            cta: "About distribution",  Illustration: DistributeModal },
+  { num: "02", tag: "Distribute",  title: "Slack, Teams, email — on cadence",   body: "Auto-send to the right people at the right moment. Lifecycle triggers, manual schedules, or recurring cadences — fully configurable.",            cta: "About distribution",  Illustration: DistributeModal },
   { num: "03", tag: "Analyse",     title: "AI surfaces themes and sentiment",         body: "AI clusters open-ended responses into themes, scores sentiment, and presents manager-ready summaries automatically.",                                cta: "About analytics",     Illustration: AnalyseModal },
 ];
 
@@ -145,7 +145,7 @@ export default function HowItWorks() {
         <div className="text-center max-w-xl mx-auto mb-14">
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">How it works</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">From question to concrete change</h2>
-          <p className="text-dark-100 text-base leading-relaxed">Empuls handles distribution, reminders, analysis, and follow-through &mdash; so HR teams spend their time on impact, not administration.</p>
+          <p className="text-dark-100 text-base leading-relaxed">Empuls handles distribution, reminders, analysis, and follow-through — so HR teams spend their time on impact, not administration.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-[380px_minmax(0,520px)] gap-8 lg:gap-14 items-center lg:justify-center">

@@ -7,22 +7,22 @@ const FAQS = [
   {
     id: "item-1",
     q: "How is Empuls Surveys different from standalone tools like SurveyMonkey or Typeform?",
-    a: "Standalone survey tools collect responses but stop there. Empuls closes the loop &mdash; AI analyses sentiment in open-ended answers, surfaces engagement drivers by department, and lets you assign action plans directly from insights inside the same platform. Your HRIS data is also pre-connected, so surveys auto-segment by team, tenure, location, or grade without manual list management.",
+    a: "Standalone survey tools collect responses but stop there. Empuls closes the loop — AI analyses sentiment in open-ended answers, surfaces engagement drivers by department, and lets you assign action plans directly from insights inside the same platform. Your HRIS data is also pre-connected, so surveys auto-segment by team, tenure, location, or grade without manual list management.",
   },
   {
     id: "item-2",
     q: "How does Empuls achieve such high response rates?",
-    a: "Empuls delivers surveys through channels employees already use &mdash; Slack, Microsoft Teams, or email &mdash; with smart reminder nudges that stop once someone responds. Surveys are short by design (most pulse checks are under 3 minutes) and employees trust the platform because they also use it for recognition and rewards, so engagement is higher from the start.",
+    a: "Empuls delivers surveys through channels employees already use — Slack, Microsoft Teams, or email — with smart reminder nudges that stop once someone responds. Surveys are short by design (most pulse checks are under 3 minutes) and employees trust the platform because they also use it for recognition and rewards, so engagement is higher from the start.",
   },
   {
     id: "item-3",
     q: "Can managers see individual employee responses?",
-    a: "No &mdash; individual responses are anonymised. Managers see aggregated scores, department-level breakdowns, and AI-generated themes, but cannot identify who said what. Empuls enforces a minimum group size threshold (configurable, typically 5) before any breakdown is displayed, protecting employee privacy while still providing actionable team-level insights.",
+    a: "No — individual responses are anonymised. Managers see aggregated scores, department-level breakdowns, and AI-generated themes, but cannot identify who said what. Empuls enforces a minimum group size threshold (configurable, typically 5) before any breakdown is displayed, protecting employee privacy while still providing actionable team-level insights.",
   },
   {
     id: "item-4",
     q: "How does the AI sentiment analysis work on open-ended responses?",
-    a: "Empuls uses natural language processing to read every open-ended response, classify the sentiment (positive, neutral, negative), and cluster similar comments into themes like &ldquo;workload&rdquo;, &ldquo;manager communication&rdquo;, or &ldquo;growth opportunities&rdquo;. The result is a ranked list of themes &mdash; with representative quotes &mdash; that managers can act on immediately, without reading hundreds of individual comments.",
+    a: "Empuls uses natural language processing to read every open-ended response, classify the sentiment (positive, neutral, negative), and cluster similar comments into themes like &ldquo;workload&rdquo;, &ldquo;manager communication&rdquo;, or &ldquo;growth opportunities&rdquo;. The result is a ranked list of themes — with representative quotes — that managers can act on immediately, without reading hundreds of individual comments.",
   },
 ];
 

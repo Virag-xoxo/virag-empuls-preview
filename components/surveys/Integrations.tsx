@@ -62,7 +62,7 @@ export default function Integrations() {
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">Works where your workforce already lives</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">Connects to the channels and HRIS your team already uses</h2>
           <p className="text-dark-100 text-base leading-relaxed">
-            Surveys delivered through Slack, Teams, and email. HRIS sync from Workday, BambooHR, SAP SuccessFactors, Oracle HCM, and Rippling auto-segments responses by team, tenure, location, or grade &mdash; without manual list management.
+            Surveys delivered through Slack, Teams, and email. HRIS sync from Workday, BambooHR, SAP SuccessFactors, Oracle HCM, and Rippling auto-segments responses by team, tenure, location, or grade — without manual list management.
           </p>
         </motion.div>
 

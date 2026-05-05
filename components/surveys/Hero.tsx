@@ -93,7 +93,7 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p {...fadeUp(0.2)} className="text-lg text-dark-000 max-w-md mb-10 leading-relaxed">
-            Pulse checks, lifecycle feedback, AI-powered sentiment, and built-in action plans &mdash; every voice heard, every insight acted on, all in one place.
+            Pulse checks, lifecycle feedback, AI-powered sentiment, and built-in action plans — every voice heard, every insight acted on, all in one place.
           </motion.p>
 
           <motion.div {...fadeUp(0.3)} className="flex flex-wrap items-center gap-4 mb-10">
@@ -117,7 +117,7 @@ export default function Hero() {
                 <div className="w-8 h-8 rounded-lg bg-blue-200/30 border border-blue-100/30 flex items-center justify-center text-base">📊</div>
                 <div>
                   <p className="text-white text-[12px] font-bold leading-tight">Employee Pulse Survey · Q2 2024</p>
-                  <p className="text-dark-000 text-[10px] mt-0.5">Apr 1 &mdash; Jun 30, 2024</p>
+                  <p className="text-dark-000 text-[10px] mt-0.5">Apr 1 — Jun 30, 2024</p>
                 </div>
               </div>
               <div className="text-right shrink-0">
