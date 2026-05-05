@@ -21,7 +21,7 @@ export default function FinalCTA() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">in the exit interview.</span>
             </h2>
             <p className="text-dark-000 text-base leading-relaxed">
-              Mood-o-meter gives HR a daily read on every team so you can act while there&apos;s still time to make a difference.
+              Mood-o-meter gives HR a daily read on every team so you can act while there's still time to make a difference.
             </p>
           </motion.div>
 

@@ -9,8 +9,8 @@ const FEATURED = {
   metric: "1",
   metricSuffix: " Q",
   metricLabel: "single-emoji format",
-  metricContext: "the entire daily check-in: one emoji question, no forms, no surveys, no fatigue &mdash; embedded in the social feed",
-  quote: "We didn&apos;t need another survey. We needed a daily signal that didn&apos;t feel like a survey. The mood widget sits in the feed where employees already are &mdash; and the data flows in without us asking.",
+  metricContext: "the entire daily check-in: one emoji question, no forms, no surveys, no fatigue — embedded in the social feed",
+  quote: "We didn't need another survey. We needed a daily signal that didn't feel like a survey. The mood widget sits in the feed where employees already are — and the data flows in without us asking.",
   name: "Catherine Reed",
   title: "VP People Operations",
   photo: "https://randomuser.me/api/portraits/women/45.jpg",
@@ -23,8 +23,8 @@ const COMPACT = [
     metric: "8",
     metricSuffix: "×",
     metricLabel: "segmentation dimensions",
-    metricContext: "department · designation · location · business unit · grade · cost center · manager · tenure &mdash; one tab switch each",
-    quote: "When the heatmap flagged a Customer Support dip last quarter, we sliced by manager and saw it was scoped to one pod. Two weeks of focused intervention later, the score recovered. We&apos;d never have caught that org-wide.",
+    metricContext: "department · designation · location · business unit · grade · cost center · manager · tenure — one tab switch each",
+    quote: "When the heatmap flagged a Customer Support dip last quarter, we sliced by manager and saw it was scoped to one pod. Two weeks of focused intervention later, the score recovered. We'd never have caught that org-wide.",
     name: "Daniel Foster",
     title: "Head of Employee Experience",
     photo: "https://randomuser.me/api/portraits/men/41.jpg",
@@ -35,8 +35,8 @@ const COMPACT = [
     metric: "100",
     metricSuffix: "%",
     metricLabel: "anonymous",
-    metricContext: "individual responses are never visible to anyone &mdash; only aggregated % positive, gated by a configurable min-group threshold",
-    quote: "We tried a daily survey three years ago and it died in two months &mdash; nobody trusted the anonymity, nobody had time. The Mood-o-meter tap is a different category. People answer because it&apos;s genuinely one tap, and they trust the math.",
+    metricContext: "individual responses are never visible to anyone — only aggregated % positive, gated by a configurable min-group threshold",
+    quote: "We tried a daily survey three years ago and it died in two months — nobody trusted the anonymity, nobody had time. The Mood-o-meter tap is a different category. People answer because it's genuinely one tap, and they trust the math.",
     name: "Megan Hayes",
     title: "Director People Analytics",
     photo: "https://randomuser.me/api/portraits/women/52.jpg",
@@ -104,7 +104,7 @@ export default function Testimonials() {
         <div className="text-center max-w-xl mx-auto mb-14">
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-100 mb-3">Customer stories</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-white tracking-tight mb-4">People teams that catch sentiment dips before quarter-end</h2>
-          <p className="text-dark-000 text-base leading-relaxed">Companies that swapped quarterly batch surveys for a daily one-tap signal &mdash; and started catching morale problems early.</p>
+          <p className="text-dark-000 text-base leading-relaxed">Companies that swapped quarterly batch surveys for a daily one-tap signal — and started catching morale problems early.</p>
         </div>
 
         <motion.figure className="bg-white/8 border border-white/12 rounded-2xl p-7 lg:p-8 mb-4 grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-6 lg:gap-12 items-center"

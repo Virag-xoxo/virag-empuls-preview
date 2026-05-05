@@ -217,8 +217,8 @@ export default function FeatureBento() {
       <div className="max-w-[1280px] mx-auto px-6">
         <div className="text-center max-w-xl mx-auto mb-14">
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">Daily check-in. Org-wide insight.</p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">Anonymous, segmented, archived &mdash; by design</h2>
-          <p className="text-dark-100 text-base leading-relaxed">Live dashboard, 8-dimension segmentation, archive history with period deltas, and zero-friction in-feed entry &mdash; built around the principle that the only sustainable check-in is a frictionless one.</p>
+          <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">Anonymous, segmented, archived — by design</h2>
+          <p className="text-dark-100 text-base leading-relaxed">Live dashboard, 8-dimension segmentation, archive history with period deltas, and zero-friction in-feed entry — built around the principle that the only sustainable check-in is a frictionless one.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-auto">
@@ -226,7 +226,7 @@ export default function FeatureBento() {
             className="rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-100">Trust</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-white">Always anonymous</h3>
-            <p className="text-xs text-dark-000 leading-relaxed mb-4">Individual responses are never exposed &mdash; not to managers, not to HR. Only aggregated % positive scores, with a configurable min-group threshold.</p>
+            <p className="text-xs text-dark-000 leading-relaxed mb-4">Individual responses are never exposed — not to managers, not to HR. Only aggregated % positive scores, with a configurable min-group threshold.</p>
             <AnonymityList />
           </motion.div>
 
@@ -234,7 +234,7 @@ export default function FeatureBento() {
             className="rounded-2xl p-6 bg-light-100 border border-light-200 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-200">Slice</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-dark-300">8-dimension segmentation</h3>
-            <p className="text-xs text-dark-100 leading-relaxed mb-4">Slice the heatmap by Department, Designation, Location, Business Unit, Grade, Cost Center, Manager, or Tenure &mdash; with a single tab switch.</p>
+            <p className="text-xs text-dark-100 leading-relaxed mb-4">Slice the heatmap by Department, Designation, Location, Business Unit, Grade, Cost Center, Manager, or Tenure — with a single tab switch.</p>
             <SegmentationList />
           </motion.div>
 
@@ -242,7 +242,7 @@ export default function FeatureBento() {
             className="rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-100">Friction</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-white">Zero-friction check-in</h3>
-            <p className="text-xs text-dark-000 leading-relaxed mb-4">The widget lives directly in the Empuls feed &mdash; right alongside recognition, posts, and polls. No separate tool, no extra step.</p>
+            <p className="text-xs text-dark-000 leading-relaxed mb-4">The widget lives directly in the Empuls feed — right alongside recognition, posts, and polls. No separate tool, no extra step.</p>
             <FrictionList />
           </motion.div>
 
@@ -250,7 +250,7 @@ export default function FeatureBento() {
             className="lg:col-span-2 rounded-2xl p-6 bg-light-100 border border-light-200 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-200">Live dashboard</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-dark-300">Org sentiment score. Team heatmap. One view.</h3>
-            <p className="text-xs text-dark-100 leading-relaxed mb-4">Exactly what % of employees are feeling positive &mdash; broken down by department, location, tenure, and 5 more dimensions.</p>
+            <p className="text-xs text-dark-100 leading-relaxed mb-4">Exactly what % of employees are feeling positive — broken down by department, location, tenure, and 5 more dimensions.</p>
             <MoodDashboard />
           </motion.div>
 
@@ -258,7 +258,7 @@ export default function FeatureBento() {
             className="rounded-2xl p-6 bg-light-100 border border-light-200 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-200">Export</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-dark-300">Period-over-period delta</h3>
-            <p className="text-xs text-dark-100 leading-relaxed mb-4">Every archived run shows how the score changed from the previous cycle &mdash; green up, red down. Plus full CSV export from the three-dot menu.</p>
+            <p className="text-xs text-dark-100 leading-relaxed mb-4">Every archived run shows how the score changed from the previous cycle — green up, red down. Plus full CSV export from the three-dot menu.</p>
             <PeriodDelta />
           </motion.div>
 
@@ -266,7 +266,7 @@ export default function FeatureBento() {
             className="lg:col-span-2 rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-100">Archive &amp; history</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-white">Every run saved. Every shift visible.</h3>
-            <p className="text-xs text-dark-000 leading-relaxed mb-4">Mood-o-meter automatically archives each collection cycle &mdash; so HR can spot seasonal patterns and measure whether interventions actually moved the needle.</p>
+            <p className="text-xs text-dark-000 leading-relaxed mb-4">Mood-o-meter automatically archives each collection cycle — so HR can spot seasonal patterns and measure whether interventions actually moved the needle.</p>
             <ArchiveTable />
           </motion.div>
 
@@ -274,7 +274,7 @@ export default function FeatureBento() {
             className="rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-100">Configurable</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-white">Custom question. Custom cadence.</h3>
-            <p className="text-xs text-dark-000 leading-relaxed mb-4">Admins set the daily question, frequency, and anonymity threshold from the three-dot menu. Sensible defaults out of the box &mdash; every team can dial in their own.</p>
+            <p className="text-xs text-dark-000 leading-relaxed mb-4">Admins set the daily question, frequency, and anonymity threshold from the three-dot menu. Sensible defaults out of the box — every team can dial in their own.</p>
             <ConfigurableList />
           </motion.div>
         </div>

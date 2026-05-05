@@ -112,8 +112,8 @@ function DashboardModal() {
 }
 
 const STEPS = [
-  { num: "01", tag: "Tap a mood",      title: "One emoji. Under 5 seconds.",            body: "Every day the Mood-o-meter widget appears in the Empuls feed &mdash; right next to recognition and posts. Pick one of five emojis: Stressed, A bit low, Neutral, Happy, or Very happy.",          cta: "About the widget", Illustration: TapMoodModal },
-  { num: "02", tag: "Aggregated",      title: "Anonymously, with min-group floor",      body: "Individual selections are never stored against a name. Empuls computes the % positive score per team, per day &mdash; only when the minimum anonymity threshold of respondents is met.",                       cta: "About anonymity", Illustration: AnonymousModal },
+  { num: "01", tag: "Tap a mood",      title: "One emoji. Under 5 seconds.",            body: "Every day the Mood-o-meter widget appears in the Empuls feed — right next to recognition and posts. Pick one of five emojis: Stressed, A bit low, Neutral, Happy, or Very happy.",          cta: "About the widget", Illustration: TapMoodModal },
+  { num: "02", tag: "Aggregated",      title: "Anonymously, with min-group floor",      body: "Individual selections are never stored against a name. Empuls computes the % positive score per team, per day — only when the minimum anonymity threshold of respondents is met.",                       cta: "About anonymity", Illustration: AnonymousModal },
   { num: "03", tag: "HR reads",        title: "Org score, full distribution, heatmap",  body: "The dashboard shows the Org Sentiment Score, the full response distribution across all five moods, and a colour-coded team sentiment heatmap with 8 segmentation dimensions.",                                cta: "About the dashboard", Illustration: DashboardModal },
 ];
 
@@ -141,7 +141,7 @@ export default function HowItWorks() {
         <div className="text-center max-w-xl mx-auto mb-14">
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">How it works</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">One tap a day. Full picture by end of week.</h2>
-          <p className="text-dark-100 text-base leading-relaxed">A check-in employees actually finish &mdash; then the data tells HR exactly where sentiment needs attention.</p>
+          <p className="text-dark-100 text-base leading-relaxed">A check-in employees actually finish — then the data tells HR exactly where sentiment needs attention.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-[380px_minmax(0,520px)] gap-8 lg:gap-14 items-center lg:justify-center">

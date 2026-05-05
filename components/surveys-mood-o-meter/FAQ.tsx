@@ -7,12 +7,12 @@ const FAQS = [
   {
     id: "item-1",
     q: "How often does the Mood-o-meter check-in appear for employees?",
-    a: "The Mood-o-meter widget appears in the Empuls social feed for employees to respond to. Admins can configure settings &mdash; including the question and other parameters &mdash; from the three-dot menu on the dashboard. The check-in is non-intrusive: it sits in the feed alongside recognition and posts rather than interrupting the employee with a pop-up or notification.",
+    a: "The Mood-o-meter widget appears in the Empuls social feed for employees to respond to. Admins can configure settings — including the question and other parameters — from the three-dot menu on the dashboard. The check-in is non-intrusive: it sits in the feed alongside recognition and posts rather than interrupting the employee with a pop-up or notification.",
   },
   {
     id: "item-2",
     q: "Can a manager ever see how a specific employee voted?",
-    a: "No. Individual responses are never exposed &mdash; not to managers, not to HR admins. The system only displays aggregated % positive scores at the team level. Anonymity settings can be configured from the three-dot menu on the Mood-o-meter Dashboard to control how responses are handled.",
+    a: "No. Individual responses are never exposed — not to managers, not to HR admins. The system only displays aggregated % positive scores at the team level. Anonymity settings can be configured from the three-dot menu on the Mood-o-meter Dashboard to control how responses are handled.",
   },
   {
     id: "item-3",
@@ -22,7 +22,7 @@ const FAQS = [
   {
     id: "item-4",
     q: "How does the heatmap segmentation work?",
-    a: "The Team Sentiment Heatmap defaults to Department view, but you can switch to any of 8 dimensions &mdash; Designation, Location, Business Unit, Grade, Cost Center, Manager, or Tenure &mdash; by clicking the tabs above the table. Each cell shows % positive for that team on that day, colour-coded: teal for high, pink for low. The Filter panel lets you narrow the data further before reading the heatmap.",
+    a: "The Team Sentiment Heatmap defaults to Department view, but you can switch to any of 8 dimensions — Designation, Location, Business Unit, Grade, Cost Center, Manager, or Tenure — by clicking the tabs above the table. Each cell shows % positive for that team on that day, colour-coded: teal for high, pink for low. The Filter panel lets you narrow the data further before reading the heatmap.",
   },
 ];
 
