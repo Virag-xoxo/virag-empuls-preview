@@ -10,7 +10,7 @@ const FEATURED = {
   metricSuffix: "%",
   metricLabel: "fewer safety incidents",
   metricContext: "across plants in the first nine months of streak rewards",
-  quote: "Crews stopped seeing safety as a poster on the wall. They watch the streak. When the 30-day mark hits, the whole shift celebrates &mdash; and nobody wants to be the one to break it.",
+  quote: "Crews stopped seeing safety as a poster on the wall. They watch the streak. When the 30-day mark hits, the whole shift celebrates — and nobody wants to be the one to break it.",
   name: "Catherine Reed",
   title: "VP Workplace Operations",
   photo: "https://randomuser.me/api/portraits/women/45.jpg",
@@ -24,7 +24,7 @@ const COMPACT = [
     metricSuffix: "×",
     metricLabel: "attendance lift",
     metricContext: "perfect-month attendance grew across hybrid and on-site teams",
-    quote: "Tying perfect attendance to a real reward changed the conversation. Showing up consistently is now visible &mdash; and rewarded the same week, not at year-end review.",
+    quote: "Tying perfect attendance to a real reward changed the conversation. Showing up consistently is now visible — and rewarded the same week, not at year-end review.",
     name: "Daniel Foster",
     title: "Head of HR Operations",
     photo: "https://randomuser.me/api/portraits/men/41.jpg",
@@ -36,7 +36,7 @@ const COMPACT = [
     metricSuffix: "%",
     metricLabel: "goal attainment",
     metricContext: "of teams hit their quarterly target after we tied it to milestones",
-    quote: "We replaced quarterly bonuses with milestone rewards that fire the moment a team crosses 100%. People feel the win in real time &mdash; not three months later.",
+    quote: "We replaced quarterly bonuses with milestone rewards that fire the moment a team crosses 100%. People feel the win in real time — not three months later.",
     name: "Megan Hayes",
     title: "Director of Workforce Performance",
     photo: "https://randomuser.me/api/portraits/women/52.jpg",
@@ -105,7 +105,7 @@ export default function Testimonials() {
         <div className="text-center max-w-xl mx-auto mb-14">
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-100 mb-3">Customer stories</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-white tracking-tight mb-4">Workplace teams that turned metrics into milestones</h2>
-          <p className="text-dark-000 text-base leading-relaxed">Companies that swapped quarterly reviews for milestone-driven rewards &mdash; and watched safety, attendance, and performance lift together.</p>
+          <p className="text-dark-000 text-base leading-relaxed">Companies that swapped quarterly reviews for milestone-driven rewards — and watched safety, attendance, and performance lift together.</p>
         </div>
 
         <motion.figure className="bg-white/8 border border-white/12 rounded-2xl p-7 lg:p-8 mb-4 grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-6 lg:gap-12 items-center"

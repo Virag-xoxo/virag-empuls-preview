@@ -21,7 +21,7 @@ export default function FinalCTA() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">your workplace needs</span>
             </h2>
             <p className="text-dark-000 text-base leading-relaxed">
-              See how Empuls turns safety logs, attendance data, and performance targets into instant, automated rewards &mdash; in a 20-minute walkthrough.
+              See how Empuls turns safety logs, attendance data, and performance targets into instant, automated rewards — in a 20-minute walkthrough.
             </p>
           </motion.div>
 

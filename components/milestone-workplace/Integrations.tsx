@@ -63,7 +63,7 @@ export default function Integrations() {
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">Works where your workforce already lives</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">Pulls from the systems your teams already trust</h2>
           <p className="text-dark-100 text-base leading-relaxed">
-            Native connectors for the leading HRIS, attendance, and payroll platforms &mdash; plus the channels your teams already use. Safety logs and custom data flow in via open API.
+            Native connectors for the leading HRIS, attendance, and payroll platforms — plus the channels your teams already use. Safety logs and custom data flow in via open API.
           </p>
         </motion.div>
 

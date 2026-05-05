@@ -7,22 +7,22 @@ const FAQS = [
   {
     id: "item-1",
     q: "Can different departments have different milestone configurations?",
-    a: "Yes. Every department, plant, region, or team can run its own program with its own thresholds, point values, and reward types. Operations might track 30-day safety streaks, Sales tracks quota attainment, and Customer Support tracks perfect-attendance months &mdash; all on the same platform, with the same admin console. Configurations are reusable as templates, so a new region can launch in under an hour.",
+    a: "Yes. Every department, plant, region, or team can run its own program with its own thresholds, point values, and reward types. Operations might track 30-day safety streaks, Sales tracks quota attainment, and Customer Support tracks perfect-attendance months — all on the same platform, with the same admin console. Configurations are reusable as templates, so a new region can launch in under an hour.",
   },
   {
     id: "item-2",
     q: "How does Empuls sync with our HRMS for attendance?",
-    a: "Empuls connects natively to Workday, SAP SuccessFactors, BambooHR, Darwinbox, Keka, Rippling, ADP, UKG, and others &mdash; or via webhook/API for any system that exposes attendance events. Daily syncs pull verified time-and-attendance data, so milestone calculations always run on the same source of truth your payroll team trusts. Manual edits in the HRMS automatically reflect in Empuls without re-import.",
+    a: "Empuls connects natively to Workday, SAP SuccessFactors, BambooHR, Darwinbox, Keka, Rippling, ADP, UKG, and others — or via webhook/API for any system that exposes attendance events. Daily syncs pull verified time-and-attendance data, so milestone calculations always run on the same source of truth your payroll team trusts. Manual edits in the HRMS automatically reflect in Empuls without re-import.",
   },
   {
     id: "item-3",
-    q: "What happens if a streak gets broken &mdash; do we lose everything?",
+    q: "What happens if a streak gets broken — do we lose everything?",
     a: "Rewards already earned are never clawed back. When a streak breaks, you choose what happens next: a hard reset to zero, a configurable grace window (e.g. one missed day per 30-day streak is forgiven), or partial credit for the days already accumulated. Most teams use a 1-day grace policy, which keeps streaks meaningful without punishing single-incident outliers.",
   },
   {
     id: "item-4",
     q: "Can rewards be split across a whole team, or only individuals?",
-    a: "Both. Team milestones &mdash; like a zero-incident streak for an ops crew or a quota-hit for a sales pod &mdash; can split points equally across all members, distribute weighted by tenure or contribution, or fund a shared team experience (offsite, lunch, a charity donation). Individual milestones land directly in the recipient&apos;s wallet. Mixed models are common: a base reward to every team member, plus a bonus to the lead.",
+    a: "Both. Team milestones — like a zero-incident streak for an ops crew or a quota-hit for a sales pod — can split points equally across all members, distribute weighted by tenure or contribution, or fund a shared team experience (offsite, lunch, a charity donation). Individual milestones land directly in the recipient's wallet. Mixed models are common: a base reward to every team member, plus a bonus to the lead.",
   },
 ];
 
