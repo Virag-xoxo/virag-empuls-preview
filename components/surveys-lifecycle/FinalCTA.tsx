@@ -21,7 +21,7 @@ export default function FinalCTA() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">critical moments</span>
             </h2>
             <p className="text-dark-000 text-base leading-relaxed">
-              Set up your lifecycle survey triggers once. Every onboarding, review, and exit is covered automatically from that point on.
+              Set the lifecycle triggers once. Onboarding, reviews, and exits are covered automatically.
             </p>
           </motion.div>
 

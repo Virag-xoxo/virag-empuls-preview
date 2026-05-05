@@ -102,7 +102,7 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p {...fadeUp(0.2)} className="text-lg text-dark-000 max-w-md mb-10 leading-relaxed">
-            From first day to last — lifecycle surveys trigger automatically at each milestone so you never miss a critical employee touchpoint again.
+            From first day to last &mdash; lifecycle surveys trigger automatically at each milestone.
           </motion.p>
 
           <motion.div {...fadeUp(0.3)} className="flex flex-wrap items-center gap-4 mb-10">
