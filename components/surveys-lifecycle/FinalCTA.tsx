@@ -15,7 +15,7 @@ export default function FinalCTA() {
       <div className="relative z-10 max-w-[1280px] mx-auto px-6 py-16 lg:py-24">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-10 lg:gap-16">
           <motion.div className="max-w-xl"
-            initial={reduce ? false : { opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: reduce ? 0 : 0.55, ease: [0,0,0.2,1] as const }}>
+            initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: reduce ? 0 : 0.55, ease: [0,0,0.2,1] as const }}>
             <h2 className="text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-6">
               <span className="text-white">Stop missing<br/></span>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">critical moments.</span>
@@ -26,7 +26,7 @@ export default function FinalCTA() {
           </motion.div>
 
           <motion.div className="flex flex-col gap-4 lg:items-end lg:shrink-0"
-            initial={reduce ? false : { opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: reduce ? 0 : 0.55, ease: [0,0,0.2,1] as const, delay: 0.1 }}>
+            initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: reduce ? 0 : 0.55, ease: [0,0,0.2,1] as const, delay: 0.1 }}>
             <div className="flex items-center gap-5">
               <a href="#" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-dark-300 font-bold text-sm hover:bg-light-200 transition-colors shadow-lg">
                 Book a demo

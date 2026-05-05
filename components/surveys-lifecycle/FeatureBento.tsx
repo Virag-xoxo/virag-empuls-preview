@@ -87,37 +87,37 @@ export default function FeatureBento() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-auto">
-          <motion.div initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, ease }}
+          <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, ease }}
             className="rounded-2xl p-6 bg-light-100 border border-light-200 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <MomentCard emoji="🎉" pill="DAY 30"         pillColor="#1D61F6" title="Onboarding Feedback"     body="Understand if new hires have the clarity, tools, and team connection they need to succeed. Spot integration issues before they compound into early attrition." />
           </motion.div>
 
-          <motion.div initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.05, ease }}
+          <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.05, ease }}
             className="rounded-2xl p-6 bg-light-100 border border-light-200 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <MomentCard emoji="🎓" pill="AFTER TRAINING" pillColor="#3B82F6" title="L&D Feedback"             body="Gauge learning effectiveness and relevance immediately after every training session. Use responses to improve future programs and track skill application over time." />
           </motion.div>
 
-          <motion.div initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.1, ease }}
+          <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.1, ease }}
             className="rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <MomentCard emoji="👤" pill="EVERY QUARTER" pillColor="#6366F1" title="Manager Efficiency"       body="Give employees a regular, anonymous channel to assess their manager's effectiveness. Build a consistent feedback loop that develops leadership across the organisation." dark />
           </motion.div>
 
-          <motion.div initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.15, ease }}
+          <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.15, ease }}
             className="rounded-2xl p-6 bg-light-100 border border-light-200 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <MomentCard emoji="⭐" pill="EVERY 2 MONTHS" pillColor="#7C3AED" title="Performance Review"       body="Collect structured feedback around performance cycles. Multi-rater support enables peer and self-assessment alongside manager input in a single coordinated survey." />
           </motion.div>
 
-          <motion.div initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.2, ease }}
+          <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.2, ease }}
             className="rounded-2xl p-6 bg-light-100 border border-light-200 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <MomentCard emoji="🌍" pill="EVERY YEAR"     pillColor="#A855F7" title="Diversity & Inclusion"   body="Run an annual DEIB assessment to understand how included and valued employees feel across different demographics, locations, and levels. Benchmarked and fully anonymous." />
           </motion.div>
 
-          <motion.div initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.25, ease }}
+          <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.25, ease }}
             className="rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <MomentCard emoji="🚪" pill="AT EXIT"        pillColor="#F97316" title="Exit Interview"         body="Capture honest exit feedback before institutional knowledge walks out the door. Triggers automatically when an employee's departure date is logged in your HRIS." dark />
           </motion.div>
 
-          <motion.div initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.3, ease }}
+          <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.3, ease }}
             className="lg:col-span-2 rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-100">Journey overview</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-white">Six lifecycle moments. One automated track.</h3>
@@ -125,7 +125,7 @@ export default function FeatureBento() {
             <JourneyTimeline />
           </motion.div>
 
-          <motion.div initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.35, ease }}
+          <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.35, ease }}
             className="rounded-2xl p-6 bg-light-100 border border-light-200 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-200">Event triggers</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-dark-300">Every active trigger, one console</h3>
