@@ -109,8 +109,8 @@ function TrackedModal() {
 
 const STEPS = [
   { num: "01", tag: "Survey closes",     title: "Driver scores surface low areas",      body: "Empuls scores all nine engagement drivers and surfaces low-performing areas by department. Historical trends show whether this is a new issue or a worsening one.", cta: "About scoring",  Illustration: SurveyCloseModal },
-  { num: "02", tag: "Task created",      title: "Tag, assign, deadline &mdash; in seconds", body: "A manager creates an action plan task, tags it to the relevant engagement driver, assigns it to a responsible person, and sets a deadline. All inside Empuls.",     cta: "About creation", Illustration: CreateTaskModal },
-  { num: "03", tag: "Tracked & resolved",title: "Status, assignee, ETA &mdash; visible",   body: "Tasks are tracked by status, assignee, and ETA. Completed actions are visible to employees &mdash; closing the feedback loop and building trust that responses lead to change.", cta: "About visibility", Illustration: TrackedModal },
+  { num: "02", tag: "Task created",      title: "Tag, assign, deadline — in seconds", body: "A manager creates an action plan task, tags it to the relevant engagement driver, assigns it to a responsible person, and sets a deadline. All inside Empuls.",     cta: "About creation", Illustration: CreateTaskModal },
+  { num: "03", tag: "Tracked & resolved",title: "Status, assignee, ETA — visible",   body: "Tasks are tracked by status, assignee, and ETA. Completed actions are visible to employees — closing the feedback loop and building trust that responses lead to change.", cta: "About visibility", Illustration: TrackedModal },
 ];
 
 const slideIn: Variants = {

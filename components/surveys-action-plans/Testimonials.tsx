@@ -10,7 +10,7 @@ const FEATURED = {
   metricSuffix: "×",
   metricLabel: "engagement lift",
   metricContext: "improvement in engagement scores when employees see action plans created and completed after their survey responses",
-  quote: "We always ran the survey. We never closed the loop. Now every flagged driver has an owner and a deadline visible to the team that raised it &mdash; and engagement scores moved within two cycles.",
+  quote: "We always ran the survey. We never closed the loop. Now every flagged driver has an owner and a deadline visible to the team that raised it — and engagement scores moved within two cycles.",
   name: "Catherine Reed",
   title: "VP People Operations",
   photo: "https://randomuser.me/api/portraits/women/45.jpg",
@@ -23,7 +23,7 @@ const COMPACT = [
     metric: "72",
     metricSuffix: "%",
     metricLabel: "the gap we closed",
-    metricContext: "of employees say their feedback has no visible impact &mdash; because survey insights never become assigned, tracked actions",
+    metricContext: "of employees say their feedback has no visible impact — because survey insights never become assigned, tracked actions",
     quote: "The action plan feature is the difference between a survey program that drives change and one that decorates a slide deck. Our managers actually look at the post-survey board now.",
     name: "Daniel Foster",
     title: "Head of Employee Experience",
@@ -35,8 +35,8 @@ const COMPACT = [
     metric: "18",
     metricSuffix: "d",
     metricLabel: "average resolution time",
-    metricContext: "average time to close an action plan task when deadline and owner are set at creation &mdash; vs open-ended action items that stall indefinitely",
-    quote: "The deadline + owner pattern is what changed things. Tasks without those two fields used to drift for months. Now everything has a date and a name on it &mdash; and they actually close.",
+    metricContext: "average time to close an action plan task when deadline and owner are set at creation — vs open-ended action items that stall indefinitely",
+    quote: "The deadline + owner pattern is what changed things. Tasks without those two fields used to drift for months. Now everything has a date and a name on it — and they actually close.",
     name: "Megan Hayes",
     title: "Director People Analytics",
     photo: "https://randomuser.me/api/portraits/women/52.jpg",
@@ -104,8 +104,8 @@ export default function Testimonials() {
       <div className="max-w-[1280px] mx-auto px-6">
         <div className="text-center max-w-xl mx-auto mb-14">
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-100 mb-3">Customer stories</p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-white tracking-tight mb-4">People teams that closed the feedback loop &mdash; for real</h2>
-          <p className="text-dark-000 text-base leading-relaxed">Companies that gave every survey insight an owner and a deadline &mdash; and watched engagement scores follow.</p>
+          <h2 className="text-3xl lg:text-4xl font-bold text-white tracking-tight mb-4">People teams that closed the feedback loop — for real</h2>
+          <p className="text-dark-000 text-base leading-relaxed">Companies that gave every survey insight an owner and a deadline — and watched engagement scores follow.</p>
         </div>
 
         <motion.figure className="bg-white/8 border border-white/12 rounded-2xl p-7 lg:p-8 mb-4 grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-6 lg:gap-12 items-center"

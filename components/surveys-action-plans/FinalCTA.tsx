@@ -21,7 +21,7 @@ export default function FinalCTA() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">Every single time.</span>
             </h2>
             <p className="text-dark-000 text-base leading-relaxed">
-              Give every piece of employee feedback a deadline, an owner, and a resolution. See how it transforms survey participation &mdash; and engagement scores.
+              Give every piece of employee feedback a deadline, an owner, and a resolution. See how it transforms survey participation — and engagement scores.
             </p>
           </motion.div>
 

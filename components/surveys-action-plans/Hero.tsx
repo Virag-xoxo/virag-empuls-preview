@@ -92,7 +92,7 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p {...fadeUp(0.2)} className="text-lg text-dark-000 max-w-md mb-10 leading-relaxed">
-            Create structured tasks directly from survey findings. Tag each one to an engagement driver, assign it to the right person, set a deadline, and track resolution &mdash; inside Empuls.
+            Create structured tasks directly from survey findings. Tag each one to an engagement driver, assign it to the right person, set a deadline, and track resolution — inside Empuls.
           </motion.p>
 
           <motion.div {...fadeUp(0.3)} className="flex flex-wrap items-center gap-4 mb-10">

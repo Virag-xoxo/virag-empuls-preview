@@ -107,7 +107,7 @@ function HistoricalTrend() {
           <circle key={i} cx={x} cy={[20,18,22,28,32,38,40][i]} r="2.5" fill="#F97316" />
         ))}
       </svg>
-      <p className="text-[10px] text-dark-100 mt-1">Worsening over 6 cycles &mdash; new action plan recommended.</p>
+      <p className="text-[10px] text-dark-100 mt-1">Worsening over 6 cycles — new action plan recommended.</p>
     </div>
   );
 }
@@ -138,7 +138,7 @@ export default function FeatureBento() {
         <div className="text-center max-w-xl mx-auto mb-14">
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">Closed-loop workflow</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">Tag, assign, deadline, resolve</h2>
-          <p className="text-dark-100 text-base leading-relaxed">Every survey insight gets an owner, a deadline, and a visible resolution &mdash; so feedback loops actually close.</p>
+          <p className="text-dark-100 text-base leading-relaxed">Every survey insight gets an owner, a deadline, and a visible resolution — so feedback loops actually close.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-auto">
@@ -146,7 +146,7 @@ export default function FeatureBento() {
             className="rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-100">Tagging</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-white">Engagement driver tagging</h3>
-            <p className="text-xs text-dark-000 leading-relaxed mb-4">Every task is tagged to the engagement driver it addresses &mdash; so anyone reviewing action plans understands the context and priority.</p>
+            <p className="text-xs text-dark-000 leading-relaxed mb-4">Every task is tagged to the engagement driver it addresses — so anyone reviewing action plans understands the context and priority.</p>
             <DriverTags />
           </motion.div>
 
@@ -154,7 +154,7 @@ export default function FeatureBento() {
             className="rounded-2xl p-6 bg-light-100 border border-light-200 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-200">Ownership</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-dark-300">Owner assignment</h3>
-            <p className="text-xs text-dark-100 leading-relaxed mb-4">Search the directory, select multiple owners if needed, set a hard deadline. No ambiguity about who&apos;s responsible.</p>
+            <p className="text-xs text-dark-100 leading-relaxed mb-4">Search the directory, select multiple owners if needed, set a hard deadline. No ambiguity about who's responsible.</p>
             <OwnerCapabilities />
           </motion.div>
 
@@ -170,7 +170,7 @@ export default function FeatureBento() {
             className="lg:col-span-2 rounded-2xl p-6 bg-light-100 border border-light-200 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-200">Workflow</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-dark-300">Create task</h3>
-            <p className="text-xs text-dark-100 leading-relaxed mb-4">A short, structured form. Driver, owner, deadline. Created in seconds during the manager&apos;s post-survey review.</p>
+            <p className="text-xs text-dark-100 leading-relaxed mb-4">A short, structured form. Driver, owner, deadline. Created in seconds during the manager's post-survey review.</p>
             <CreateTaskForm />
           </motion.div>
 
@@ -178,7 +178,7 @@ export default function FeatureBento() {
             className="rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-100">RBAC</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-white">Role-based access</h3>
-            <p className="text-xs text-dark-000 leading-relaxed mb-4">Managers see plans for their teams. HR admins see everything. ICs see what&apos;s assigned to them. No data leakage, no overload.</p>
+            <p className="text-xs text-dark-000 leading-relaxed mb-4">Managers see plans for their teams. HR admins see everything. ICs see what's assigned to them. No data leakage, no overload.</p>
             <RbacCapabilities />
           </motion.div>
 
@@ -194,7 +194,7 @@ export default function FeatureBento() {
             className="rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-100">Intelligence</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-white">Research-backed recommendations</h3>
-            <p className="text-xs text-dark-000 leading-relaxed mb-4">Empuls suggests action types based on the engagement driver and historical data &mdash; so managers don&apos;t start from scratch every cycle.</p>
+            <p className="text-xs text-dark-000 leading-relaxed mb-4">Empuls suggests action types based on the engagement driver and historical data — so managers don't start from scratch every cycle.</p>
             <ResearchRecommendations />
           </motion.div>
         </div>

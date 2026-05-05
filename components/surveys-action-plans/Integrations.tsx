@@ -60,7 +60,7 @@ export default function Integrations() {
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">Notifications where work happens</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">Tasks notify in Slack and Teams. People data syncs from your HRIS.</h2>
           <p className="text-dark-100 text-base leading-relaxed">
-            Action plan owners get notified in the channel they actually use. Recipient and reporting hierarchy auto-syncs from Workday, BambooHR, SAP, Oracle, and Rippling &mdash; so RBAC views always reflect the current org chart.
+            Action plan owners get notified in the channel they actually use. Recipient and reporting hierarchy auto-syncs from Workday, BambooHR, SAP, Oracle, and Rippling — so RBAC views always reflect the current org chart.
           </p>
         </motion.div>
 
