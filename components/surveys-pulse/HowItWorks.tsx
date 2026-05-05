@@ -105,8 +105,8 @@ function HrisSyncModal() {
 }
 
 const STEPS = [
-  { num: "01", tag: "Smart scheduling",   title: "Weekly, monthly, or quarterly cadence",     body: "Empuls sends surveys at the right time in each employee&apos;s local timezone &mdash; without anyone clicking send.", cta: "About cadence",     Illustration: ScheduleModal },
-  { num: "02", tag: "Auto reminders",     title: "Nudge non-responders. Stop on response.",   body: "Non-responders get a nudge after 48 hours &mdash; then the reminder stops once they&apos;ve completed the survey. No spam, no guilt.", cta: "About reminders",  Illustration: ReminderModal },
+  { num: "01", tag: "Smart scheduling",   title: "Weekly, monthly, or quarterly cadence",     body: "Empuls sends surveys at the right time in each employee's local timezone — without anyone clicking send.", cta: "About cadence",     Illustration: ScheduleModal },
+  { num: "02", tag: "Auto reminders",     title: "Nudge non-responders. Stop on response.",   body: "Non-responders get a nudge after 48 hours — then the reminder stops once they've completed the survey. No spam, no guilt.", cta: "About reminders",  Illustration: ReminderModal },
   { num: "03", tag: "Dynamic recipients", title: "HRIS-synced recipient list",                body: "As people join or leave, the recipient list updates automatically from your HRIS. New hires are included from day one.", cta: "About sync", Illustration: HrisSyncModal },
 ];
 
@@ -134,7 +134,7 @@ export default function HowItWorks() {
         <div className="text-center max-w-xl mx-auto mb-14">
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">Zero-touch distribution</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">Set it once. It runs itself.</h2>
-          <p className="text-dark-100 text-base leading-relaxed">Empuls handles everything &mdash; sending, nudging, closing, and analysing &mdash; without anyone on your team needing to press a button.</p>
+          <p className="text-dark-100 text-base leading-relaxed">Empuls handles everything — sending, nudging, closing, and analysing — without anyone on your team needing to press a button.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-[380px_minmax(0,520px)] gap-8 lg:gap-14 items-center lg:justify-center">

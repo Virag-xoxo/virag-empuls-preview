@@ -7,17 +7,17 @@ const FAQS = [
   {
     id: "item-1",
     q: "How short should a pulse survey be to maintain high response rates?",
-    a: "Empuls recommends 3&ndash;5 questions for weekly pulses and no more than 10 for monthly ones. Our data shows response rates drop sharply past 8 minutes of completion time. The weekly pulse format completes in under 2 minutes &mdash; which is why Empuls customers consistently achieve 90%+ response rates compared to the 30&ndash;40% industry average for longer email surveys.",
+    a: "Empuls recommends 3–5 questions for weekly pulses and no more than 10 for monthly ones. Our data shows response rates drop sharply past 8 minutes of completion time. The weekly pulse format completes in under 2 minutes — which is why Empuls customers consistently achieve 90%+ response rates compared to the 30–40% industry average for longer email surveys.",
   },
   {
     id: "item-2",
     q: "What are the nine engagement drivers Empuls tracks?",
-    a: "Empuls tracks: Strategic connect, Hygiene factors, Recognition &amp; Career Growth, Relationship &amp; Culture, Relationship with peers, Relationship with manager, Satisfaction, Alignment, and Happiness. These nine drivers are based on validated engagement research and give a comprehensive picture of what&apos;s driving or dampening employee engagement across teams.",
+    a: "Empuls tracks: Strategic connect, Hygiene factors, Recognition &amp; Career Growth, Relationship &amp; Culture, Relationship with peers, Relationship with manager, Satisfaction, Alignment, and Happiness. These nine drivers are based on validated engagement research and give a comprehensive picture of what's driving or dampening employee engagement across teams.",
   },
   {
     id: "item-3",
     q: "Can managers see which individual employees responded negatively?",
-    a: "No. All responses are fully anonymised. Managers see aggregated scores, department-level breakdowns, and AI-generated themes &mdash; but cannot identify individuals. Empuls also enforces a minimum group size threshold before any department-level breakdown is shown, so employees in small teams remain protected. This is critical for building the trust that leads to honest responses.",
+    a: "No. All responses are fully anonymised. Managers see aggregated scores, department-level breakdowns, and AI-generated themes — but cannot identify individuals. Empuls also enforces a minimum group size threshold before any department-level breakdown is shown, so employees in small teams remain protected. This is critical for building the trust that leads to honest responses.",
   },
   {
     id: "item-4",

@@ -9,8 +9,8 @@ const FEATURED = {
   metric: "94",
   metricSuffix: "%",
   metricLabel: "completion rate",
-  metricContext: "for pulse surveys &mdash; driven by 2-minute format, native Slack/Teams delivery, and auto-nudge reminders",
-  quote: "We used to push a 30-minute annual survey and pray. Now it&apos;s a 2-minute weekly check that sits next to recognition in Slack &mdash; and we get more honest signal in a month than we used to in a year.",
+  metricContext: "for pulse surveys — driven by 2-minute format, native Slack/Teams delivery, and auto-nudge reminders",
+  quote: "We used to push a 30-minute annual survey and pray. Now it's a 2-minute weekly check that sits next to recognition in Slack — and we get more honest signal in a month than we used to in a year.",
   name: "Catherine Reed",
   title: "VP People Operations",
   photo: "https://randomuser.me/api/portraits/women/45.jpg",
@@ -35,8 +35,8 @@ const COMPACT = [
     metric: "9",
     metricSuffix: "",
     metricLabel: "drivers tracked",
-    metricContext: "engagement drivers scored per cycle &mdash; from strategic alignment and hygiene to manager relationships and happiness",
-    quote: "An overall engagement score doesn&apos;t tell you what to fix. The 9-driver view does &mdash; we know exactly which lever moved when scores changed, and our action plans land much more accurately.",
+    metricContext: "engagement drivers scored per cycle — from strategic alignment and hygiene to manager relationships and happiness",
+    quote: "An overall engagement score doesn't tell you what to fix. The 9-driver view does — we know exactly which lever moved when scores changed, and our action plans land much more accurately.",
     name: "Megan Hayes",
     title: "Director People Analytics",
     photo: "https://randomuser.me/api/portraits/women/52.jpg",
@@ -104,7 +104,7 @@ export default function Testimonials() {
         <div className="text-center max-w-xl mx-auto mb-14">
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-100 mb-3">Customer stories</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-white tracking-tight mb-4">People teams that traded annual surveys for always-on pulse</h2>
-          <p className="text-dark-000 text-base leading-relaxed">Companies that swapped 30-minute yearly questionnaires for 2-minute weekly check-ins &mdash; and got more honest signal, faster.</p>
+          <p className="text-dark-000 text-base leading-relaxed">Companies that swapped 30-minute yearly questionnaires for 2-minute weekly check-ins — and got more honest signal, faster.</p>
         </div>
 
         <motion.figure className="bg-white/8 border border-white/12 rounded-2xl p-7 lg:p-8 mb-4 grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-6 lg:gap-12 items-center"

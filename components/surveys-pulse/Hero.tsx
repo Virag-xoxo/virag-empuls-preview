@@ -94,7 +94,7 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p {...fadeUp(0.2)} className="text-lg text-dark-000 max-w-md mb-10 leading-relaxed">
-            Short, recurring check-ins delivered automatically &mdash; so you catch morale dips, burnout signals, and culture gaps while there&apos;s still time to act on them.
+            Short, recurring check-ins delivered automatically — so you catch morale dips, burnout signals, and culture gaps while there's still time to act on them.
           </motion.p>
 
           <motion.div {...fadeUp(0.3)} className="flex flex-wrap items-center gap-4 mb-10">
@@ -118,7 +118,7 @@ export default function Hero() {
                 <div className="w-8 h-8 rounded-lg bg-blue-200/30 border border-blue-100/30 flex items-center justify-center text-base">⚡</div>
                 <div>
                   <p className="text-white text-[12px] font-bold leading-tight">Weekly Pulse Check</p>
-                  <p className="text-dark-000 text-[10px] mt-0.5">Week 24 · Jun 10 &mdash; Jun 14 · 263 recipients</p>
+                  <p className="text-dark-000 text-[10px] mt-0.5">Week 24 · Jun 10 — Jun 14 · 263 recipients</p>
                 </div>
               </div>
               <span className="inline-flex items-center gap-1 bg-green-200/15 border border-green-200/20 rounded-full px-2 py-0.5 text-green-300 text-[9px] font-bold whitespace-nowrap">

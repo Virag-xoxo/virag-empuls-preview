@@ -194,7 +194,7 @@ export default function FeatureBento() {
         <div className="text-center max-w-xl mx-auto mb-14">
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">Engagement driver analysis</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">Not just a score. A complete picture.</h2>
-          <p className="text-dark-100 text-base leading-relaxed">Empuls tracks nine engagement drivers &mdash; not just overall sentiment. See which areas are healthy, which need attention, and where each department diverges.</p>
+          <p className="text-dark-100 text-base leading-relaxed">Empuls tracks nine engagement drivers — not just overall sentiment. See which areas are healthy, which need attention, and where each department diverges.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-auto">
@@ -203,7 +203,7 @@ export default function FeatureBento() {
             className="lg:col-span-2 rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-100">9-driver heatmap</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-white">9 drivers × every department</h3>
-            <p className="text-xs leading-relaxed mb-4 text-dark-000">A single colour-coded view shows exactly where engagement is healthy and where it&apos;s falling apart &mdash; without scrolling through 50 charts.</p>
+            <p className="text-xs leading-relaxed mb-4 text-dark-000">A single colour-coded view shows exactly where engagement is healthy and where it's falling apart — without scrolling through 50 charts.</p>
             <Heatmap />
           </motion.div>
 
@@ -239,7 +239,7 @@ export default function FeatureBento() {
             className="rounded-2xl p-6 bg-light-100 border border-light-200 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-200">Insights</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-dark-300">Understand satisfaction levels</h3>
-            <p className="text-xs text-dark-100 leading-relaxed mb-4">Uncover the reasons behind the scores &mdash; not just the number.</p>
+            <p className="text-xs text-dark-100 leading-relaxed mb-4">Uncover the reasons behind the scores — not just the number.</p>
             <SatisfactionViz />
           </motion.div>
 
@@ -248,7 +248,7 @@ export default function FeatureBento() {
             className="rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-100">Benchmarking</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-white">Severity-coded heatmaps</h3>
-            <p className="text-xs text-dark-000 leading-relaxed mb-4">Highlight the specific areas that need a plan of action &mdash; coloured by severity.</p>
+            <p className="text-xs text-dark-000 leading-relaxed mb-4">Highlight the specific areas that need a plan of action — coloured by severity.</p>
             <SeverityLegend />
           </motion.div>
         </div>
