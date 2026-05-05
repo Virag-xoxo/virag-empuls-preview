@@ -21,7 +21,7 @@ export default function FinalCTA() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">launch the portal</span>
             </h2>
             <p className="text-dark-000 text-base leading-relaxed">
-              See how Empuls turns benefits enrollment from a once-a-year scramble into a portal employees actually open every month.
+              See how Empuls turns enrollment into a portal employees actually open every month.
             </p>
           </motion.div>
 
