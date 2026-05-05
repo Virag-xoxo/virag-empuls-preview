@@ -236,7 +236,7 @@ export default function FeatureBento() {
             const Viz = t.Viz;
             return (
               <motion.div key={t.title}
-                initial={reduce ? false : { opacity: 0, y: 18 }}
+                initial={{ opacity: 0, y: 18 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.5, delay: i * 0.05, ease }}

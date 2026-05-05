@@ -58,7 +58,7 @@ export default function Integrations() {
     <section className="py-20 lg:py-28 bg-white overflow-hidden">
       <div className="max-w-[1280px] mx-auto px-6">
         <motion.div className="text-center max-w-xl mx-auto mb-14"
-          initial={reduce ? false : { opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: reduce ? 0 : 0.55, ease }}>
+          initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: reduce ? 0 : 0.55, ease }}>
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">Works where your workforce already lives</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">Connects to the channels and HRIS your team already uses</h2>
           <p className="text-dark-100 text-base leading-relaxed">
@@ -67,7 +67,7 @@ export default function Integrations() {
         </motion.div>
 
         <motion.div
-          initial={reduce ? false : { opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: reduce ? 0 : 0.6, ease, delay: 0.1 }}
+          initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: reduce ? 0 : 0.6, ease, delay: 0.1 }}
           className="relative mx-auto max-w-[860px]"
           style={{ maskImage: "radial-gradient(ellipse 80% 80% at 50% 50%, #000 55%, transparent 100%)", WebkitMaskImage: "radial-gradient(ellipse 80% 80% at 50% 50%, #000 55%, transparent 100%)" }}>
           <div aria-hidden className="absolute inset-0 -z-10 opacity-40 rounded-3xl"
@@ -80,7 +80,7 @@ export default function Integrations() {
         </motion.div>
 
         <motion.div className="flex flex-wrap items-center justify-center gap-6 mt-10"
-          initial={reduce ? false : { opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: reduce ? 0 : 0.5, delay: 0.25 }}>
+          initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: reduce ? 0 : 0.5, delay: 0.25 }}>
           <div className="flex flex-col items-center gap-2">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-dark-100">Channels</p>
             <div className="flex items-center gap-2">
@@ -109,7 +109,7 @@ export default function Integrations() {
         </motion.div>
 
         <motion.div className="text-center mt-8"
-          initial={reduce ? false : { opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: reduce ? 0 : 0.4, delay: 0.3 }}>
+          initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: reduce ? 0 : 0.4, delay: 0.3 }}>
           <a href="#" className="inline-flex items-center gap-2 text-blue-200 text-sm font-semibold hover:underline">
             Explore all 50+ integrations
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
