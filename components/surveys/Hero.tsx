@@ -88,12 +88,12 @@ export default function Hero() {
           </motion.div>
 
           <motion.h1 {...fadeUp(0.1)} className="text-[46px] lg:text-[60px] font-bold text-white leading-[1.06] tracking-tight mb-6">
-            <span className="block">Listen to your workforce</span>
+            <span className="block">Listen to your team</span>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">Act on what matters</span>
           </motion.h1>
 
           <motion.p {...fadeUp(0.2)} className="text-lg text-dark-000 max-w-md mb-10 leading-relaxed">
-            Pulse checks, lifecycle feedback, AI-powered sentiment, and built-in action plans — every voice heard, every insight acted on, all in one place.
+            Pulse, lifecycle, AI sentiment, and built-in action plans &mdash; one listening platform.
           </motion.p>
 
           <motion.div {...fadeUp(0.3)} className="flex flex-wrap items-center gap-4 mb-10">

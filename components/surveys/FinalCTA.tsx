@@ -21,7 +21,7 @@ export default function FinalCTA() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">Start improving</span>
             </h2>
             <p className="text-dark-000 text-base leading-relaxed">
-              Join thousands of HR teams using Empuls to understand their workforce and build workplaces people actually want to stay in.
+              Join thousands of HR teams using Empuls to understand their workforce and act on it.
             </p>
           </motion.div>
 
