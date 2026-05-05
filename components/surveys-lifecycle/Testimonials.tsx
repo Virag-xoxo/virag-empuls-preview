@@ -10,7 +10,7 @@ const FEATURED = {
   metricSuffix: "×",
   metricLabel: "onboarding retention impact",
   metricContext: "higher retention at 12 months for employees who receive structured onboarding feedback versus ad hoc or no check-in surveys",
-  quote: "We connected our day-30 trigger to Workday. Every new hire&apos;s feedback now lands in their manager&apos;s inbox without ops touching it. Twelve-month retention on roles that complete the survey is dramatically higher.",
+  quote: "We connected our day-30 trigger to Workday. Every new hire's feedback now lands in their manager's inbox without ops touching it. Twelve-month retention on roles that complete the survey is dramatically higher.",
   name: "Catherine Reed",
   title: "VP People Operations",
   photo: "https://randomuser.me/api/portraits/women/45.jpg",
@@ -23,7 +23,7 @@ const COMPACT = [
     metric: "6",
     metricSuffix: "",
     metricLabel: "touchpoints covered",
-    metricContext: "critical lifecycle moments &mdash; from day-30 onboarding through training, reviews, manager check-ins, and exit interviews",
+    metricContext: "critical lifecycle moments — from day-30 onboarding through training, reviews, manager check-ins, and exit interviews",
     quote: "Six surveys, six triggers, zero calendar reminders. Our People team set up the rules once and now feedback flows in automatically at every meaningful moment in the journey.",
     name: "Daniel Foster",
     title: "Head of Employee Experience",
@@ -35,8 +35,8 @@ const COMPACT = [
     metric: "68",
     metricSuffix: "%",
     metricLabel: "exit intelligence captured",
-    metricContext: "of exit insights that go uncollected without automated exit surveys &mdash; Empuls fires the interview at the point of departure",
-    quote: "Pre-Empuls, our exit interviews happened maybe a third of the time. Now they happen automatically. We&apos;ve actually identified a manager pattern in attrition that we&apos;d been missing for two years.",
+    metricContext: "of exit insights that go uncollected without automated exit surveys — Empuls fires the interview at the point of departure",
+    quote: "Pre-Empuls, our exit interviews happened maybe a third of the time. Now they happen automatically. We've actually identified a manager pattern in attrition that we'd been missing for two years.",
     name: "Megan Hayes",
     title: "Director People Analytics",
     photo: "https://randomuser.me/api/portraits/women/52.jpg",
@@ -105,7 +105,7 @@ export default function Testimonials() {
         <div className="text-center max-w-xl mx-auto mb-14">
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-100 mb-3">Customer stories</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-white tracking-tight mb-4">People teams that automated every lifecycle moment</h2>
-          <p className="text-dark-000 text-base leading-relaxed">Companies that swapped calendar reminders for HRIS event triggers &mdash; and stopped missing critical employee touchpoints.</p>
+          <p className="text-dark-000 text-base leading-relaxed">Companies that swapped calendar reminders for HRIS event triggers — and stopped missing critical employee touchpoints.</p>
         </div>
 
         <motion.figure className="bg-white/8 border border-white/12 rounded-2xl p-7 lg:p-8 mb-4 grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-6 lg:gap-12 items-center"

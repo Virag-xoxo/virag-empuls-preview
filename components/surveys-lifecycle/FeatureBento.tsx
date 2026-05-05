@@ -83,7 +83,7 @@ export default function FeatureBento() {
         <div className="text-center max-w-xl mx-auto mb-14">
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">Employee journey</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">Every touchpoint. Automatically covered.</h2>
-          <p className="text-dark-100 text-base leading-relaxed">Empuls listens at each critical moment in the employee lifecycle &mdash; triggered by events in your HRIS, not by reminders on someone&apos;s calendar.</p>
+          <p className="text-dark-100 text-base leading-relaxed">Empuls listens at each critical moment in the employee lifecycle — triggered by events in your HRIS, not by reminders on someone's calendar.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-auto">
@@ -99,7 +99,7 @@ export default function FeatureBento() {
 
           <motion.div initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.1, ease }}
             className="rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
-            <MomentCard emoji="👤" pill="EVERY QUARTER" pillColor="#6366F1" title="Manager Efficiency"       body="Give employees a regular, anonymous channel to assess their manager&apos;s effectiveness. Build a consistent feedback loop that develops leadership across the organisation." dark />
+            <MomentCard emoji="👤" pill="EVERY QUARTER" pillColor="#6366F1" title="Manager Efficiency"       body="Give employees a regular, anonymous channel to assess their manager's effectiveness. Build a consistent feedback loop that develops leadership across the organisation." dark />
           </motion.div>
 
           <motion.div initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.15, ease }}
@@ -114,14 +114,14 @@ export default function FeatureBento() {
 
           <motion.div initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.25, ease }}
             className="rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
-            <MomentCard emoji="🚪" pill="AT EXIT"        pillColor="#F97316" title="Exit Interview"         body="Capture honest exit feedback before institutional knowledge walks out the door. Triggers automatically when an employee&apos;s departure date is logged in your HRIS." dark />
+            <MomentCard emoji="🚪" pill="AT EXIT"        pillColor="#F97316" title="Exit Interview"         body="Capture honest exit feedback before institutional knowledge walks out the door. Triggers automatically when an employee's departure date is logged in your HRIS." dark />
           </motion.div>
 
           <motion.div initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.3, ease }}
             className="lg:col-span-2 rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-100">Journey overview</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-white">Six lifecycle moments. One automated track.</h3>
-            <p className="text-xs leading-relaxed mb-5 text-dark-000">From day-30 onboarding to the exit interview &mdash; Empuls covers every critical employee touchpoint without manual scheduling.</p>
+            <p className="text-xs leading-relaxed mb-5 text-dark-000">From day-30 onboarding to the exit interview — Empuls covers every critical employee touchpoint without manual scheduling.</p>
             <JourneyTimeline />
           </motion.div>
 

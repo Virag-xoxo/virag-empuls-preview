@@ -7,22 +7,22 @@ const FAQS = [
   {
     id: "item-1",
     q: "What is the difference between lifecycle surveys and pulse surveys?",
-    a: "Pulse surveys run on a recurring schedule &mdash; weekly, monthly, or quarterly &mdash; to track engagement trends over time. Lifecycle surveys are event-triggered: they fire when something specific happens in an employee&apos;s journey (joining, completing a training, having an appraisal, or leaving). Together they provide two complementary listening layers &mdash; one continuous, one contextual.",
+    a: "Pulse surveys run on a recurring schedule — weekly, monthly, or quarterly — to track engagement trends over time. Lifecycle surveys are event-triggered: they fire when something specific happens in an employee's journey (joining, completing a training, having an appraisal, or leaving). Together they provide two complementary listening layers — one continuous, one contextual.",
   },
   {
     id: "item-2",
     q: "How does Empuls know when to trigger a lifecycle survey?",
-    a: "Empuls syncs with your HRIS (Workday, BambooHR, SAP, Oracle, or via API) and reads events as they happen &mdash; a new hire reaching 30 days, a training status change in your LMS, or a resignation date being logged. Each trigger rule is configured once in Empuls and fires automatically whenever the qualifying condition is met for any employee.",
+    a: "Empuls syncs with your HRIS (Workday, BambooHR, SAP, Oracle, or via API) and reads events as they happen — a new hire reaching 30 days, a training status change in your LMS, or a resignation date being logged. Each trigger rule is configured once in Empuls and fires automatically whenever the qualifying condition is met for any employee.",
   },
   {
     id: "item-3",
     q: "Can we customise which employees receive which lifecycle surveys?",
-    a: "Yes. Trigger rules can be scoped by department, location, role, employment type, or tenure. You might want a 30-day onboarding survey for all new hires but a different version for senior leaders &mdash; that&apos;s fully configurable. Different teams can also have entirely separate lifecycle survey tracks with different templates and question sets.",
+    a: "Yes. Trigger rules can be scoped by department, location, role, employment type, or tenure. You might want a 30-day onboarding survey for all new hires but a different version for senior leaders — that's fully configurable. Different teams can also have entirely separate lifecycle survey tracks with different templates and question sets.",
   },
   {
     id: "item-4",
     q: "What happens if an employee doesn't complete a lifecycle survey?",
-    a: "Empuls sends an automatic reminder after 48 hours if the survey hasn&apos;t been completed. A second reminder can be configured at 5 days. After the survey window closes (which you set), responses are no longer accepted and the result is marked as incomplete in your reporting. HR admins can see non-response rates per survey type to identify workflow issues.",
+    a: "Empuls sends an automatic reminder after 48 hours if the survey hasn't been completed. A second reminder can be configured at 5 days. After the survey window closes (which you set), responses are no longer accepted and the result is marked as incomplete in your reporting. HR admins can see non-response rates per survey type to identify workflow issues.",
   },
 ];
 

@@ -60,7 +60,7 @@ export default function Integrations() {
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">Triggers fire from your HRIS</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">Connects natively to Workday, BambooHR, SAP, Oracle, and more</h2>
           <p className="text-dark-100 text-base leading-relaxed">
-            Lifecycle events stream from your HRIS in real time &mdash; new hires, training completions, performance cycles, departures &mdash; so the right survey fires the moment it should. Surveys delivered through Slack, Teams, and email.
+            Lifecycle events stream from your HRIS in real time — new hires, training completions, performance cycles, departures — so the right survey fires the moment it should. Surveys delivered through Slack, Teams, and email.
           </p>
         </motion.div>
 

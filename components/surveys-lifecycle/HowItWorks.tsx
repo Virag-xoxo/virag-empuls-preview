@@ -99,9 +99,9 @@ function LongitudinalModal() {
 }
 
 const STEPS = [
-  { num: "01", tag: "HRIS event triggers",   title: "Workday, BambooHR, SAP &mdash; native sync", body: "Surveys fire the moment a qualifying event is detected &mdash; no integration overhead, no nightly batch.", cta: "About triggers", Illustration: HrisEventModal },
+  { num: "01", tag: "HRIS event triggers",   title: "Workday, BambooHR, SAP — native sync", body: "Surveys fire the moment a qualifying event is detected — no integration overhead, no nightly batch.", cta: "About triggers", Illustration: HrisEventModal },
   { num: "02", tag: "Custom trigger logic",  title: "Scope by team, role, or tenure",            body: "Configure rules for any combination of department, role, tenure, or event type. Different teams can have different lifecycle survey tracks.", cta: "About rules", Illustration: CustomLogicModal },
-  { num: "03", tag: "Longitudinal tracking", title: "See score trends across the journey",       body: "Score trends across an employee&apos;s lifecycle &mdash; see how satisfaction at day 30 compares to performance review feedback six months later.", cta: "About tracking", Illustration: LongitudinalModal },
+  { num: "03", tag: "Longitudinal tracking", title: "See score trends across the journey",       body: "Score trends across an employee's lifecycle — see how satisfaction at day 30 compares to performance review feedback six months later.", cta: "About tracking", Illustration: LongitudinalModal },
 ];
 
 const slideIn: Variants = {
@@ -128,7 +128,7 @@ export default function HowItWorks() {
         <div className="text-center max-w-xl mx-auto mb-14">
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">Event-driven automation</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">Surveys that fire when things happen</h2>
-          <p className="text-dark-100 text-base leading-relaxed">Instead of scheduled sends, lifecycle surveys fire based on real events &mdash; an employee joining, a training completing, or a departure being logged. No calendar reminders, no missed moments.</p>
+          <p className="text-dark-100 text-base leading-relaxed">Instead of scheduled sends, lifecycle surveys fire based on real events — an employee joining, a training completing, or a departure being logged. No calendar reminders, no missed moments.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-[380px_minmax(0,520px)] gap-8 lg:gap-14 items-center lg:justify-center">
