@@ -21,7 +21,7 @@ export default function FinalCTA() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">launch in days</span>
             </h2>
             <p className="text-dark-000 text-base leading-relaxed">
-              See how Empuls turns Income Tax Act allowances into a single MCC-locked card — issued, KYC-cleared, and audit-ready in days.
+              See how Empuls turns Income Tax Act allowances into a single MCC-locked card &mdash; in days.
             </p>
           </motion.div>
 
