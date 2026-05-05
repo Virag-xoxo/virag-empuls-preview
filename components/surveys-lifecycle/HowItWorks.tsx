@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence, useReducedMotion, type Variants } from "motion/react";
 
-const AUTO_MS = 8000;
+const AUTO_MS = 5000;
 
 function HrisEventModal() {
   const reduce = useReducedMotion();
