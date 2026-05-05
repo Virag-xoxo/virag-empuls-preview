@@ -21,7 +21,7 @@ export default function FinalCTA() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">No more black-box math</span>
             </h2>
             <p className="text-dark-000 text-base leading-relaxed">
-              See how Empuls gives every rep a real-time window into exactly what they've earned — in a 20-minute walkthrough.
+              See exactly what every rep has earned &mdash; in a 20-minute walkthrough.
             </p>
           </motion.div>
 
