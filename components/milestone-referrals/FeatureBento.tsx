@@ -71,7 +71,7 @@ export default function FeatureBento() {
             className="lg:col-span-2 bg-white border border-light-200 rounded-2xl p-6 hover:shadow-menu hover:-translate-y-0.5 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-1">📊 Program analytics</p>
             <h3 className="text-lg font-bold text-dark-300 mb-1">Cost-per-hire, retention, and conversion at a glance</h3>
-            <p className="text-dark-100 text-sm leading-relaxed mb-5">See exactly where referred candidates fall off, who your top referrers are, and how much you&apos;re saving versus job boards.</p>
+            <p className="text-dark-100 text-sm leading-relaxed mb-5">See exactly where referred candidates fall off, who your top referrers are, and how much you're saving versus job boards.</p>
             <AnalyticsViz />
           </motion.div>
 

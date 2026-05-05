@@ -12,7 +12,7 @@ const FAQS = [
   {
     id: "item-2",
     q: "What if the referred candidate is declined but re-applies later?",
-    a: "Empuls tracks referral attribution with configurable expiry windows. If a candidate is re-hired within the attribution window (default 12 months), the original referrer still receives credit. If the candidate applies again after the window closes, it&apos;s treated as a fresh referral. These rules are fully configurable by admins.",
+    a: "Empuls tracks referral attribution with configurable expiry windows. If a candidate is re-hired within the attribution window (default 12 months), the original referrer still receives credit. If the candidate applies again after the window closes, it's treated as a fresh referral. These rules are fully configurable by admins.",
   },
   {
     id: "item-3",
