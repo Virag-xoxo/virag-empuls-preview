@@ -16,7 +16,7 @@ const FITNESS_MENTAL = [
   { name: "HealthifyMe",  src: "/logos/wellness/healthifyme.png" },
   { name: "ClassPass",    src: "/logos/wellness/classpass.png"   },
   { name: "YourDost",     src: "/logos/wellness/yourdost.png"    },
-  { name: "Fitpass",      src: "/logos/wellness/fitpass.png"     },
+  { name: "Fitpass",      src: "/logos/wellness/fitpass.png",     bigger: true },
   { name: "Fitterfly",    src: "/logos/wellness/fitterfly.png",   bigger: true },
 ];
 
