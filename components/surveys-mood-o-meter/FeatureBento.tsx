@@ -173,6 +173,24 @@ function FrictionList() {
   );
 }
 
+function ConfigurableList() {
+  const items = [
+    { e: "❓", c: "Custom question" },
+    { e: "🗓", c: "Custom cadence" },
+    { e: "🔢", c: "Min-group threshold" },
+  ];
+  return (
+    <div className="space-y-1.5">
+      {items.map((it) => (
+        <div key={it.c} className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-lg px-2.5 py-1.5">
+          <span className="text-base">{it.e}</span>
+          <span className="text-[10px] font-bold text-white">{it.c}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function PeriodDelta() {
   return (
     <div className="space-y-1.5">
@@ -237,6 +255,14 @@ export default function FeatureBento() {
           </motion.div>
 
           <motion.div initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.2, ease }}
+            className="rounded-2xl p-6 bg-light-100 border border-light-200 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
+            <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-200">Export</p>
+            <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-dark-300">Period-over-period delta</h3>
+            <p className="text-xs text-dark-100 leading-relaxed mb-4">Every archived run shows how the score changed from the previous cycle &mdash; green up, red down. Plus full CSV export from the three-dot menu.</p>
+            <PeriodDelta />
+          </motion.div>
+
+          <motion.div initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.25, ease }}
             className="lg:col-span-2 rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-100">Archive &amp; history</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-white">Every run saved. Every shift visible.</h3>
@@ -244,12 +270,12 @@ export default function FeatureBento() {
             <ArchiveTable />
           </motion.div>
 
-          <motion.div initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.25, ease }}
-            className="rounded-2xl p-6 bg-light-100 border border-light-200 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
-            <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-200">Export</p>
-            <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-dark-300">Period-over-period delta</h3>
-            <p className="text-xs text-dark-100 leading-relaxed mb-4">Every archived run shows how the score changed from the previous cycle &mdash; green up, red down. Pattern recognition at a glance, plus full CSV export.</p>
-            <PeriodDelta />
+          <motion.div initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.3, ease }}
+            className="rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
+            <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-100">Configurable</p>
+            <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-white">Custom question. Custom cadence.</h3>
+            <p className="text-xs text-dark-000 leading-relaxed mb-4">Admins set the daily question, frequency, and anonymity threshold from the three-dot menu. Sensible defaults out of the box &mdash; every team can dial in their own.</p>
+            <ConfigurableList />
           </motion.div>
         </div>
       </div>
