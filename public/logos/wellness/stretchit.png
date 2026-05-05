@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="preconnect" href="https://d2bkxke45bupbc.cloudfront.net" crossorigin />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://d2bkxke45bupbc.cloudfront.net/assets/img/NewRebrend/favicon_upd.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://d2bkxke45bupbc.cloudfront.net/assets/img/NewRebrend/favicon_upd.ico"
+    />
+    <link rel="preload" href="/fonts/Gibson-Light.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/Gibson-Medium.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/Gibson-Bold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/images/logo.webp" as="image" type="image/webp" />
+    <link
+      rel="preload"
+      href="/images/hero-poster-360.webp"
+      as="image"
+      type="image/webp"
+      media="(max-width: 510px)"
+    />
+    <link
+      rel="preload"
+      href="/images/hero-poster-990.webp"
+      as="image"
+      type="image/webp"
+      media="(min-width: 511px) and (max-width: 990px)"
+    />
+    <link
+      rel="preload"
+      href="/images/hero-poster.webp"
+      as="image"
+      type="image/webp"
+      media="(min-width: 991px)"
+    />
+    
+		<link href="./_app/immutable/assets/0.DndN_VAh.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.gm-dPOa_.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/75Vlni5G.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/BorPg4Yi.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.PI-oyF91.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CcJi1dpo.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/t6RGGoeH.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/BCtpLDyB.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DiZZZyOu.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/zhymdlCZ.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Bx7fUQtb.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.BqJbCTan.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DMIP8sLj.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Bd750hbM.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/BNBuXSsu.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CIVpubLX.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.CiB7Z1RZ.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/iHOSYtwg.js">
+		<link rel="modulepreload" href="./_app/env.js"><!--12qhfyh--><meta name="description" content="STRETCHIT — the #1 stretching and flexibility app. Follow along with expert-led video classes for splits, backbends, and full-body mobility. Available on iOS, Android, and web."/> <link rel="canonical" href="https://stretchitapp.com/"/> <meta property="fb:app_id" content="841146102608637"/> <meta name="p:domain_verify" content="653209c18ab306bd7aa71ea8891b6bb5"/> <meta property="og:type" content="website"/> <meta property="og:site_name" content="STRETCHIT"/> <meta property="og:title" content="STRETCHIT Videos for flexibility | STRETCHIT"/> <meta property="og:description" content="STRETCHIT — the #1 stretching and flexibility app. Follow along with expert-led video classes for splits, backbends, and full-body mobility."/> <meta property="og:url" content="https://stretchitapp.com/"/> <meta property="og:locale" content="en_US"/> <!--[--><!--[!--><!--]--><!--[--><meta property="og:locale:alternate" content="es_ES"/> <link rel="alternate" hreflang="es" href="https://stretchitapp.com/es"/><!--]--><!--[--><meta property="og:locale:alternate" content="pt_BR"/> <link rel="alternate" hreflang="pt" href="https://stretchitapp.com/pt"/><!--]--><!--[--><meta property="og:locale:alternate" content="de_DE"/> <link rel="alternate" hreflang="de" href="https://stretchitapp.com/de"/><!--]--><!--[--><meta property="og:locale:alternate" content="it_IT"/> <link rel="alternate" hreflang="it" href="https://stretchitapp.com/it"/><!--]--><!--]--> <link rel="alternate" hreflang="x-default" href="https://stretchitapp.com/"/> <meta property="og:image" content="https://stretchitapp.com/images/locale/en.jpg"/> <meta property="og:image:secure_url" content="https://stretchitapp.com/images/locale/en.jpg"/> <meta property="og:image:type" content="image/jpeg"/> <meta property="og:image:width" content="2048"/> <meta property="og:image:height" content="1000"/> <meta property="og:image:alt" content="STRETCHIT — stretching and flexibility app: expert-led video classes for mobility."/> <meta name="twitter:card" content="summary_large_image"/> <meta name="twitter:title" content="STRETCHIT Videos for flexibility | STRETCHIT"/> <meta name="twitter:description" content="STRETCHIT — the #1 stretching and flexibility app. Follow along with expert-led video classes for splits, backbends, and full-body mobility."/> <meta name="twitter:image" content="https://stretchitapp.com/images/locale/en.jpg"/> <meta name="twitter:image:src" content="https://stretchitapp.com/images/locale/en.jpg"/> <meta name="twitter:image:alt" content="STRETCHIT — stretching and flexibility app: expert-led video classes for mobility."/> <script>
+    if (
+      location.pathname.length > 1 &&
+      !/^\/(en|de|es|pt|it)(\/|$|\/index\.html$|\.html$)/.test(location.pathname)
+    ) {
+      location.replace('https://blog.stretchitapp.com' + location.pathname);
+    }
+  </script> <!----><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"STRETCHIT","url":"https://stretchitapp.com","logo":"https://stretchitapp.com/images/logo-black.webp","sameAs":["https://www.instagram.com/stretchitapp","https://www.facebook.com/stretchitapp","https://www.youtube.com/@stretchitapp","https://www.tiktok.com/@stretchitapp","https://x.com/stretchitapp"]},{"@type":"WebSite","name":"STRETCHIT","url":"https://stretchitapp.com"},{"@type":"MobileApplication","name":"STRETCHIT","operatingSystem":"iOS, Android","applicationCategory":"HealthApplication","description":"The #1 stretching and flexibility app with expert-led video classes for splits, backbends, and full-body mobility.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"installUrl":["https://apps.apple.com/app/stretchit/id1092655552","https://play.google.com/store/apps/details?id=splitsin30days.stretchit"]}]}</script><!----><!----><!--1uha8ag--><noscript><meta http-equiv="refresh" content="0;url=/en"/></noscript><!----><title>STRETCHIT Videos for flexibility | STRETCHIT</title>
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents"><!--[--><!--[--><!----><div class="main-layout svelte-12qhfyh"><!----><!----><!----></div><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_hrt3ua = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: null
+					};
+
+					const element = document.currentScript.parentElement;
+
+					import("./_app/env.js").then(({ env }) => {
+						__sveltekit_hrt3ua.env = env;
+
+						Promise.all([
+							import("./_app/immutable/entry/start.gm-dPOa_.js"),
+							import("./_app/immutable/entry/app.PI-oyF91.js")
+						]).then(([kit, app]) => {
+							kit.start(app, element, {
+									node_ids: [0, 2],
+									data: [null,null],
+									form: null,
+									error: null
+								});
+						});
+					});
+				}
+			</script>
+		</div>
+
+    <script async>
+      !(function (t, e, n, s, a, c, i, o, p) {
+        ((t.AppsFlyerSdkObject = a),
+          (t.AF =
+            t.AF ||
+            function () {
+              (t.AF.q = t.AF.q || []).push(
+                [Date.now()].concat(Array.prototype.slice.call(arguments))
+              );
+            }),
+          (t.AF.id = t.AF.id || i),
+          (t.AF.plugins = {}),
+          (o = e.createElement(n)),
+          (p = e.getElementsByTagName(n)[0]),
+          (o.async = 1),
+          (o.src =
+            'https://websdk.appsflyer.com?' +
+            (c.length > 0 ? 'st=' + c.split(',').sort().join(',') + '&' : '') +
+            (i.length > 0 ? 'af_id=' + i : '')));
+        p.parentNode.insertBefore(o, p);
+      })(window, document, 'script', 0, 'AF', 'pba', {
+        pba: { webAppId: '90198be5-22d7-4032-9961-f2d1937d6c29' },
+      });
+    </script>
+
+    <script>
+      (function (e, t, n) {
+        if (e.snaptr) return;
+        var a = (e.snaptr = function () {
+          a.handleRequest ? a.handleRequest.apply(a, arguments) : a.queue.push(arguments);
+        });
+        a.queue = [];
+        var s = 'script';
+        r = t.createElement(s);
+        r.async = !0;
+        r.src = n;
+        var u = t.getElementsByTagName(s)[0];
+        u.parentNode.insertBefore(r, u);
+      })(window, document, 'https://sc-static.net/scevent.min.js');
+      snaptr('init', 'a59824a9-c5d6-42fb-bc40-447709c7be4e', {
+        user_email: '',
+      });
+      snaptr('track', 'PAGE_VIEW');
+    </script>
+
+    <script>
+      !(function (w, d) {
+        if (!w.rdt) {
+          var p = (w.rdt = function () {
+            p.sendEvent ? p.sendEvent.apply(p, arguments) : p.callQueue.push(arguments);
+          });
+          p.callQueue = [];
+          var t = d.createElement('script');
+          ((t.src = 'https://www.redditstatic.com/ads/pixel.js'), (t.async = !0));
+          var s = d.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(t, s);
+        }
+      })(window, document);
+      rdt('init', 't2_9zm0hbl0v', { optOut: false, useDecimalCurrencyValues: true });
+      rdt('track', 'PageVisit');
+    </script>
+
+    <script>
+      window._tfa = window._tfa || [];
+      window._tfa.push({ notify: 'event', name: 'page_view', id: '1541805' });
+      !(function (t, f, a, x) {
+        if (!document.getElementById(x)) {
+          t.async = 1;
+          t.src = a;
+          t.id = x;
+          f.parentNode.insertBefore(t, f);
+        }
+      })(
+        document.createElement('script'),
+        document.getElementsByTagName('script')[0],
+        'https://cdn.taboola.com/libtrc/unip/1541805/tfa.js',
+        'tb_tfa_script'
+      );
+    </script>
+
+    <script async>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '840508957821163');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=840508957821163&amp;ev=PageView&amp;noscript=1"
+        alt=""
+      />
+    </noscript>
+
+    <script>
+      !(function (e, t, n, s, u, a) {
+        e.twq ||
+          ((s = e.twq =
+            function () {
+              s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+            }),
+          (s.version = '1.1'),
+          (s.queue = []),
+          (u = t.createElement(n)),
+          (u.async = !0),
+          (u.src = 'https://static.ads-twitter.com/uwt.js'),
+          (a = t.getElementsByTagName(n)[0]),
+          a.parentNode.insertBefore(u, a));
+      })(window, document, 'script');
+      twq('config', 'odiar');
+      twq('event', 'tw-odiar-odibr', {});
+    </script>
+
+    <script>
+      !(function (e) {
+        if (!window.pintrk) {
+          window.pintrk = function () {
+            window.pintrk.queue.push(Array.prototype.slice.call(arguments));
+          };
+          var n = window.pintrk;
+          n.queue = [];
+          n.version = '3.0';
+          var t = document.createElement('script');
+          t.async = !0;
+          t.src = e;
+          var r = document.getElementsByTagName('script')[0];
+          r.parentNode.insertBefore(t, r);
+        }
+      })('https://s.pinimg.com/ct/core.js');
+      pintrk('load', '2613306501670', {});
+      pintrk('page');
+      pintrk('track', 'pagevisit');
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        alt=""
+        src="https://ct.pinterest.com/v3/?event=init&amp;tid=2613306501670&amp;noscript=1"
+      />
+    </noscript>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3PBFY5NL7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-C3PBFY5NL7');
+    </script>
+  </body>
+</html>
