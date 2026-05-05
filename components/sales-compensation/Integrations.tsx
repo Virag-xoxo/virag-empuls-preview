@@ -63,7 +63,7 @@ export default function Integrations() {
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">Plugs into your existing stack</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">Reads from CRM and ERP, syncs with HRIS, posts to channels</h2>
           <p className="text-dark-100 text-base leading-relaxed">
-            Native connectors for Salesforce, HubSpot, Zoho CRM, Workday, SAP Sales Cloud, and Oracle HCM. CSV upload for any system that doesn&apos;t support webhooks. Statements and payouts notify reps in Slack, Teams, and email automatically.
+            Native connectors for Salesforce, HubSpot, Zoho CRM, Workday, SAP Sales Cloud, and Oracle HCM. CSV upload for any system that doesn't support webhooks. Statements and payouts notify reps in Slack, Teams, and email automatically.
           </p>
         </motion.div>
 

@@ -7,22 +7,22 @@ const FAQS = [
   {
     id: "item-1",
     q: "Can I build commission plans with multiple tiers and accelerators?",
-    a: "Yes. Empuls supports configurable tiered logic with as many breakpoints as you need: define quota thresholds, the rate at each level, and accelerator multipliers. The correct rate is automatically applied to each deal based on cumulative attainment, so accelerator math doesn&apos;t require a quarter-end reconciliation pass.",
+    a: "Yes. Empuls supports configurable tiered logic with as many breakpoints as you need: define quota thresholds, the rate at each level, and accelerator multipliers. The correct rate is automatically applied to each deal based on cumulative attainment, so accelerator math doesn't require a quarter-end reconciliation pass.",
   },
   {
     id: "item-2",
     q: "How do reps access their commission statements?",
-    a: "Every rep gets a personal Empuls dashboard with a live earnings statement &mdash; every deal listed with deal amount, rate applied, and earned amount, plus current quota attainment, the active tier, and the threshold to the next accelerator. Available on web and mobile. Reps can audit their own statements without filing a ticket.",
+    a: "Every rep gets a personal Empuls dashboard with a live earnings statement — every deal listed with deal amount, rate applied, and earned amount, plus current quota attainment, the active tier, and the threshold to the next accelerator. Available on web and mobile. Reps can audit their own statements without filing a ticket.",
   },
   {
     id: "item-3",
     q: "What happens if a deal is refunded or the amount changes after close?",
-    a: "Empuls syncs deal updates from the CRM in real time. If an amount is revised, the statement automatically adjusts and the rep is notified. If a deal is cancelled, the related commission is reversed (or held if rep&apos;s wallet has been redeemed). Every adjustment is logged in the audit trail with timestamp and reason.",
+    a: "Empuls syncs deal updates from the CRM in real time. If an amount is revised, the statement automatically adjusts and the rep is notified. If a deal is cancelled, the related commission is reversed (or held if rep's wallet has been redeemed). Every adjustment is logged in the audit trail with timestamp and reason.",
   },
   {
     id: "item-4",
     q: "Does Empuls handle multi-currency payouts for global sales teams?",
-    a: "Yes. Payouts are delivered in local currencies across 175+ countries. Deal values are converted at current FX rates, and reps can redeem as gift cards, digital rewards, prepaid cards, or local bank transfer &mdash; no payroll involvement required. Tax-compliant by region; reporting available in your reporting currency.",
+    a: "Yes. Payouts are delivered in local currencies across 175+ countries. Deal values are converted at current FX rates, and reps can redeem as gift cards, digital rewards, prepaid cards, or local bank transfer — no payroll involvement required. Tax-compliant by region; reporting available in your reporting currency.",
   },
 ];
 

@@ -196,11 +196,11 @@ function GlobalPayoutMini() {
 }
 
 const TILES = [
-  { tag: "Unified data",       title: "Pulls deals from every revenue system", body: "Salesforce, HubSpot, Oracle ERP, CSV upload &mdash; one engine, one source of truth, zero spreadsheet reconciliation.",                                  Viz: UnifiedDataViz,    span: "lg:col-span-2", dark: false },
+  { tag: "Unified data",       title: "Pulls deals from every revenue system", body: "Salesforce, HubSpot, Oracle ERP, CSV upload — one engine, one source of truth, zero spreadsheet reconciliation.",                                  Viz: UnifiedDataViz,    span: "lg:col-span-2", dark: false },
   { tag: "100% accuracy",      title: "Tiered commission engine",              body: "Configurable breakpoints, multipliers, and accelerators. The right rate is applied to every deal automatically.",                                          Viz: CommissionLadder,  span: "",              dark: false },
   { tag: "Rep visibility",     title: "Live earnings statements",              body: "Reps see every deal, every rate applied, and every dollar earned the moment a deal closes.",                                                              Viz: StatementMini,     span: "",              dark: false },
   { tag: "ROI analytics",      title: "Compensation effectiveness",            body: "Spend-vs-revenue tracking, plan variant comparison, dispute counts, and adoption metrics. Built for the CFO conversation.",                               Viz: RoiChart,          span: "lg:col-span-2", dark: true  },
-  { tag: "Next-tier preview",  title: "Show reps what&rsquo;s ahead",          body: "&ldquo;$22K to your 2× kicker.&rdquo; Reps see the gap and the gain &mdash; a self-serve motivation engine.",                                              Viz: NextTierWidget,    span: "",              dark: false },
+  { tag: "Next-tier preview",  title: "Show reps what&rsquo;s ahead",          body: "&ldquo;$22K to your 2× kicker.&rdquo; Reps see the gap and the gain — a self-serve motivation engine.",                                              Viz: NextTierWidget,    span: "",              dark: false },
   { tag: "Audit trail",        title: "Every calculation, fully logged",       body: "Plan version, source deal, rate applied, payout amount, timestamp. Every adjustment traced to its origin.",                                               Viz: AuditTrail,        span: "",              dark: false },
   { tag: "Global payout",      title: "Pay reps in their currency",            body: "Multi-currency conversion at current FX rates. Local rewards, local bank transfers, local prepaid cards across 175+ countries.",                          Viz: GlobalPayoutMini,  span: "",              dark: false },
 ];
@@ -213,7 +213,7 @@ export default function FeatureBento() {
         <div className="text-center max-w-xl mx-auto mb-14">
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">Platform capabilities</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">A commission engine that finance, RevOps, and reps agree on</h2>
-          <p className="text-dark-100 text-base leading-relaxed">Unified data, tiered logic, live statements, ROI analytics, full audit trail, and global payout &mdash; in one platform.</p>
+          <p className="text-dark-100 text-base leading-relaxed">Unified data, tiered logic, live statements, ROI analytics, full audit trail, and global payout — in one platform.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-auto">

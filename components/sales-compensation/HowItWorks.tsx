@@ -107,8 +107,8 @@ function PayoutModal() {
 
 const STEPS = [
   { num: "01", tag: "CRM trigger",     title: "Deal closes in your CRM",            body: "The moment a deal is marked closed-won in Salesforce, HubSpot, or your ERP, Empuls receives a webhook with the full deal context.", cta: "About CRM sync",       Illustration: CrmCloseModal },
-  { num: "02", tag: "Auto-calculated", title: "Commission resolved against the plan", body: "Empuls looks up the rep&apos;s plan, checks current quota attainment, applies the right tier multiplier, and posts the commission &mdash; with the full calculation logged in audit trail.", cta: "About calculation",    Illustration: CalculationModal },
-  { num: "03", tag: "Instant payout",  title: "Money in the rep&apos;s wallet",     body: "Reps redeem instantly: gift cards, Visa prepaid, bank transfer, or experiences across 175+ countries. No payroll cycle, no end-of-quarter waiting.", cta: "About delivery",       Illustration: PayoutModal },
+  { num: "02", tag: "Auto-calculated", title: "Commission resolved against the plan", body: "Empuls looks up the rep's plan, checks current quota attainment, applies the right tier multiplier, and posts the commission — with the full calculation logged in audit trail.", cta: "About calculation",    Illustration: CalculationModal },
+  { num: "03", tag: "Instant payout",  title: "Money in the rep's wallet",     body: "Reps redeem instantly: gift cards, Visa prepaid, bank transfer, or experiences across 175+ countries. No payroll cycle, no end-of-quarter waiting.", cta: "About delivery",       Illustration: PayoutModal },
 ];
 
 const slideIn: Variants = {

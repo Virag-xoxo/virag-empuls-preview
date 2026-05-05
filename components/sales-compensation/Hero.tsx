@@ -135,7 +135,7 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p {...fadeUp(0.2)} className="text-lg text-dark-000 max-w-md mb-10 leading-relaxed">
-            Every deal, every tier, every payout &mdash; calculated automatically and visible to reps the moment a deal closes.
+            Every deal, every tier, every payout — calculated automatically and visible to reps the moment a deal closes.
           </motion.p>
 
           <motion.div {...fadeUp(0.3)} className="flex flex-wrap items-center gap-4 mb-10">

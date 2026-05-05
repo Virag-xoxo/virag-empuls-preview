@@ -10,7 +10,7 @@ const FEATURED = {
   metricSuffix: "%",
   metricLabel: "fewer commission disputes",
   metricContext: "in the first quarter after rep-visible live statements went live",
-  quote: "RevOps used to spend two weeks of every quarter answering &ldquo;why is my commission this&rdquo; tickets. We don&apos;t answer those tickets anymore. Reps audit their own statements, and the math is always right.",
+  quote: "RevOps used to spend two weeks of every quarter answering &ldquo;why is my commission this&rdquo; tickets. We don't answer those tickets anymore. Reps audit their own statements, and the math is always right.",
   name: "Catherine Reed",
   title: "Director of RevOps",
   photo: "https://randomuser.me/api/portraits/women/45.jpg",
@@ -24,7 +24,7 @@ const COMPACT = [
     metricSuffix: "×",
     metricLabel: "faster payouts",
     metricContext: "vs the legacy end-of-month payroll cycle reps used to wait on",
-    quote: "We were paying commissions 30 days after a deal closed. Now it&apos;s the same day. Morale alone justified the switch &mdash; the reduction in payroll work was the bonus.",
+    quote: "We were paying commissions 30 days after a deal closed. Now it's the same day. Morale alone justified the switch — the reduction in payroll work was the bonus.",
     name: "Daniel Foster",
     title: "Finance Director",
     photo: "https://randomuser.me/api/portraits/men/41.jpg",
@@ -35,8 +35,8 @@ const COMPACT = [
     metric: "96",
     metricSuffix: "%",
     metricLabel: "plan adoption",
-    metricContext: "of reps actively use the live statement &mdash; up from 41% on the old PDF-monthly system",
-    quote: "Reps actually open the dashboard now. They didn&apos;t open the monthly PDF. Adoption isn&apos;t a vanity number &mdash; it&apos;s the difference between a comp plan that drives behavior and one that doesn&apos;t.",
+    metricContext: "of reps actively use the live statement — up from 41% on the old PDF-monthly system",
+    quote: "Reps actually open the dashboard now. They didn't open the monthly PDF. Adoption isn't a vanity number — it's the difference between a comp plan that drives behavior and one that doesn't.",
     name: "Megan Hayes",
     title: "Sales Compensation Manager",
     photo: "https://randomuser.me/api/portraits/women/52.jpg",
@@ -103,8 +103,8 @@ export default function Testimonials() {
       <div className="max-w-[1280px] mx-auto px-6">
         <div className="text-center max-w-xl mx-auto mb-14">
           <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-100 mb-3">Customer stories</p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-white tracking-tight mb-4">Finance, RevOps, and reps &mdash; all reading the same numbers</h2>
-          <p className="text-dark-000 text-base leading-relaxed">Companies that retired the spreadsheet, the PDF cheque-stub, and the dispute backlog &mdash; and saw the rest of the comp program work better as a result.</p>
+          <h2 className="text-3xl lg:text-4xl font-bold text-white tracking-tight mb-4">Finance, RevOps, and reps — all reading the same numbers</h2>
+          <p className="text-dark-000 text-base leading-relaxed">Companies that retired the spreadsheet, the PDF cheque-stub, and the dispute backlog — and saw the rest of the comp program work better as a result.</p>
         </div>
 
         <motion.figure className="bg-white/8 border border-white/12 rounded-2xl p-7 lg:p-8 mb-4 grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-6 lg:gap-12 items-center"
