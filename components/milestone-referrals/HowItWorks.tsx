@@ -196,7 +196,7 @@ export default function HowItWorks() {
             <div className="absolute inset-4 rounded-3xl blur-2xl bg-blue-200/10 pointer-events-none" />
             <AnimatePresence mode="wait">
               <motion.div key={active}
-                initial={reduce ? false : { opacity: 0, y: 16 }}
+                initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={reduce ? { opacity: 0 } : { opacity: 0, y: -16, transition: { duration: 0.2 } }}
                 transition={{ duration: reduce ? 0 : 0.35, ease: [0,0,0.2,1] }}
