@@ -151,11 +151,9 @@ export default function Hero() {
 
         <motion.div
           className="relative hidden lg:block h-[540px]"
-          {...(reduce ? {} : {
-            initial: { opacity: 0, x: 40 },
-            animate: { opacity: 1, x: 0 },
-            transition: { duration: 0.75, ease, delay: 0.18 },
-          })}>
+          initial={reduce ? false : { opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: reduce ? 0 : 0.75, ease, delay: 0.18 }}>
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-blue-200/10 blur-3xl pointer-events-none" />
 
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 bg-white/10 backdrop-blur-xl rounded-2xl border border-white/15 p-5 shadow-2xl">
