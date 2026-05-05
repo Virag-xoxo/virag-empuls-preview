@@ -100,12 +100,11 @@ export default function Hero() {
     };
   }, []);
 
-  const fadeUp = (delay: number) =>
-    reduce ? {} : {
-      initial: { opacity: 0, y: 22 },
-      animate: { opacity: 1, y: 0 },
-      transition: { duration: 0.65, ease, delay },
-    };
+  const fadeUp = (delay: number) => ({
+    initial: reduce ? (false as const) : { opacity: 0, y: 22 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: reduce ? 0 : 0.65, ease, delay },
+  });
 
   return (
     <section className="relative flex flex-col overflow-hidden bg-dark-300">
