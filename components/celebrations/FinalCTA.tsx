@@ -44,7 +44,7 @@ export default function FinalCTA() {
               </span>
             </h2>
             <p className="text-dark-000 text-base leading-relaxed">
-              Join thousands of HR teams who&apos;ve stopped missing birthdays and anniversaries — and started making every employee feel truly seen.
+              See how Empuls automates milestone moments &mdash; in a 20-minute walkthrough.
             </p>
           </motion.div>
 
