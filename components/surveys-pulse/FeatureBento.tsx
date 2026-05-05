@@ -199,7 +199,7 @@ export default function FeatureBento() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-auto">
           <motion.div
-            initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, ease }}
+            initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, ease }}
             className="lg:col-span-2 rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-100">9-driver heatmap</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-white">9 drivers × every department</h3>
@@ -208,25 +208,25 @@ export default function FeatureBento() {
           </motion.div>
 
           <motion.div
-            initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.05, ease }}
+            initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.05, ease }}
             className="rounded-2xl p-6 bg-light-100 border border-light-200 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <CadenceCard tag="Weekly" title="Weekly Pulse" body="A 3–5 question check-in designed to complete in under 2 minutes. Ideal for high-velocity teams, remote workforces, or periods of significant change." bullets={["3–5 questions per send", "Emoji or 5-point rating scale", "Delivered Monday morning", "Real-time response tracking"]} />
           </motion.div>
 
           <motion.div
-            initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.1, ease }}
+            initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.1, ease }}
             className="rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <CadenceCardDark tag="Monthly" title="Monthly Deep-Dive" body="An 8–10 question survey covering all nine engagement drivers. Gives managers a fuller picture of team health beyond the weekly signal." bullets={["8–10 questions across 9 drivers", "Multi-section Likert format", "Department comparison heatmap", "AI theme summary on close"]} />
           </motion.div>
 
           <motion.div
-            initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.15, ease }}
+            initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.15, ease }}
             className="rounded-2xl p-6 bg-light-100 border border-light-200 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <CadenceCard tag="Quarterly" title="Quarterly eNPS" body="A standard Employee Net Promoter Score check — single question with optional follow-up — benchmarked against your own quarterly trend." bullets={["1 NPS question + 1 open-ended", "eNPS score calculated automatically", "Trend tracked across quarters", "Segmentable by team or tenure"]} />
           </motion.div>
 
           <motion.div
-            initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.2, ease }}
+            initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.2, ease }}
             className="lg:col-span-2 rounded-2xl p-6 bg-light-100 border border-light-200 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-200">Automation</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-dark-300">Pulse Schedule Configuration</h3>
@@ -235,7 +235,7 @@ export default function FeatureBento() {
           </motion.div>
 
           <motion.div
-            initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.25, ease }}
+            initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.25, ease }}
             className="rounded-2xl p-6 bg-light-100 border border-light-200 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-200">Insights</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-dark-300">Understand satisfaction levels</h3>
@@ -244,7 +244,7 @@ export default function FeatureBento() {
           </motion.div>
 
           <motion.div
-            initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.3, ease }}
+            initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.3, ease }}
             className="rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-100">Benchmarking</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-white">Severity-coded heatmaps</h3>
