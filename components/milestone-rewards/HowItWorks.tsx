@@ -169,10 +169,9 @@ export default function HowItWorks() {
   const reduce = useReducedMotion();
 
   useEffect(() => {
-    if (reduce) return;
     const t = setInterval(() => setActive((p) => (p + 1) % STEPS.length), AUTO_MS);
     return () => clearInterval(t);
-  }, [reduce]);
+  }, []);
 
   const ActiveIllustration = STEPS[active].Illustration;
 
