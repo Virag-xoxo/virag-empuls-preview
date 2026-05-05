@@ -2,29 +2,27 @@
 
 import { motion, useReducedMotion } from "motion/react";
 
-const CHANNELS = [
-  { name: "Slack",       src: "/logos/integrations/slack.png"       },
-  { name: "Teams",       src: "/logos/integrations/teams.png"       },
-  { name: "Gmail",       src: "/logos/integrations/gmail.png"       },
-  { name: "Outlook",     src: "/logos/integrations/outlook.png"     },
-  { name: "Google Chat", src: "/logos/integrations/google-chat.png" },
+const DIAGNOSTICS = [
+  { name: "Practo",        src: "/logos/wellness/practo.png"        },
+  { name: "Thyrocare",     src: "/logos/wellness/thyrocare.png"     },
+  { name: "Orange Health", src: "/logos/wellness/orange-health.svg" },
+  { name: "Portea",        src: "/logos/wellness/portea.svg"        },
+  { name: "Ekincare",      src: "/logos/wellness/ekincare.png"      },
+  { name: "Healthians",    src: "/logos/wellness/healthians.png"    },
 ];
 
-const HRIS = [
-  { name: "Workday",            src: "/logos/integrations/workday.png"            },
-  { name: "SAP SuccessFactors", src: "/logos/integrations/sap-successfactors.png" },
-  { name: "BambooHR",           src: "/logos/integrations/bamboohr.png"           },
-  { name: "Darwinbox",          src: "/logos/integrations/darwinbox.png"          },
-  { name: "Keka",               src: "/logos/integrations/keka.png"               },
-  { name: "Rippling",           src: "/logos/integrations/rippling.png"           },
-  { name: "Zoho People",        src: "/logos/integrations/zoho.png"               },
-  { name: "ADP",                src: "/logos/integrations/adp.png"                },
-  { name: "UKG",                src: "/logos/integrations/ukg.png"                },
+const FITNESS_MENTAL = [
+  { name: "Cult.fit",     src: "/logos/wellness/cultfit.png"     },
+  { name: "HealthifyMe",  src: "/logos/wellness/healthifyme.png" },
+  { name: "ClassPass",    src: "/logos/wellness/classpass.png"   },
+  { name: "YourDost",     src: "/logos/wellness/yourdost.png"    },
+  { name: "Fitpass",      src: "/logos/wellness/fitpass.png"     },
+  { name: "Fitterfly",    src: "/logos/wellness/fitterfly.png"   },
 ];
 
-const ROW_1 = [HRIS[0], CHANNELS[0], HRIS[1], CHANNELS[1], HRIS[2], HRIS[3], CHANNELS[2]];
-const ROW_2 = [HRIS[4], CHANNELS[3], HRIS[5], CHANNELS[4], HRIS[6], HRIS[7], HRIS[8]];
-const ROW_3 = [CHANNELS[0], HRIS[0], HRIS[2], CHANNELS[1], HRIS[5], HRIS[3], CHANNELS[2]];
+const ROW_1 = [DIAGNOSTICS[0], FITNESS_MENTAL[0], DIAGNOSTICS[1], FITNESS_MENTAL[1], DIAGNOSTICS[2], FITNESS_MENTAL[2], DIAGNOSTICS[3], FITNESS_MENTAL[3]];
+const ROW_2 = [FITNESS_MENTAL[4], DIAGNOSTICS[4], FITNESS_MENTAL[1], DIAGNOSTICS[0], FITNESS_MENTAL[5], DIAGNOSTICS[5], FITNESS_MENTAL[0], DIAGNOSTICS[3]];
+const ROW_3 = [DIAGNOSTICS[1], FITNESS_MENTAL[2], DIAGNOSTICS[5], FITNESS_MENTAL[3], DIAGNOSTICS[2], FITNESS_MENTAL[4], DIAGNOSTICS[4], FITNESS_MENTAL[5]];
 
 function LogoPill({ name, src }: { name: string; src: string }) {
   return (
@@ -57,10 +55,10 @@ export default function Integrations() {
       <div className="max-w-[1280px] mx-auto px-6">
         <motion.div className="text-center max-w-xl mx-auto mb-14"
           initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: reduce ? 0 : 0.55, ease }}>
-          <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">Wellness partner network</p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">Built on trusted health partners and your HRMS</h2>
+          <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-3">Curated wellness partner network</p>
+          <h2 className="text-3xl lg:text-4xl font-bold text-dark-300 tracking-tight mb-4">Built on trusted health partners</h2>
           <p className="text-dark-100 text-base leading-relaxed">
-            Healthians, Practo, Pazcare, ekincare, Apollo, Mfine and more for wellness delivery &mdash; alongside HRMS sync (Workday, BambooHR, SAP, Darwinbox, Rippling) and channel notifications in Slack and Teams.
+            Pre-integrated with vetted partners across diagnostics, telehealth, fitness, mental health, and home care &mdash; so employees access the right benefit in one tap, with zero IT lift.
           </p>
         </motion.div>
 
@@ -79,18 +77,21 @@ export default function Integrations() {
         <motion.div className="flex flex-wrap items-center justify-center gap-6 mt-10"
           initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: reduce ? 0 : 0.5, delay: 0.25 }}>
           <div className="flex flex-col items-center gap-2">
-            <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-dark-100">Wellness partners</p>
-            <div className="flex items-center gap-1.5 flex-wrap justify-center">
-              {["Healthians", "Practo", "Pazcare", "ekincare", "Apollo", "HealthySure", "Mfine"].map((p) => (
-                <span key={p} className="text-[10px] font-bold text-dark-300 bg-light-100 border border-light-200 rounded-full px-2.5 py-1">{p}</span>
+            <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-dark-100">Diagnostics &amp; Care</p>
+            <div className="flex items-center gap-2 flex-wrap justify-center">
+              {DIAGNOSTICS.map((h) => (
+                <div key={h.name} className="bg-white border border-light-200 rounded-lg px-2.5 py-1 shadow-sm" title={h.name}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={h.src} alt={h.name} className="h-4 w-auto max-w-[64px] object-contain" />
+                </div>
               ))}
             </div>
           </div>
           <div className="w-px h-10 bg-light-200 hidden sm:block" />
           <div className="flex flex-col items-center gap-2">
-            <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-dark-100">HRIS &amp; Payroll</p>
+            <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-dark-100">Fitness &amp; Mental Wellness</p>
             <div className="flex items-center gap-2 flex-wrap justify-center">
-              {HRIS.map((h) => (
+              {FITNESS_MENTAL.map((h) => (
                 <div key={h.name} className="bg-white border border-light-200 rounded-lg px-2.5 py-1 shadow-sm" title={h.name}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={h.src} alt={h.name} className="h-4 w-auto max-w-[64px] object-contain" />
@@ -103,7 +104,7 @@ export default function Integrations() {
         <motion.div className="text-center mt-8"
           initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: reduce ? 0 : 0.4, delay: 0.3 }}>
           <a href="#" className="inline-flex items-center gap-2 text-blue-200 text-sm font-semibold hover:underline">
-            Explore all 50+ integrations
+            Explore all 50+ wellness partners
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
               <path d="M3 7H11M8 4L11 7L8 10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
