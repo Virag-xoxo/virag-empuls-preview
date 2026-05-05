@@ -62,7 +62,7 @@ export default function Hero() {
   }, []);
 
   const fadeUp = (delay: number) => ({
-    initial: reduce ? (false as const) : { opacity: 0, y: 22 },
+    initial: { opacity: 0, y: 22 },
     animate: { opacity: 1, y: 0 },
     transition: { duration: reduce ? 0 : 0.65, ease, delay },
   });
@@ -105,7 +105,7 @@ export default function Hero() {
         </div>
 
         <motion.div className="relative hidden lg:block h-[540px]"
-          initial={reduce ? false : { opacity: 0, x: 40 }}
+          initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: reduce ? 0 : 0.75, ease, delay: 0.18 }}>
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-blue-200/10 blur-3xl pointer-events-none" />
@@ -162,7 +162,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      <motion.div className="relative z-10 w-full pt-4 pb-8" initial={reduce ? false : { opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: reduce ? 0 : 0.6, ease, delay: 0.55 }}>
+      <motion.div className="relative z-10 w-full pt-4 pb-8" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: reduce ? 0 : 0.6, ease, delay: 0.55 }}>
         <div className="flex items-center gap-5 max-w-[1280px] mx-auto px-6 mb-5">
           <div className="flex-1 h-px bg-white/10" />
           <p className="text-[10px] text-dark-100 uppercase tracking-[0.18em] font-semibold whitespace-nowrap">Trusted by 1,400+ companies worldwide</p>
