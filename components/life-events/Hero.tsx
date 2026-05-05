@@ -126,7 +126,7 @@ export default function Hero() {
           </motion.div>
 
           <motion.h1 {...fadeUp(0.1)} className="text-[46px] lg:text-[60px] font-bold text-white leading-[1.06] tracking-tight mb-6">
-            <span className="block">Life milestones deserve</span>
+            <span className="block">Big life moments</span>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">
               recognition at work
             </span>
