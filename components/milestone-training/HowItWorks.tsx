@@ -117,7 +117,7 @@ function FireModal() {
 const STEPS = [
   { num: "01", tag: "Connect your LMS", title: "Coursera, LinkedIn Learning, Degreed, Cornerstone, or any LMS", body: "Native integrations or open API. Setup takes under 30 minutes. Empuls listens for completion events as soon as the connection goes live.", cta: "About LMS sync", Illustration: ConnectLMSModal },
   { num: "02", tag: "Configure reward tiers", title: "Different rewards per course type and skill level", body: "Microlearning, course, certification, cohort. Set values that match the time and effort each learning path requires.", cta: "About reward tiers", Illustration: ConfigureModal },
-  { num: "03", tag: "Empuls fires it", title: "Auto-delivered the moment a course is marked done", body: "Slack DM, Empuls feed, or email. Points hit the employee&apos;s wallet within seconds of LMS completion.", cta: "About delivery", Illustration: FireModal },
+  { num: "03", tag: "Empuls fires it", title: "Auto-delivered the moment a course is marked done", body: "Slack DM, Empuls feed, or email. Points hit the employee's wallet within seconds of LMS completion.", cta: "About delivery", Illustration: FireModal },
 ];
 
 const slideIn: Variants = {

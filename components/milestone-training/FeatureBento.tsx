@@ -151,7 +151,7 @@ function StreaksViz() {
   return (
     <div ref={ref} className="space-y-2">
       <div className="flex items-center justify-between">
-        <p className="text-[10px] font-bold text-dark-300">Sarah&apos;s 23-day streak 🔥</p>
+        <p className="text-[10px] font-bold text-dark-300">Sarah's 23-day streak 🔥</p>
         <span className="text-[10px] font-bold text-blue-200">+150 pts at 30</span>
       </div>
       <div className="grid grid-cols-10 gap-1">
