@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { Fragment, useRef } from "react";
 import { motion, useInView, useReducedMotion } from "motion/react";
 
 const ease = [0, 0, 0.2, 1] as const;
@@ -40,12 +40,12 @@ function Heatmap() {
             <div key={d} className="bg-white/5 px-1 py-2 text-[8px] font-bold text-white/55 uppercase tracking-[0.06em] text-center">{d}</div>
           ))}
           {DEPTS.map((dept, ri) => (
-            <>
-              <div key={`name-${dept.name}`} className="px-2 py-2 text-[10px] font-bold text-white truncate" style={{ background: ri % 2 === 0 ? "rgba(255,255,255,0.02)" : "transparent" }}>{dept.name}</div>
+            <Fragment key={dept.name}>
+              <div className="px-2 py-2 text-[10px] font-bold text-white truncate" style={{ background: ri % 2 === 0 ? "rgba(255,255,255,0.02)" : "transparent" }}>{dept.name}</div>
               {dept.scores.map((s, ci) => {
                 const c = colorFor(s);
                 return (
-                  <motion.div key={`${dept.name}-${ci}`}
+                  <motion.div key={ci}
                     initial={{ opacity: 0, scale: 0.7 }}
                     animate={inView ? { opacity: 1, scale: 1 } : {}}
                     transition={reduce ? { duration: 0 } : { duration: 0.25, delay: (ri * DRIVERS.length + ci) * 0.012, ease }}
@@ -53,7 +53,7 @@ function Heatmap() {
                     style={{ background: c.bg, color: c.text, borderRight: "1px solid rgba(255,255,255,0.05)", borderTop: "1px solid rgba(255,255,255,0.05)" }}>{s.toFixed(1)}</motion.div>
                 );
               })}
-            </>
+            </Fragment>
           ))}
         </div>
       </div>
