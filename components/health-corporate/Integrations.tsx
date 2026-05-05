@@ -3,8 +3,8 @@
 import { motion, useReducedMotion } from "motion/react";
 
 const DIAGNOSTICS = [
-  { name: "Practo",        src: "/logos/wellness/practo.png"        },
-  { name: "Thyrocare",     src: "/logos/wellness/thyrocare.png"     },
+  { name: "Practo",        src: "/logos/wellness/practo.png",         bigger: true },
+  { name: "Thyrocare",     src: "/logos/wellness/thyrocare.png",      bigger: true },
   { name: "Orange Health", src: "/logos/wellness/orange-health.svg" },
   { name: "Portea",        src: "/logos/wellness/portea.svg"        },
   { name: "Ekincare",      src: "/logos/wellness/ekincare.png"      },
@@ -12,35 +12,35 @@ const DIAGNOSTICS = [
 ];
 
 const FITNESS_MENTAL = [
-  { name: "Cult.fit",     src: "/logos/wellness/cultfit.png"     },
+  { name: "Cult.fit",     src: "/logos/wellness/cultfit.png",     bigger: true },
   { name: "HealthifyMe",  src: "/logos/wellness/healthifyme.png" },
   { name: "ClassPass",    src: "/logos/wellness/classpass.png"   },
   { name: "YourDost",     src: "/logos/wellness/yourdost.png"    },
   { name: "Fitpass",      src: "/logos/wellness/fitpass.png"     },
-  { name: "Fitterfly",    src: "/logos/wellness/fitterfly.png"   },
+  { name: "Fitterfly",    src: "/logos/wellness/fitterfly.png",   bigger: true },
 ];
 
 const ROW_1 = [DIAGNOSTICS[0], FITNESS_MENTAL[0], DIAGNOSTICS[1], FITNESS_MENTAL[1], DIAGNOSTICS[2], FITNESS_MENTAL[2], DIAGNOSTICS[3], FITNESS_MENTAL[3]];
 const ROW_2 = [FITNESS_MENTAL[4], DIAGNOSTICS[4], FITNESS_MENTAL[1], DIAGNOSTICS[0], FITNESS_MENTAL[5], DIAGNOSTICS[5], FITNESS_MENTAL[0], DIAGNOSTICS[3]];
 const ROW_3 = [DIAGNOSTICS[1], FITNESS_MENTAL[2], DIAGNOSTICS[5], FITNESS_MENTAL[3], DIAGNOSTICS[2], FITNESS_MENTAL[4], DIAGNOSTICS[4], FITNESS_MENTAL[5]];
 
-function LogoPill({ name, src }: { name: string; src: string }) {
+function LogoPill({ name, src, bigger }: { name: string; src: string; bigger?: boolean }) {
   return (
-    <div title={name} className="shrink-0 flex items-center justify-center bg-white rounded-2xl border border-light-200 shadow-sm px-4 py-2.5 h-[52px] w-[140px] hover:border-blue-100 hover:shadow-md transition-all duration-200">
+    <div title={name} className={`shrink-0 flex items-center justify-center bg-white rounded-2xl border border-light-200 shadow-sm h-[52px] w-[140px] hover:border-blue-100 hover:shadow-md transition-all duration-200 ${bigger ? "px-3 py-1" : "px-4 py-2.5"}`}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={src} alt={name} className="max-h-[28px] w-auto max-w-[108px] object-contain" />
+      <img src={src} alt={name} className={`w-auto object-contain ${bigger ? "max-h-[42px] max-w-[120px]" : "max-h-[28px] max-w-[108px]"}`} />
     </div>
   );
 }
 
-type LogoItem = { name: string; src: string };
+type LogoItem = { name: string; src: string; bigger?: boolean };
 
 function SliderRow({ logos, reverse = false, speed = 28 }: { logos: LogoItem[]; reverse?: boolean; speed?: number }) {
   const doubled = [...logos, ...logos];
   return (
     <div className="overflow-hidden w-full">
       <div className="flex gap-3 w-max" style={{ animation: `${reverse ? "slideRight" : "slideLeft"} ${speed}s linear infinite`, willChange: "transform" }}>
-        {doubled.map((l, i) => <LogoPill key={`${l.name}-${i}`} name={l.name} src={l.src} />)}
+        {doubled.map((l, i) => <LogoPill key={`${l.name}-${i}`} name={l.name} src={l.src} bigger={l.bigger} />)}
       </div>
     </div>
   );
