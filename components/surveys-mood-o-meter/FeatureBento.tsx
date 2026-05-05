@@ -1,5 +1,6 @@
 "use client";
 
+import { Fragment } from "react";
 import { motion, useReducedMotion } from "motion/react";
 
 const ease = [0, 0, 0.2, 1] as const;
@@ -74,17 +75,17 @@ function MoodDashboard() {
               <div key={d} className="bg-light-100 px-1 py-1.5 text-[9px] font-bold text-dark-100 uppercase tracking-[0.06em] text-center">{d}</div>
             ))}
             {HEATMAP_ROWS.map((r) => (
-              <>
-                <div key={`${r.name}-name`} className="px-2 py-1.5 text-[10px] font-bold text-dark-300 truncate border-t border-light-200">{r.name}</div>
+              <Fragment key={r.name}>
+                <div className="px-2 py-1.5 text-[10px] font-bold text-dark-300 truncate border-t border-light-200">{r.name}</div>
                 {[r.d104, r.d105, r.d106].map((v, i) => {
                   const c = heatColor(v);
                   return (
-                    <div key={`${r.name}-${i}`} className="px-1 py-1.5 text-[9px] font-bold tabular-nums flex items-center justify-center border-t border-light-200" style={{ background: c.bg, color: c.text }}>
+                    <div key={i} className="px-1 py-1.5 text-[9px] font-bold tabular-nums flex items-center justify-center border-t border-light-200" style={{ background: c.bg, color: c.text }}>
                       {v.toFixed(v % 1 === 0 ? 0 : 2)}%
                     </div>
                   );
                 })}
-              </>
+              </Fragment>
             ))}
           </div>
         </div>
@@ -222,7 +223,7 @@ export default function FeatureBento() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-auto">
-          <motion.div initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, ease }}
+          <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, ease }}
             className="rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-100">Trust</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-white">Always anonymous</h3>
@@ -230,7 +231,7 @@ export default function FeatureBento() {
             <AnonymityList />
           </motion.div>
 
-          <motion.div initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.05, ease }}
+          <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.05, ease }}
             className="rounded-2xl p-6 bg-light-100 border border-light-200 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-200">Slice</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-dark-300">8-dimension segmentation</h3>
@@ -238,7 +239,7 @@ export default function FeatureBento() {
             <SegmentationList />
           </motion.div>
 
-          <motion.div initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.1, ease }}
+          <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.1, ease }}
             className="rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-100">Friction</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-white">Zero-friction check-in</h3>
@@ -246,7 +247,7 @@ export default function FeatureBento() {
             <FrictionList />
           </motion.div>
 
-          <motion.div initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.15, ease }}
+          <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.15, ease }}
             className="lg:col-span-2 rounded-2xl p-6 bg-light-100 border border-light-200 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-200">Live dashboard</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-dark-300">Org sentiment score. Team heatmap. One view.</h3>
@@ -254,7 +255,7 @@ export default function FeatureBento() {
             <MoodDashboard />
           </motion.div>
 
-          <motion.div initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.2, ease }}
+          <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.2, ease }}
             className="rounded-2xl p-6 bg-light-100 border border-light-200 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-200">Export</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-dark-300">Period-over-period delta</h3>
@@ -262,7 +263,7 @@ export default function FeatureBento() {
             <PeriodDelta />
           </motion.div>
 
-          <motion.div initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.25, ease }}
+          <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.25, ease }}
             className="lg:col-span-2 rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-100">Archive &amp; history</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-white">Every run saved. Every shift visible.</h3>
@@ -270,7 +271,7 @@ export default function FeatureBento() {
             <ArchiveTable />
           </motion.div>
 
-          <motion.div initial={reduce ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.3, ease }}
+          <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: 0.3, ease }}
             className="rounded-2xl p-6 bg-dark-300 border border-white/10 hover:shadow-menu hover:-translate-y-1 transition-all duration-200">
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] mb-2 text-blue-100">Configurable</p>
             <h3 className="text-base lg:text-lg font-bold leading-snug mb-2 text-white">Custom question. Custom cadence.</h3>
