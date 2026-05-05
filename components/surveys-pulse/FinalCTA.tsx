@@ -21,7 +21,7 @@ export default function FinalCTA() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">Start listening</span>
             </h2>
             <p className="text-dark-000 text-base leading-relaxed">
-              Set up your first pulse survey in minutes. See engagement scores, driver heatmaps, and trend analysis from day one.
+              Engagement scores, driver heatmaps, and trend analysis &mdash; from day one.
             </p>
           </motion.div>
 
