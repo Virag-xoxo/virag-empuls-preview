@@ -21,7 +21,7 @@ export default function FinalCTA() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200">job boards</span>
             </h2>
             <p className="text-dark-000 text-base leading-relaxed">
-              See how Empuls turns your team into a talent pipeline — with structured rewards that actually drive quality hires.
+              Turn your team into a talent pipeline with structured rewards &mdash; in a 20-minute walkthrough.
             </p>
           </motion.div>
 
